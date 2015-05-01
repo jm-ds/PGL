@@ -1,0 +1,41 @@
+The CMC-files:
+If you pick them from the CMC-catalogue, a mass-conservation correction has 
+been attempted. If you pick them from the CMC_MIB, the ocean model has not
+been adjusted for mass imbalance.
+
+Geocentre tides due to ocean loading
+Values in metre
+
+1st line: FORMAT (Fortran)
+(a,1p,t42,3(2x,2e12.4))
+
+Lines 2..12: 
+Tide Ocean Model                                Zin         Zcr           Xin          Xcr          Yin         Ycr
+-----------------------------------------------------------------------------------------------------------------------
+M2   NCDF_GOT00.2                           -1.1614E-03 -1.5096E-03   -1.4006E-03  8.0005E-04    1.0986E-03  3.1974E-04   
+S2   NCDF_GOT00.2                           -3.1303E-04 -6.4096E-04   -5.9912E-04 -2.8858E-04    1.3144E-04  3.7089E-04  
+N2   NCDF_GOT00.2                           -3.0363E-04 -2.5126E-04   -1.8826E-04  1.6450E-04    2.3605E-04 -2.5852E-05  
+K2   NCDF_GOT00.2                           -1.2477E-04 -2.0995E-04   -1.6032E-04  7.8655E-05    2.3789E-06  1.0238E-04  
+K1   NCDF_GOT00.2                           -1.2728E-03  4.5253E-03   -1.9265E-03 -1.0514E-03   -8.9944E-04 -1.7933E-03  
+O1   NCDF_GOT00.2                           -3.4703E-04  2.8796E-03   -1.2376E-03 -1.8878E-04   -8.8022E-04 -6.6826E-04  
+P1   NCDF_GOT00.2                           -4.0305E-04  1.4822E-03   -6.3248E-04 -3.2646E-04   -3.0547E-04 -5.7402E-04  
+Q1   NCDF_GOT00.2                           -1.6272E-04  6.7429E-04   -2.5240E-04 -1.3063E-04   -2.2049E-04 -8.5858E-05  
+Mf   NCDF_GOT00.2                           -4.0516E-04 -6.3067E-06   -8.9498E-05  4.1418E-04   -1.2127E-04  9.2828E-05  
+Mm   NCDF_GOT00.2                           -2.4351E-04  1.6908E-05   -4.8862E-05  1.1182E-04   -9.8429E-06  3.4371E-06  
+Ssa  NCDF_GOT00.2                           -1.5658E-04  9.9181E-07    2.2924E-04  3.4792E-05   -2.5571E-05  1.0326E-06  
+-----------------------------------------------------------------------------------------------------------------------
+Example above from GOT00.2.cmc
+
+Usage: t=time, angle=atronomical tide argument
+DX(t) = Sum(n in 11 tides) Xin(n) * COS(angle(t,n)) + Xcr(n) * SIN(angle(t,n))
+DY(t) = Sum(n in 11 tides) Yin(n) * COS(angle(t,n)) + Ycr(n) * SIN(angle(t,n))
+DZ(t) = Sum(n in 11 tides) Zin(n) * COS(angle(t,n)) + Zcr(n) * SIN(angle(t,n))
+
+[DX,DY,DZ] is the offset of the terrestrial, 
+solid-earth fixed frame reckoned from the 
+joint mass centre (solid earth + tidal ocean), 
+and are given in the geocentric cartesian system.
+
+Here angle(t,n) is computed by ARG2 (EST::Utils::OTL)
+
+

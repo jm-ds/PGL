@@ -1,0 +1,2350 @@
+%=SNX 1.00 IGS 06:276:00000 IGN 92:001:00000 06:276:00000 P 00000 1 X        
+*-------------------------------------------------------------------------------
++FILE/REFERENCE                                                                 
+-FILE/REFERENCE                                                                 
+*-------------------------------------------------------------------------------                
++FILE/COMMENT      
+ Discontinuity list used in ITRF2008 generation
+ 
+ Commonly used models for time series analysis are:
+ "M" Models Codes for coordinates time series Analysis:
+      P = Position
+      V = Velocity
+      A = Annual Periodicity
+      S = Semi-Annual Periodicity
+      E = Exponential Decay
+      X = Exclude/Delete
+  "A" Axis modeled:
+ (E,N,U) East, North, Up
+ (X,Y,Z) Geocentric XYZ
+ "-" (3D)
+-FILE/COMMENT                                                                   
+*-------------------------------------------------------------------------------
++INPUT/ACKNOWLEDGMENTS    
+ This file has been gradually updated from a list supplied by R. Ferland (NRCan) with some inputs from the DGFI combination centre,
+ the MIT team and Jake Griffiths (NGS).
+
+ All the soln numbers have been renamed and sorted. 
+ As a consequence, they are not consistent anymore with ITRF2005 solution numbers.
+
+*AGY ______________FULL_DESCRIPTION_____________________________________________
+ COD Centre for Orbit Determination in Europe, Bern, C.H.                       
+ DGF Deutsches Geodatisches Forschungsinstitut, Munich, Germany
+ ESA European Space Agency, Darmstadt, Germany                                  
+ GFZ Geoforschungszentrum, Potsdam, Germany                                     
+ IGN Institut Geographic National, Paris, France
+ JPL Jet Propulsion Labs, Pasadena, California, U.S.A.                          
+ MIT Massachusetts Institute of Technology, Cambridge, Mass., U.S.A.            
+ NCL University of Newcastle, Newcastle upon Tyne, U.K.                         
+ NGS National Geodetic Survey, Silver Springs, Maryland, U.S.A.                 
+ NRC Natural Resources Canada, Ottawa, Ontario, Canada                          
+ SIO Scripps Institute of Oceanography, San Diego, California, U.S.A.           
+ TUM Technical University of Munich, Germany.
+     + Several undividuals.
+-INPUT/ACKNOWLEDGMENTS                                                          
+*-------------------------------------------------------------------------------
++SITE/ID                                                                        
+*Code Pt __Domes__ T _Station Description__ _Longitude_ _Latitude__ _Height    
+ ABER  A 13231M001 P Aberdeen               357 55 11.2  57  8 38.4    53.5
+ ACOR  A 13434M001 P A Corunai, SPAIN       351 36  3.8  43 21 51.8    66.9
+ ADE1  A 50109S001 P Adelaide    [SU]02[12] 138 38 50.4 -34 43 44.4    38.0
+ AIRA  A 21742S001 P AIRA                   130 35 58.5  31 49 26.6   314.6
+ AIS1  A 49998S001 P Annette Island Alaska  228 24 01.7  55 04 08.7    32.2
+ AJAC  A 10077M005 P Ajaccio, France          8 45 45.4  41 55 39.0    98.8
+ ALAC  A 13433M001 P Alicante, SPAIN        359 31  7.6  38 20 20.1    60.3
+ ALBH  A 40129M003 P Victoria, Canada       236 30 45.4  48 23 23.3    32.0     
+ ALGO  A 40104M002 P ALGONQUIN PARK, CANADA 281 55 43.0  45 57 31.7   202.0     
+ ALIC  A 50137M001 P Alice Springs, Austral 133 53 07.8 -23 40 12.4   603.4     
+ ALME  A 13437M001 P Almeria                357 32 26.0  36 51  9.1   127.5 
+ ALRT  A 40162M001 P Alert (Ellesmere Islan 297 39 34.3  82 29 39.5    78.1     
+ AMC2  A 40472S004 P Colorado Springs, USA  255 28 31.5  38 48 11.2  1911.1     
+ AMMN  A 22201M001 P Amman, Jordan           35 52 48.0  32 01 48.0  1055.8     
+ ANG1  A 49569S001 P Angleton 1             264 30 53.7  29 18  5.3    -9.4
+ ANKR  A 20805M002 P Ankara, Turkey          32 45 30.9  39 53 15.0   974.8     
+ ANTC  A 41713S001 P Antuco                 288 28  4.6 -37 20 19.3   745.7
+ AOML  A 49914S001 P Key Biscayne, Miami, U 279 50 16.1  25 44 04.9     0.1   
+ AOA1  A 40483S001 P  
+ AREQ  A 42202M005 P Arequipa, Peru         288 10 32.0 -16 27 55.2  2488.9     
+ ARP3  A 49878S003 P Aransas Pass, USA      262 56 27.6  27 50 18.2   -16.6
+ ARTU  A 12362M001 P Arti, Russian Federati  58 33 37.6  56 25 47.4   247.5     
+ ASC1  A 30602M001 P Ascension Island, Asce 345 35 16.5  -7 57 04.4   105.0     
+ ASHV  A 49853S001 P Asheville              277 27 13.7  35 35 58.0   659.2
+ ASPA  A 50503S006 P Pago Pago, USA         189 16 39.3 -14 19 34.0    53.7  
+ ATWC  A 49934M001 P Palmer, Alaska, USA    210 52 03.7  61 35 53.5    98.0      
+ AUCK  A 50209M001 P Whangaparaoa Peninsula 174 50 03.8 -36 36 10.1   132.0  
+ AUS5  A 49579S002 P Austin RRP2, USA       262 14 37.3  30 18 42.1   190.3 
+ AUTF  A 41515S001 P Ushuaia, ARGENTINA     291 41 47.2 -54 50 22.3    71.9
+ AZCN  A 49504M001 P Aztec, USA             252 05 20.4  36 50 23.3  1862.9
+ AZCO  A 49454M001 P Bisbee, US             250  4 15.1  31 23 27.8  1473.2
+ AZRY  A 49971M001 P Anza_Gravel            243 22 13.1  33 32 24.3  1265.7
+ AZU1  A 49911M001 P Azusa, USA             242 06 00.0  34 07 48.0   144.8     
+ BAKE  A 40152M001 P Baker Lake, CANADA     263 59 51.6  64 19 04.2     4.4     
+ BAN2  A 22306M003 P Bangalore, India        77 30 36.0  12 57 00.0   732.9     
+ BAR1  A 49656M001 P BAR1_SCGN_CS2002       240 58 13.0  33 28 49.6    14.8
+ BARH  A 49927S001 P Bar Harbor, USA        291 46 41.9  44 23 42.0     7.4     
+ BAKO  A 23101M002 P Cibinong, Indonesia    106 51 00.0  -6 29 24.0   158.2     
+ BAY1  A 49804S001 P Cold Bay , USA         197 17 34.2  55 11 25.0    50.5
+ BAY2  A 49804S002 P Cold Bay, USA          197 17 35.5  55 11 25.4    50.5     
+ BAYR  A 49612S001 P Saginaw                276  6 29.8  43 26 46.4   148.9
+ BBRY  A 49937M001 P BBRY_SCGN_CS           243 06 56.7  34 15 51.4  2051.1
+ BDOS  A 43401M001 P Bridgetown, BB         300 23 27.3  13  5 16.6   -38.6
+ BILI  A 12363M001 P Bilibino, Russian Fede 166 26 16.7  68 04 34.1   456.2     
+ BINT  A 22702M001 P Bintulu                113 04 01.9   3 15 41.4    48.8
+ BISH  A 12358M001 P Bishkek, Kyrgyz Rep     74 35 39.1  42 52 32.0   732.9
+ BJFS  A 21601M001 P Fangshan, China        115 53 32.9  39 36 31.0    87.4     
+ BLYT  A 40479M001 P Blythe, USA            245 17 24.0  33 36 36.0    85.9     
+ BOGO  A 12207M002 P Borowa Gora 40 km to    21 02 07.1  52 28 33.2   149.6     
+ BOGT  A 41901M001 P Bogota, Colombia       285 55 08.6   4 38 24.3  2576.8     
+ BOR1  A 12205M002 P BOROWIEC near KORNIK &  17 04 00.5  52 06 00.7   124.0     
+ BORK  A 14268M001 P Borkum                   6 44 50.8  53 33 49.1    54.2
+ BRAZ  A 41606M001 P Brasilia, Brazil       312 07 19.9 -15 56 50.6  1106.0     
+ BREW  A 40473M001 P Brewster, USA          240 19 02.3  48 07 52.5   290.0     
+ BRFT  A 41602M002 P Eusebio, BR            321 34 28.1  -3 52 38.8    21.7
+ BRMU  A 42501S004 P Bermuda, UK            295 18 10.8  32 22 12.0   -10.6     
+ BRST  A 10004M004 P Brest, France          355 30 12.2  48 22 49.8    65.8     
+ BRUS  A 13101M004 P Brussels, Belgium        4 21 33.1  50 47 52.1   149.7     
+ BUCU  A 11401M001 P Bucuresti, Romania      26 07 32.7  44 27 50.2   143.2     
+ BUDP  A 10101M003 P Kxbenhavn              012 30  0.1  55 44 20.5    94.0
+ BUE2  A 41505S007 P Buenos Aires[SU]03[12] 301 28 50.5 -34 34 25.3    48.7
+ BUR1  A 50144M001 P Burnie_TA._A           145 54 53.5 -41 03  0.2     3.1
+ BSHM  A 20705M001 
+ CAGL  A 12725M003 P Cagliari, Italy          8 58 22.1  39 08 09.2   238.4     
+ CAGS  A 40147M001 P Gatineau, Canada       284 11 33.7  45 35 06.0   235.0     
+ CAGZ  A 12725M004 P CAPOTERRA, ITALY         8 58 21.9  39 08 09.2   238.0     
+ CANT  A 13438M001 P Santander              356 12  7.0  43 28 19.1    99.2
+ CART  A 41902M001 P Cartagena              284 27 58.1  10 23 28.8     4.1
+ CASA  A 40437M002 P -                        0  0  0.0   0  0  0.0     0.0  
+ CAS1  A 66011M001 P Casey, Antarctica      110 31 10.9 -66 17 00.2    22.6     
+ CASC  A 13909S001 P Cascais, Portugal      350 34 53.4  38 41 36.2    77.1     
+ CAT1  A 40488M001 P Catalina, USA          241 31 12.0  33 27 00.0     3.9     
+ CAT2  A 49728M001 P Avalon, USA            241 39 58.3  33 18 41.8   477.2
+ CCJM  A 21732S003 P Ogasawara, Japan       142 11  4.5  27  5 44.1   206.9
+ CCV3  A 40426M002 P Cape Canaveral I, USA  279 27 17.2  28 27 36.8   -24.4
+ CEDU  A 50138M001 P Ceduna, Australia      133 48 35.3 -31 52 00.1   144.8     
+ CEUT  A 13449M001 P Ceuta                  354 41 19.2  35 53 45.7    51.8
+ CFAG  A 41517S001 P Caucete, Argentina     291 46 02.6 -31 36 07.9   703.0
+ CIT1  A 40400S201 P 
+ CHA1  A 49851S001 P Charleston, USA        280 09 25.7  32 45 27.2   -29.0
+ CHAN  A 21611M002 P Changchun, CN          125 26 39.1  43 47 26.5   273.3
+ CHAT  A 50207M001 P Waitangi, New Zealand  183 26 03.1 -43 57 20.9    58.0     
+ CHB1  A 49856S001 P CHB1 49856S001         275 32  3.7  45 39 12.6   145.1
+ CHIL  A 40484M001 P San Gabriel Mountains  241 58 12.0  34 19 48.0  1567.5     
+ CHIZ  A 10020M001 P Chize                  359 35 32.2  46  8  0.4   113.2
+ CHPI  A 41609M003 P Cachoeira Paulista, Br 315 00 53.4 -22 41 13.7   618.0     
+ CHUM  A 25601M001 P Chumysh, Kazakhstan     74 45 03.9  42 59 54.6   716.3     
+ CHUR  A 40128M002 P CHURCHILL, CANADA      265 54 40.7  58 45 32.8   -18.9     
+ CIC1  A 40508M002 P Ensenada, Mexico       243 20 03.1  31 52 14.5    67.5     
+ CKIS  A 50213M003 P Cook_Islands           200 11 57.8 -21 12  3.7    18.4     
+ CLAR  A 49906M001 P Claremont, USA         242 17 24.0  34 06 36.0   373.6     
+ CNMR  A 50512M001 P Saipan, USA            145 44 35.1  15 13 46.9    62.4
+ COCO  A 50127M001 P Cocos (Keeling) Island  96 50 02.0 -12 11 17.9   -35.2     
+ CONZ  A 41719M002 P Concepcion, Chile      286 58 28.3 -36 50 37.5   181.2     
+ COPO  A 41714S001 P Copiapo, Chile         289 39 42.4 -27 23 04.3   479.2     
+ CORD  A 41511M001 P Cordoba, Argentina     295 31 48.0 -31 42 36.7   747.1     
+ CORX  A 49897M001 P Coronados_Is           242 45  6.5  32 24 55.3    74.3
+ COSO  A 40469M001 P Coso Junction, USA     242 11 24.0  35 58 48.0  1455.4
+ COYQ  A 41715S001 P Coyhaique, Chile       288 06 28.4 -45 30 51.5   476.0     
+ CRAO  A 12337M002 P Simeiz, Ukraine         33 59 26.2  44 24 46.4   387.6
+ CRAR  A 66001M004 P CRAR 66001M004         166 40  5.7 -77 50 53.0   -19.9     
+ CREU  A 13432M001 P Cap de Creus, SPAIN    003 18 56.2  42 19  7.8   133.4
+ CRO1  A 43201M001 P Christiansted, USA     295 24 56.5  17 45 24.5   -31.8     
+ DAEJ  A 23902M002 P Taejon, Korea          127 22 28.2  36 23 57.8   117.0     
+ DAKA  A 34106M001 P Dakar, Senegal         342 32 06.6  14 41 05.9    63.1     
+ DARW  A 50134M001 P Darwin, Australia      131 07 57.7 -12 50 37.7   125.2     
+ DAV1  A 66010M001 P Davis, Antarctica       77 58 21.4 -68 34 38.3    44.5     
+ DGAR  A 30802M001 P Diego Garcia Island, U  72 22 12.9  -7 16 10.9   -64.7     
+ DNRC  A 49470M001 P Dover, USA             284 28 35.0  39 09 36.4   -15.2
+ DRAG  A 20710S001 P metzoki dragot, Israel  35 23 32.6  31 35 34.4   120.3     
+ DRAO  A 40105M002 P Penticton, Canada      240 22 30.0  49 19 21.4   542.0
+ DUBO  A 40137M001 P Lac du Bonnet, Canada  264 08 01.7  50 15 31.7   251.0     
+ DUBR  A 11901M001 P Dubrovnik, Croatia     018 06 37.6  42 38 59.9   454.4
+ DUCK  A 49846S001 P USACE_Field            284 14 55.7  36 10 55.7   -26.7
+ DUM1  A 91501M001 P Dumont                 140  0  6.9 -66 39 54.3    -1.4
+ DUNT  A 50212S001 P Dunedin, NZ            170 37 45.9 -45 48 51.5    13.5
+ DWH1  A 49837S001 P Woodinville, USA       237 55 11.4  47 46 26.8   109.1     
+ EBRE  A 13410M001 P Roquetes, Spain          0 29 32.6  40 49 15.2   107.9
+ EIJS  A 13533M001 P Eijsden                005 41 00.9  50 45 29.5   103.8 
+ EIL2  A 49805S001 P Eielson AFB,[SU]10[12] 212 53 13.3  64 41 16.6   176.5
+ EISL  A 41703M003 P Easter Island, Chile   250 37 00.1 -27 08 53.5   114.5     
+ ELAT  A 20706M001 P Eilat, Israel           34 55 12.0  29 30 36.0    29.6     
+ ELEN  A 40902S001 P Santa Elena, Guatemala 270 54 27.7  16 11 10.7   118.1     
+ ELRO  A 20711S001 P Kibutz el-rom, Israel   35 46 14.9  33 10 55.6  1080.4     
+ ENG1  A 49866S001 P English Turn, USA      270 03 29.8  29 52 44.3   -18.4
+ EPRT  A 49928S001 P Eastport, USA          293 00 28.4  44 54 31.3    31.0     
+ ESTI  A 41202S001 P Esteli, Nicaragua      273 38 16.8  13 05 58.2   956.5     
+ EURK  A 40153M001 P EUREKA, CANADA         274 03 36.3  79 59 18.7    25.6     
+ FAIR  A 40408M001 P Fairbanks, USA         212 30 02.7  64 58 40.8   319.0     
+ FALE  A 50601S001 P Faleolo Airport        188  0  1.7 -13 49 56.0    47.8
+ FLIN  A 40135M001 P CFS Flin Flon, Canada  258 01 19.2  54 43 32.2   320.0     
+ FORT  A 41602M001 P Eusebio, Fortaleza, Br 321 34 27.8  -3 52 38.6    20.5     
+ FTS1  A 49893S001 P Fort_Stevens           236 02 38.1  46 12 17.6   -14.0
+ GAL1  A 49872S001 P Galveston, USA         265 15 47.5  29 19 47.6   -17.5
+ GALA  A 42005M001 P Galapagos Island, Ecua 269 41 47.0  -0 44 33.4     7.4     
+ GENO  A 12712M002 P GENOVA, ITALY            8 55 16.0  44 25 09.8   137.0     
+ GETI  A 22703M001 P Geting                 102 06 19.6   6 13 34.2    -0.5
+ GILB  A 20708S001 P Maale Gilboa            35 24 59.3  32 28 45.6   506.8
+ GLPS  A 42005M002 P Puerto Ayora, Ecuador  269 41 46.8  -0 44 34.8     1.9     
+ GLPT  A 49467M001 P Gloucester_P           283 30  2.0  37 14 54.7   -22.0
+ GLSV  A 12356M001 P Kiev, Ukraine           30 29 48.1  50 21 51.1   226.8     
+ GMAS  A 31303S004 P Maspalomas, Spain      344 31 56.6  27 45 53.2   195.4     
+ GMSD  A 21749S002 P Nakatane town, Japan   131  0 56.0  30 33 23.2   140.4
+ GODE  A 40451M123 P Greenbelt, USA         283 10 23.4  39 01 18.2    15.0     
+ GOLD  A 40405S031 P Goldstone, USA         243 06 38.9  35 25 30.4   986.7     
+ GOPE  A 11502M002 P Ondrejov, Czech Republ  14 47 08.2  49 54 49.3   592.6     
+ GOUG  A 30608M001 P Gough Island, dependen 350 07 59.9 -40 20 55.7    81.3     
+ GRAS  A 10002M006 P Caussols, France         6 55 14.2  43 45 16.9  1320.3     
+ GRAZ  A 11001M002 P Graz, Austria           15 29 36.6  47 04 01.6   538.3     
+ GUAM  A 50501M002 P Dededo, Guam           144 52 05.9  13 35 21.5   201.9     
+ GUAO  A 21612M003 P URUMQI, CHINA           87 10 38.3  43 28 16.0  2049.2     
+ GUAT  A 40901S001 P Guatemala City, Guatem 269 28 48.7  14 35 25.8  1552.0     
+ GUAX  A 40512M001 P Isla Guadalupe         241 42 37.2  28 53 02.6    40.5
+ GUUG  A 82301M001 P Mangilao, Guam         144 48  9.8  13 25 59.5   134.7
+ HALY  A 20102M001 P Halat Ammar, Saudi Ara 036 05 59.7  29 08 19.9   861.6
+ HAMM  A 49677S001 P Hammond, USA           269 31 56.5  30 30 47.1     5.8
+ HARB  A 30302M009 P Pretoria, South Africa  27 42 27.0 -25 53 12.8  1555.0     
+ HARV  A 40420M101 P Vandenberg AFB, USA    239 19 04.6  34 28 09.8    15.0     
+ HELG  A 14264M001 P Helgoland_Is           007 53 35.1  54 10 28.1    48.4
+ HERS  A 13212M007 P Hailsham, England        0 20 10.3  50 52 02.3    76.5     
+ HERT  A 13212M010 P Hailsham, England        0 20 03.7  50 52 02.9    83.3     
+ HFLK  A 11006S003 P Innsbruck, Austria      11 23 10.0  47 18 46.4  2383.0     
+ HIL1  A 50141S001 P Hillarys, Australia    115 44 18.9 -31 49 31.9   -27.2
+ HILO  A 49979S001 P Hilo, USA              204 56 50.3  19 43 09.1    29.0     
+ HLFX  A 40120M001 P HALIFAX, CANADA        296 23 19.4  44 41 00.8     3.1     
+ HNLC  A 49970S001 P Honolulu, USA          202 08 07.8  21 18 11.9    22.0     
+ HNPT  A 49913S001 P Cambridge, USA         283 52 08.4  38 35 16.8   -27.5     
+ HOB2  A 50116M004 P Hobart, Australia      147 26 19.3 -42 48 16.9    41.1     
+ HOFN  A 10204M002 P Hoefn, Iceland         344 48 47.5  64 16 02.2    82.5     
+ HOLB  A 40130M001 P Holberg, Canada        231 51 54.0  50 38 25.4   560.0     
+ HOLM  A 40148M001 P Holman (Victoria Islan 242 14 20.8  70 44 11.0    39.5     
+ HRAO  A 30302M004 P Krugersdorp, South Afr  27 41 13.1 -25 53 24.4  1414.2     
+ HRM1  A 13235S001 P Hermitage,UK[SU]04[12] 358 42 58.0  51 27 13.5   163.0
+ HYDE  A 22307M001 P Hyderabad (located in   78 33 03.1  17 25 02.1   441.7     
+ IENG  A 12724S001 P Torino, Italy            7 38 21.9  45  0 54.5   316.5     
+ IISC  B 22306M002 P Bangalore, India        77 34 12.0  13 01 15.6   800.0     
+ INEG  A 40507M001 P Aguascalientes, Mexico 257 42 56.9  21 51 22.0  1888.3     
+ INVK  A 40150M001 P Inuvik, Canada         226 28 22.8  68 18 22.3    46.4     
+ IQQE  A 41708S002 P Iquique, Chile         289 52 05.8 -20 16 24.8    38.9     
+ IRKJ  A 12313M002 P Irkutsk, RUSSIA        104 18 58.2  52 13 08.5   502.1     
+ IRKT  A 12313M001 P Irkutsk, Russia        104 18 58.3  52 13 08.4   503.4     
+ ISPA  A 41703M007 P Easter Island, Chile   250 39 20.1 -27 07 29.9   112.6     
+ ISTA  A 20807M001 P Istanbul, Turkey        29 01 09.5  41 06 15.8   147.2     
+ JAB1  A 50136M001 P Jabiru, Australia      132 53 38.0 -12 39 31.7    82.1     
+ JAMA  A 42601S001 P Kingston, Jamaica      283 13 08.8  17 56 20.4    -2.9     
+ JOEN  A 10512M001 P JOEN 10512M001          30  5 46.2  62 23 28.2   113.7
+ JOZ2  A 12204M002 P JOZEFOSLAW near WARSAW  21 01 56.5  52 05 52.2   152.5     
+ JOZE  A 12204M001 P JOZEFOSLAW near WARSAW  21 01 59.5  52 05 10.7   141.0     
+ JPLM  A 40400M007 P Pasadena, USA          241 49 36.4  34 12 17.3   424.0     
+ KABR  A 20709S001 P Kibutz Kabri, Israel    35 08 41.3  33 01 22.1   119.4     
+ KARR  A 50139M001 P Karratha, Australia    117 05 49.9 -20 58 53.0   109.2     
+ KATZ  A 20707M001 P Katzrin, Israel         35 41 17.9  32 59 42.0   338.9     
+ KELS  A 49662M001 P Kelso, USA             237 06 14.2  46 07  5.4   -15.9
+ KELY  A 43005M001 P Kangerlussuaq, Greenla 309 03 18.0  66 59 14.3   230.6     
+ KELY  B 43005M002 P Kangerlussuaq, Greenla 309 03 18.0  66 59 14.3   230.6     
+ KEN1  A 49995S001 P Kenai, Alaska, USA     208 38 59.3  60 40 30.3    56.0
+ KERG  A 91201M002 P Port aux Francais, Ker  70 15 19.8 -49 21 05.4    74.1     
+ KGN0  A 21704S006 P Koganei, Japan         139 29 18.6  35 42 24.5   128.5     
+ KGNI  A 21704S005 P KOGANEI, JAPAN         139 29 17.2  35 42 37.1   123.5     
+ KHAJ  A 12361M001 P Khabarovsk, RUSSIA     135 02 46.1  48 31 17.2   130.6     
+ KHAR  A 12314M001 P Kharkiv                 36 14 20.4  50  0 18.4   201.0
+ KIRI  A 50305M001 P Betio_Island           172 55 22.4   1 21 16.5    36.2     
+ KIRU  A 10403M002 P Kiruna, Sweden          20 58 06.2  67 51 26.3   391.1     
+ KIT3  A 12334M001 P Kitab, Uzbekistan       66 52 48.0  39 08 24.0   643.0     
+ KJUN  A 49680S001 P Lafayette, USA         267 57 17.6  30 13 17.0    -7.9
+ KLPD  A 10802M001 P Klaipeda, Lithuania    021 07  8.0  55 42 55.3    42.7
+ KOD1  A 40419S001 P Kodiak, USA            207 30 00.0  57 43 48.0    78.5     
+ KODK  A 40419S003 P Kodiak, USA            207 30 00.0  57 43 48.0    78.5     
+ KOK1  A 49896S001 P Kokole Point, USA      200 14 30.5  21 59 00.6    23.7
+ KOKB  A 40424M004 P Kokee Park, Waimea,, U 200 20 06.3  22 07 34.5  1167.4     
+ KOSG  A 13504M003 P Kootwijk (near Apeldoo   5 48 34.6  52 10 42.2    97.9     
+ KOU1  A 97301M211 P Kourou, French Guyana  307 11 38.5   5 15 07.9   -25.7     
+ KOUC  A 92727S001 P Koumac, New Caledonia  164 17 14.3 -20 33 31.3    84.0     
+ KOUR  A 97301M210 P Kourou, French Guyana  307 11 38.4   5 15 07.9   -25.6     
+ KR0G  A 10422M001 P Kiruna, Sweden          21 03 36.8  67 52 39.3   497.9     
+ KSMV  A 21701S007 P KASHIMA, JAPAN         140 39 27.7  35 57 19.4    57.9     
+ KSTU  A 12349M002 P Krasnoyarsk, Russia     92 47 24.0  55 59 24.0   210.0     
+ KUNM  A 21609M001 P Kunming, China         102 47 49.8  25 01 46.3  1986.2     
+ KUUJ  A 40154M001 P KUUJJUARAPIK, CANADA   282 15 16.4  55 16 42.1    -0.5
+ KYW1  A 49852S001 P Key West Naval Air Sta 278 20 49.2  24 34 56.3   -13.8     
+ LAE1  A 51002M001 P Lae, Papua New Guinea  146 59 35.5  -6 40 25.3   140.3     
+ LAGO  A 13903M001 P LAGOS                  351 19 53.8  37 05 56.2    62.7
+ LAMA  A 12209M001 P OLSZTYN, POLAND         20 40 11.6  53 53 32.6   187.0     
+ LAMP  A 12706M002 P LAMPEDUSA, ITALY        12 36 19.8  35 29 58.9    57.8     
+ LASC  A 49933M001 P L.A. SW College, USA   241 48 59.0  33 33 17.3    24.7
+ LAUT  A 50804M002 P Fiji_CGPS              177 26 47.7 -17 36 31.7    89.7     
+ LEBA  A 49631S001 P Lebanon                275 43  0.7  39 25 49.8   224.3
+ LHAS  A 21613M001 P LHASA, China            91 06 14.3  29 39 26.4  3622.0     
+ LHAZ  A 21613M002 P Lhasa, China            91 06 14.5  29 39 26.4  3622.0     
+ LHCL  A 41518S001 P Lihue Calel, Argentina 294 24 17.1 -38 00  9.6   404.6
+ LHUE  A 49980S001 P Lihue, Kauai, USA      200 39 38.5  21 59 04.6    46.0     
+ LKTH  A 80601S001 P Lookout_Hill           302 08 57.3 -51 41 54.3    66.1
+ LPAL  A 81701M001 P Roque de los Muchachos 342 27 49.3  28 27 18.0  2207.0     
+ LPGS  A 41510M001 P La Plata, Argentina    302 04 12.0 -34 54 36.0   254.0     
+ LROC  A 10023M001 P La Rochelle, France    358 46 50.5  46 09 32.2    57.9     
+ LYTT  A 50214S001 P Lyttelton Tide Gauge   172 43 20.0 -43 36 21.0    18.5
+ MAC1  A 50135M001 P MacQuarie Island, Sub- 158 56 08.9 -54 29 58.2    -6.7     
+ MADR  A 13407S012 P Robledo, Spain         355 45 01.2  40 25 45.0   829.5     
+ MAG0  A 12354M001 P Magadan, Russian Feder 150 46 12.0  59 34 32.9   361.9     
+ MALD  A 22901S001 P Male Airport, Maldives  73 31 34.7   4 11 19.3   -92.0     
+ MALI  A 33201M001 P Malindi, Kenya          40 11 39.8  -2 59 45.2    22.7     
+ MALL  A 13444M001 P Mallorca                 2 37 28.3  39 33  9.4    62.0
+ MANA  A 41201S001 P Managua, Nicaragua     273 45 04.7  12 08 56.8   170.0     
+ MANZ  A 40513S001 P Manzanillo, Mexico     255 42 06.8  19 03 50.0   -14.0     
+ MAR6  A 10405M002 P Maartsbo, Sweden        17 15 30.7  60 35 42.5    75.4     
+ MARS  A 10073M008 P Marseille, France        5 21 13.6  43 16 43.6    61.8
+ MAS1  A 31303M002 P Maspalomas, Spain      344 22 00.1  27 45 49.3   197.3     
+ MAT1  A 12734M009 P MATERA, ITALY           16 42 16.4  40 38 56.6   534.5     
+ MATE  A 12734M008 P Matera, Italy           16 42 16.2  40 38 56.8   535.6  
+ MATH  A 40474M001 P Lake Mathews Water Res 242 33 36.0  33 51 36.0   396.9        
+ MAUI  A 40445S008 P Haleakala, Maui, USA   203 44 34.8  20 42 24.1  3062.0     
+ MAW1  A 66004M001 P Mawson, Antarctica      62 52 14.5 -67 36 17.3    59.2     
+ MBAR  A 33901M001 P Mbarara, Uganda         30 44 16.3  -0 36 05.3  1337.5     
+ MCD1  A 49778S001 P Mac_Dill_1             277 28  3.6  27 50 59.4   -15.9
+ MCIL  A 21789S001 P Ogasawara, Japan       153 58 43.2  24 17 24.3    33.7
+ MCM4  A 66001M003 P Ross Island, Antarctic 166 40 09.5 -77 50 17.9    97.9     
+ MCN1  A 49479M001 P Macon 1                276 26 22.0  32 41 43.2    60.3
+ MDO1  A 40442M012 P Fort Davis, USA        255 59 06.0  30 40 49.8  2005.5     
+ MDVJ  A 12309M005 P Mendeleevo, RUSSIA      37 12 52.2  56 01 17.4   257.4     
+ MDVO  A 12309M002 P Mendeleevo, Moscow Reg  37 13 24.9  56 01 38.9   254.8     
+ MEDI  A 12711M003 P MEDICINA (BOLOGNA), IT  11 38 48.5  44 31 11.6    50.0     
+ MEM2  A 49867S002 P MEM2 49867S002         269 47 38.2  35 27 56.5    46.6
+ METS  A 10503S011 P Kirkkonummi (40 km wes  24 41 43.1  60 13 03.0    94.6     
+ METZ  A 10503M005 P Kirkkonummi (40 km wes  24 23 43.2  60 13 02.9    94.5     
+ MIG1  A 49741M001 P San Miguel Island, USA 239 38 55.0  34 02 17.7   130.9
+ MIKL  A 12335M001 P Mykolaiv, Ukraine       31 58 22.2  46 58 22.0    94.7
+ MIZU  A 21702M002 P Mizusawa, Japan        141 07 48.0  39 08 24.0    75.6     
+ MKEA  A 40477M001 P Mauna Kea, USA         204 32 37.2  19 48 04.9  3754.7     
+ MLF1  A 49484M001 P Millers Ferry 1        272 36 29.5  32 05 24.9     9.1
+ MOB1  A 49863S001 P Mobile_Point           271 58 33.2  30 13 39.1   -18.6
+ MOBN  A 12365M001 P Obninsk, Russian Feder  36 34 10.3  55 06 53.6   182.6     
+ MOBS  A 50182M001 P Melbourne, Australia   144 58 31.2 -37 49 45.9    40.0     
+ MONP  A 40497M004 P Laguna Mountains, USA  243 34 48.0  32 53 24.0  1842.6     
+ MORP  A 13299S001 P Morpeth, England       358 18 52.2  55 12 46.0   144.4     
+ MQZG  A 50214M001 P McQueens_Val           172 39 16.9 -43 42  9.8   154.7
+ MSKU  A 32810M001 P Franceville, Gabon      13 33 07.2  -1 37 52.3   387.0     
+ MTJO  A 50204M001 P Tepako, New Zealand    170 27 54.4 -43 59 08.5  1031.0     
+ MTKA  A 21741S002 P Mitaka, Japan          139 33 41.0  35 40 46.3   109.0     
+ NAIN  A 40164M001 P Nain, Canada           298 18 40.6  56 32 13.1    33.5     
+ NANO  A 40138M001 P Nanoose Bay, Canada    235 54 48.6  49 17 41.3     6.0     
+ NAUR  A 50701M001 P NAURU_CGPS, Nauru      166 55 32.0  -0 33  6.2    46.3
+ NEAH  A 40139M001 P Cheeka Peak, Canada    235 22 30.3  48 17 52.3   459.9
+ NEIA  A 41620M001 P Cananeia               312  4 30.1 -25  1 12.8     6.1
+ NETP  A 49647S001 P Houston, USA           264 57 59.8  29 04 44.8   -10.5
+ NEWL  A 13273M103 P Newlyn                 354 27 25.9  50  6 10.9    64.5
+ NEWP  A 49666M001 P Newport                235 56 17.2  44 35  6.1    20.4
+ NICO  A 14302M001 P Nicosia, Cyprus         33 23 47.0  35 08 27.2   155.0     
+ NISU  A 49507M001 P Boulder, USA           254 44 15.9  39 59 43.5  1653.9
+ NKLG  A 32809M002 P Libreville, Gabon        9 40 11.3   0 21 08.4    31.4     
+ NLIB  A 40465M001 P North Liberty, USA     268 25 30.4  41 46 17.7   207.1     
+ NNOR  A 50181M001 P New Norcia, Australia  116 11 33.8 -31 02 55.5   235.0     
+ NOT1  A 12717M004 P NOTO, ITALY             14 59 23.3  36 52 34.0   126.2     
+ NOUM  A 92701M003 P NOUMEA, FRANCE         166 24 36.7 -22 16 11.6    83.1     
+ NOVJ  A 12367M001 P Novosibirsk, RUSSIA     82 54 34.0  55 02 48.0   142.4     
+ NPLD  A 13234M003 P Teddington, United Kin 359 39 37.4  51 25 15.6    72.7     
+ NPRI  A 49684S001 P Naval_Statio           288 40 20.9  41 30 35.4   -13.1
+ NRC1  A 40114M001 P OTTAWA, CANADA         284 22 34.3  45 27 15.1    82.5     
+ NRIL  A 12364M001 P Norilsk, Russian Feder  88 21 35.2  69 21 42.6    47.9     
+ NRMD  A 92701M005 P NOUMEA, FRANCE         166 29  5.6 -22 13 42.0   160.4
+ NSSP  A 12312M001 P Yerevan, Armenia        44 30 10.5  40 13 35.2  1194.8     
+ NSSS  A 49898M001 P Naval_Space            243  1 38.3  32 34 45.5   123.6
+ NSTG  A 13216M001 P North_Shield           358 33 36.4  55  0 26.7    56.9
+ NTUS  A 22601M001 P Singapore, Singapore   103 40 47.6   1 20 44.9    79.0     
+ NVSK  A 12319M001 P Novosibirsk, Russia     83 14 07.8  54 50 26.2   123.6     
+ NYA1  A 10317M003 P Ny-Alesund, Norway      11 51 55.1  78 55 46.4    84.0     
+ NYAL  A 10317M001 P Ny-Alesund, Norway      11 52 12.0  78 55 48.0    82.0     
+ OBE2  A 14208M003 P Oberpfaffenhofen, Germ  11 18 00.0  48 06 00.0   651.0     
+ OBET  A 14208M004 P Wessling, Germany       11 16 39.2  48 05 03.6   638.0     
+ OHI2  A 66008M005 P O'Higgins, Antarctic P 302 05 55.3 -63 19 16.0    33.1     
+ OHI3  A 66008M006 P O'Higgins, Antarctic P 302 05 55.0 -63 19 15.9    32.1     
+ ONSA  A 10402M004 P Onsala, Sweden          11 55 31.9  57 23 43.1    45.5     
+ OPMT  A 10001S006 P Paris, France            2 20 05.6  48 50 09.2   124.2     
+ ORID  A 15601M001 P Ohrid, Macedonia        20 47 38.4  41 07 38.6   773.0     
+ OSN1  A 23904S001 P Osan AB, KP [SU]13[12] 127  1 26.5  37  4 39.2    48.8
+ OUS2  A 50212M002 P Dunedin, New Zealand   170 30 36.0 -45 40 48.0    26.2     
+ OUSD  A 50212M001 P Dunedin, New Zealand   170 30 38.9 -45 52 16.0    26.2     
+ P101  A 21753S001 P RandolphLLUT           248 45 50.3  41 41 32.2  2016.1
+ P105  A 21757S001 P DeltaMuni_UT           247 29 45.3  39 23 15.2  1431.5
+ P108  A 21760S001 P SageValleyUT           248 03 19.6  39 35 20.0  1683.2
+ P110  A 21762S001 P SanPeteValUT           248 25 43.9  39 42 54.8  2266.2
+ P112  A 21764S001 P Indianola_UT           248 33  0.0  39 49  0.9  1930.4
+ P114  A 21766S001 P BurgessRchUT           247 28 20.5  40 38  2.3  1352.4
+ P118  A 21769S001 P KamasLloydUT           248 39  0.5  40 38  7.8  2082.6
+ P119  A 21770S001 P MahoganyHRUT           248 44 32.2  40 43 54.4  2045.4
+ P121  A 21772S001 P HNSLVALLY_UT           247 18  6.2  41 48 12.2  1452.4
+ P122  A 21773S001 P CNRSPRNGS_UT           247 40  5.1  41 38  7.3  1293.2
+ P201  A 21776S001 P Wakkanai               141 41  7.1  45 24 28.1    31.7
+ P202  A 21777S001 P Abashiri               144 17  8.8  44  1  9.8    36.5
+ P203  A 21778S001 P Kushiro                144 22 17.0  42 58 32.0    35.9
+ P204  A 21779S001 P Hakodate_I             140 43 28.3  41 46 53.9    39.5
+ P205  A 21780S001 P Ofunato                141 45 11.7  39  1 11.1    47.0
+ P207  A 21782S001 P Toyama                 137 13 28.4  36 45 43.8    44.2
+ P209  A 21784S001 P Hamada_II              132  3 58.3  34 53 50.3    39.6
+ P211  A 21786S001 P Aburatsu               131 24 33.4  31 34 37.0    36.9
+ PADO  A 12750S001 P Padova, Italy           11 53 45.8  45 24 40.2    64.7     
+ PALM  A 66005M002 P Palmer St., Antarctica 295 56 56.0 -64 46 30.3    29.2     
+ PAPE  A 92201M011 P Papeete                210 25 38.2 -17 31 59.1    11.9
+ PARA  A 41610M001 P Curitiba, Brazil       310 46  8.6 -25 26 54.1   925.8
+ PARC  A 41716S001 P Punta Arenas, Chile    289 07 12.4 -53 08 13.2    22.0     
+ PARK  A 50108M001 P Parkes, AU             148 15 52.6 -32 59 55.6   397.4
+ PDEL  A 31906M004 P Ponta Delgada, PORTUGA 334 20 14.0  37 44 51.9   110.8     
+ PENC  A 11206M006 P Penc, 50 km northward   19 16 53.4  47 47 22.6   291.8     
+ PERT  A 50133M001 P Perth, Australia       115 53 06.7 -31 48 06.8    12.9     
+ PETP  A 12355M002 P Petropavlovsk-Kamchatk 158 36 25.2  53 04 00.1   211.0     
+ PETS  A 12355M003 P Petropavlovsk-Kamchatk 158 39  0.5  53 01 23.9   102.1
+ PGC5  A 40129M007 P pgc5__WCDA-A           236 32 55.9  48 38 54.7     3.6
+ PHLW  A 30101M001 P Helwan_Defor           031 20 36.2  29 51 41.6   148.6
+ PICL  A 40155M001 P PICKLE LAKE, CANADA    269 50 16.9  51 28 47.3   315.1     
+ PIE1  A 40456M001 P Pie Town, USA          251 52 51.9  34 18 05.4  2347.7     
+ PIMO  A 22003M001 P Quezon City, Phillipin 121 04 39.7  14 38 08.5    95.5     
+ PIN1  A 40407M003 P Pinyon Flat, USA       243 32 24.0  33 36 36.0  1256.2     
+ PLO3  A 49886S003 P Point Loma, USA        242 45 25.1  32 39 55.5   -22.7
+ PLUZ  A 31308M001 P Puerto_de_la           344 35 32.6  28  8 48.1    49.4
+ PNGM  A 51006M001 P Manus Island CGPS      147 21 57.6  -2  2 35.6   116.3     
+ POHN  A 51601M001 P POHNPEI_CGPS           158 12 36.4   6 57 35.8    90.7     
+ POL2  A 12348M001 P Bishkek, Kyrghyzstan    74 41 39.5  42 40 47.3  1714.2     
+ POLV  A 12336M001 P Poltava, Ukraine        34 32 34.4  49 36 09.4   178.1     
+ POTS  A 14106M003 P Potsdam, Germany        13 04 12.0  52 22 48.0   174.0     
+ PRDS  A 40124M001 P CALGARY, CANADA        245 42 23.4  50 52 16.7  1247.9     
+ PRE1  A 30310S001 P Pretoria, ZA[SU]12[12]  28 13 26.5 -25 44 46.8  1416.3
+ PSU1  A 49466M001 P Penn State             282  9  0.7  40 48 24.8   311.2     
+ PTBB  A 14234M001 P Braunschweig, Germany   10 27 34.9  52 17 46.3   130.2     
+ PUC1  A 49750S001 P Carbon County Courthou 249 11 28.6  39 35 57.1  1692.5     
+ PUR3  A 82001S003 P Isabella, USA          292 55 58.8  18 27 46.8    89.6
+ PVEP  A 40403M002 P -                        0  0  0.0   0  0  0.0     0.0  
+ QAQ1  A 43007M001 P Qaqortoq / Julianehaab 313 57 07.9  60 42 54.7   110.4     
+ QIKI  A 40166M001 P Qikiqtarjuaq, Canada   295 57 58.8  67 33 33.6    11.4
+ QUIN  A 40433M004 P Quincy, USA            239 03 20.1  39 58 28.4  1105.8     
+ RABT  A 35001M002 P Rabat, Morocco         353 08 42.0  33 58 48.0    80.8     
+ RAMO  A 20703S001 P Mitzpe Ramon, Israel    34 45 47.2  30 35 52.1   893.1     
+ RBAY  A 30315M001 P Richardsbay, South Afr  32 04 42.2 -28 47 44.1    34.2     
+ REDU  A 13102M001 P Redu, Belgium            5 08 41.6  50 00 05.4   369.9     
+ RESO  A 40149M001 P Resolute (Cornwallis I 265 06 24.1  74 41 26.9    34.9     
+ REUN  A 97401M003 P Le Tampon, France       55 34 18.0 -21 12 30.0  1558.4     
+ REYK  A 10202M001 P Reykjavik, Iceland     338 02 40.3  64 08 19.6    93.1     
+ REYZ  A 10202M003 P Reykjavik, Iceland     338 02 40.3  64 08 19.7    93.0     
+ RIGA  A 12302M002 P Riga, Latvia            24 03 31.4  56 56 55.0    34.7
+ RIOG  A 41507M004 P Rio Grande, Argentina  292 15 00.0 -53 47 24.0    32.0     
+ RIOP  A 42006M001 P Riobamba, Ecuador      281 20 52.8  -1 39 03.6  2816.1     
+ RWSN  A 41513M001 P Rawson                 294 53 33.9 -43 17 55.9    27.4
+ SACH  A 40163M001 P Sachs Harbour (Banks I 234 45 00.5  71 59 25.2    69.3     
+ SAG1  A 49475M001 P Saginaw 1              276  9 44.1  43 37 43.1   149.2
+ SAMO  A 50603M001 P SAMOA_CGPS             188 15 41.7 -13 50 57.2    76.9
+ SAMP  A 23104M001 P Sampali                098 42 53.0   3 37 17.8     2.0     
+ SANT  A 41705M003 P Santiago, Chile        289 19 53.2 -33 09 01.0   723.0     
+ SASK  A 40167M001 P sask01                 253 36  5.9  52 11 46.5   578.8
+ SASS  A 14281M001 P Sassnitz Island of Rue  13 38 35.8  54 30 48.9    68.2
+ SCH2  A 40133M002 P Schefferville, Canada  293 10 02.6  54 49 55.6   498.2     
+ SCIP  A 49915M001 P San Clemente Island, U 241 30 36.0  32 54 36.0   452.9     
+ SCOR  A 43006M002 P Scoresbysund/Ittoqqoor 338  2 58.8  70 29  7.2   126.6
+ SCUB  A 40701M001 P Santiago de Cuba, Cuba 284 14 15.7  20 00 43.4    21.9     
+ SEAT  A 40457M002 P Seattle, WA, USA       237 41 25.9  47 39 14.3    44.2
+ SELE  A 12352M001 P Almaty, Kazakstan       77 01 00.5  43 10 44.8  1340.0     
+ SEY1  A 39801M001 P La Misere, Seychelles   55 28 45.9  -4 40 25.4   537.2     
+ SFDM  A 49826M001 P Piru, USA              -11 84 50.0   3 42736.0   291.0
+ SFER  A 13402M004 P San Fernando (Cadiz)   353 47 39.8  36 27 51.5    85.8     
+ SHAO  A 21605M002 P Sheshan, China         121 12 01.6  31 05 58.7    22.1     
+ SHEE  A 13236M001 P Sheerness                0 44 36.2  51 26 44.4    53.3
+ SIMO  A 30307M001 P Simonstown, South Afri  18 26 22.4 -34 11 16.4    34.9     
+ SIO3  A 40460M004 P La Jolla, USA          242 45 00.0  32 51 36.0    34.9     
+ SIO5  A 40460M006 P Scripps 5              242 45  1.1  32 50 26.6   185.5     
+ SJDV  A 10090M001 P Saint Jean des Vignes    4 41 01.3  45 53 16.4   336.0     
+ SNI1  A 49909S001 P San Nicolas Island, US 240 28 48.0  33 15 00.0   239.7     
+ SOFI  A 11101M002 P Sofia, Bulgaria         23 23 40.9  42 33 22.0  1119.6     
+ SOL1  A 49907S001 P Solomons Island, USA   283 32 45.6  38 19 04.8   -18.1     
+ SPK1  A 40458M001 P Saddle Peak, USA       241 21 00.0  34 03 36.0   440.1     
+ SPMX  A 40511M001 P San Pedro Martir, Mexi 244 32 02.9  31 02 42.2  2763.7
+ SPT0  A 10425M001 P Boras, Sweden           12 53 28.8  57 42 53.8   219.9     
+ SRS1  A 49734M001 P Santa Rosa Island      239 56  5.2  34 00 15.6    68.2
+ SSIA  A 41401S001 P San Salvador, El Salva 270 53 01.7  13 41 50.3   664.4     
+ STAV  A 10330M001 P STAVANGER              005 35 55.0  59 01  3.8   104.9
+ STJO  A 40101M001 P ST. JOHN'S, CANADA     307 19 20.1  47 35 42.9   152.8     
+ STK2  A 21731S004 P Shintotsukawa, Japan   141 50 41.4  43 31 43.1   118.5
+ STR1  A 50119M002 P Canberra, Australia    149 00 36.4 -35 18 55.8   800.0     
+ STR2  A 50119M001 P Canberra, Australia    149 01 01.0 -35 31 55.0   800.0     
+ SULP  A 12366M001 P LVIV, UKRAINE           24  0 52.2  49 50  8.2   370.5
+ SUM1  A 49743S001 P Summerfield 1          257 29 17.6  34 49 30.2  1163.4     
+ SUNM  A 50143M001 P BRISBANE, AUSTRALIA    153 02 06.7 -27 29 05.6    92.0     
+ SUTH  A 30314M002 P Sutherland, South Afri  20 48 37.8 -32 22 48.7  1799.8     
+ SUTM  A 30314M004 P Sutherland, South Afri  20 48 36.0 -32 12 36.0  1797.6     
+ SUWN  A 23903M001 P Suwon-shi, Korea       127 03 15.1  37 16 31.8    83.9     
+ SVTL  A 12350M001 P svtl0000                29 46 51.2  60 31 58.3    76.6
+ SYDN  A 50124M003 P Sydney, Australia      151 09 01.4 -33 46 51.2    85.6
+ SYOG  A 66006S002 P East Ongle Island, Ant  39 35 01.3 -69 00 25.2    50.1     
+ TAH1  A 92201M013 P Tahiti_NGA  [SU]14[12] 210 23 37.7 -17 34 37.3    99.8
+ TAKL  A 50216S001 P Auckland_TG            174 46 11.6 -36 50 36.9    40.9
+ TASH  A 99801S999 P TASHKENT    (GSN),      69 17 44.0  41 19 41.0   440.2
+ TCMS  A 23604S002 P Hsinchu, China         120 59 14.6  24 47 52.7    77.3     
+ TEHN  A 20404M002 P TEHRAN, IRAN            51 20  2.7  35 41 50.2  1194.6
+ TELA  A 20704M001 P Tel Aviv, Israel        34 46 51.3  32 04 04.8    85.4
+ TERS  A 13534M001 P Terschelling           005 13 09.8  53 21 46.0    56.1
+ THTI  A 92201M009 P Papeete, Tahiti, Frenc 210 23 37.3 -17 34 36.8    98.0     
+ THU1  A 43001M001 P Thule, Greenland       291 12 43.2  76 32 14.3    55.0     
+ THU3  A 43001M002 P THULE AIRBASE, Greenla 291 10 30.0  76 32 13.2    36.1     
+ TIDB  A 50103M108 P (Near) Canberra, Austr 148 58 48.0 -35 23 57.2   665.4     
+ TIXI  A 12360M001 P Tixi, Russian Federati 128 51 59.1  71 38 04.1    47.0     
+ TLSE  A 10003M009 P Toulouse, France         1 28 50.9  43 33 38.5   211.6     
+ TNML  A 23604S001 P Hsinchu, China         120 59 14.4  24 47 52.6    77.5     
+ TONG  A 50902M001 P TONGA_CGPS             184 49 14.8 -21  8 41.0    56.3     
+ TORP  A 49912M001 P Torrance, USA          241 40 12.0  33 48 00.0    -5.2     
+ TORS  A 10108S001 P Torshavn               353 14 07.7  62 01 23.8   114.6
+ TOW2  A 50140M001 P Cape Ferguson, Austral 147 03 20.5 -19 16 09.5    87.4     
+ TRAB  A 20808M001 P Trabzon, Turkey         39 46 32.2  40 59 40.9    99.2     
+ TRDS  A 10331M001 P TRONDHEIM              010 19  9.0  63 22 17.0   317.7
+ TRO1  A 10302M006 P Tromsoe, Norway         18 56 22.7  69 39 45.8   138.0     
+ TROM  A 10302M003 P Tromsoe, Norway         18 56 18.0  69 39 49.9   132.0     
+ TSK2  A 21730S010 P TSUKUBA Ibaraki, JAPAN 140  5 13.6  36  6 20.1    69.9
+ TSKB  A 21730S005 P Tsukuba, Japan         140 05 15.0  36 06 20.5    67.3     
+ TUBI  A 20806M001 P Gebze, TURKEY           29 27 02.5  40 47 12.1   221.8     
+ TUCU  A 41520S001 P Tucuman, Argentina     294 46 10.7 -26 50 35.7   485.1
+ TUKT  A 40165M001 P Tuktoyaktuk, Canada    227  0 20.3  69 26 17.6     1.5
+ TUVA  A 51101M001 P TUVALU_CGPS            179 11 47.6  -8 31 31.0    38.4
+ TWTF  A 23603S002 P Taoyuan, China         121 09 52.2  24 57 13.0   203.1     
+ UCLU  A 40140M001 P Ucluelet, Canada       234 27 30.2  48 55 32.2    10.0     
+ UEPP  A 41611M001 P Pr. Prudente, Brazil   308 35 29.3 -22 07 11.7   430.9
+ ULAB  A 24201M001 P Ulaanbataar, Mongolia  107 03 00.0  47 40 12.0  1611.7     
+ UNB1  A 40146S001 P Fredericton, Canada    293 21 29.9  45 57 00.8    22.9     
+ UNIV  A 49624S001 P Jackson                275 36 50.7  42 17  8.2   264.5 
+ UNPG  A 12752M001 P Perugia, Italy          12 21 20.5  43 07  9.8   351.1 
+ UNSA  A 41514M001 P Salta, Argentina       294 35 32.6 -24 43 39.0  1257.8 
+ UPAD  A 12750M002 P PADOVA, ITALY           11 52 40.4  45 24 24.1    84.0      
+ UPO1  A 49895S001 P Upolu Point, USA       204 06 58.3  20 14 45.2    78.2
+ URUM  A 21612M001 P Urumqi, China           87 37 48.0  43 35 24.0   856.1     
+ USN3  A 40451S007 P Washington, U.S.A.     282 56  1.4  38 55 14.0    57.4
+ USNA  A 49908S001 P Annapolis, USA         283 31 12.0  38 58 58.8   -26.3     
+ USNO  A 40451S003 P Washington, USA        282 56 01.7  38 55 08.4    48.9     
+ USUD  A 21729S007 P Usuda, Japan           138 21 43.4  36 07 59.2  1509.0     
+ UZHL  A 12301M001 P Uzhgorod, Ukraine       22 17 51.4  48 37 55.2   232.0     
+ VAAS  A 10511M001 P Vaasa, Finland          21 46 14.3  62 57 40.3    58.1
+ VALE  A 13439M001 P Valencia               359 39 44.5  39 28 51.0    77.6
+ VANU  A 51402M001 P VANUATU_CGPS           168 18 54.5 -17 44 38.3    97.6     
+ VARS  A 10322M002 P VARDOE                 031 01 52.3  70 20 10.9   174.9
+ VBCA  A 41512M001 P Bahia_Blanca           297 43 50.7 -38 42  2.7    59.5
+ VCIO  A 49490M001 P Vici, USA              260 46 57.7  36 04 18.1   623.9
+ VENE  A 12741M001 P VENEZIA, ITALY          12 19 54.8  45 26 12.8    67.1     
+ VESL  A 66009M001 P Sanae IV, Antarctica   357 09 29.9 -71 40 25.7   862.4     
+ VIL0  A 10424M001 P VIL0 10424M001          16 33 35.7  64 41 52.2   450.0
+ VILL  A 13406M001 P Villafranca, Spain     356 02 52.8  40 26 37.0   647.5     
+ VNDP  A 40420M007 P Vandenberg AFB         239 22 48.0  34 33 36.0   -11.5     
+ VTIS  A 49956M001 P San Pedro, USA         241 42 22.2  33 42 45.5    59.5
+ WAB2  A 14014M002 P Wabern, Switzerland      7 27 51.3  46 55 25.5   611.0
+ WARN  A 14277M002 P Rostock-Warnemuende, G  12  6  5.1  54 10 11.2    50.7
+ WDC2  A 40451S005 P WashingtonUS[SU]07[12] 282 56  1.3  38 55 14.0    57.8
+ WDC3  A 40451S008 P WASHINGTON, USA        282 56  1.3  38 55 14.0    57.9
+ WEL2  A 50208S003 P WellingtonNZ[SU]11[12] 174 46 43.3 -41 16 21.5    46.8
+ WES2  A 40440S020 P Westford, USA          288 30 21.6  42 36 46.8    86.0     
+ WGTN  A 50208M003 P Wellington, NZ         174 48 21.2 -41 19 24.4    26.1
+ WGTT  A 50208S004 P Te_Papa_(Nat           174 46 53.7 -41 17 25.6    43.0
+ WHIT  A 40136M001 P WHITEHORSE, CANADA     224 46 40.4  60 45 01.8  1427.0     
+ WILL  A 40134M001 P Williams Lake, Canada  237 49 55.9  52 14 12.8  1096.0     
+ WIND  A 31101M001 P Windhoek, Namibia       17 05 22.0 -22 34 29.7  1734.7     
+ WIS1  A 49871S001 P Wisconsin Point, USA   267 59  5.2  46 42 18.2   159.3
+ WLSN  A 40400M101 P Mt. Wilson, USA        241 56 24.0  34 13 48.0  1705.3     
+ WROC  A 12217M001 P WROCLAW, POLAND         17 03 42.8  51 06 47.2   181.0     
+ WSLR  A 40141M001 P Whistler, Canada       237 04 43.7  50 07 35.4   909.0     
+ WSRT  A 13506M005 P Westerbork, Netherland   6 36 16.2  52 54 52.6    86.0     
+ WTZA  A 14201M013 P Koetzting, Germany      12 52 44.0  49 08 39.1   666.0     
+ WTZR  A 14201M010 P Koetzting, Germany      12 52 44.1  49 08 39.1   666.0     
+ WTZT  A 14201M011 P Wettzell_/_G            12 52 44.2  49  8 39.2   665.9
+ WTZZ  A 14201M014 P Koetzting, Germany      12 52 44.1  49 08 39.2   666.0     
+ WUHN  A 21602M001 P Wuhan City, P.R. China 114 21 26.3  30 31 54.1    25.8     
+ XMIS  A 50183M001 P Christmas Island India 105 41 18.7 -10 27  0.2   261.5
+ YAKT  A 12353M002 P Yakutsk, Russian Feder 129 40 49.1  62 01 51.5   103.4     
+ YAR1  A 50107M004 P Mingenew, Australia    115 20 49.1 -29 02 47.6   241.3     
+ YARR  A 50107M006 P Dongara, Australia     115 35 00.0 -29 05 05.9   241.4     
+ YEBE  A 13420M001 P Yebes, Spain           356 54 41.0  40 31 29.6   973.0     
+ YELL  A 40127M003 P YELLOWKNIFE, CANADA    245 31 09.5  62 28 51.2   181.0     
+ YIBL  A 25001M001 P Yibal, Oman             56 06 44.4  22 11 11.3    95.1     
+ YSSK  A 12329M003 P Yuzhno-Sakhalinsk, Rus 142 43 00.2  47 01 47.0    91.3     
+ ZAMB  A 34601M001 P Lusaka, Zambia          28 18 39.6 -15 19 37.8  1321.1     
+ ZECK  A 12351M001 P Zelenchukskaya, Russia  41 33 54.2  43 17 18.2  1166.8     
+ ZIMJ  A 14001M006 P Zimmerwald, Switzerlan   7 27 54.4  46 52 37.7   954.3     
+ ZIMM  A 14001M004 P Zimmerwald, Switzerlan   7 27 55.1  46 52 37.6   956.7     
+ ZIMZ  A 14001M005 P Zimmerwald, Switzerlan   7 27 54.5  46 52 37.7   953.9     
+ ZWE2  A 12330M003 P Zwenigorod, Russia      36 45 36.0  55 42 00.0   272.0
+ ZWEN  A 12330M001 P Zwenigorod, Russia      36 45 36.0  55 42 00.0   270.0  
+-SITE/ID                                                                        
+*-------------------------------------------------------------------------------
++SOLUTION/DISCONTINUITY 
+ ABER  A    1 P 00:000:00000 00:000:00000 P - 
+ ABER  A    1 P 00:000:00000 00:000:00000 V -
+ ACOR  A    1 P 00:000:00000 00:009:00000 P - Unknown (added by R. Ferland)
+ ACOR  A    2 P 00:009:00000 07:077:00000 P - Antenna & Receiver Change
+ ACOR  A    3 P 07:077:00000 00:000:00000 P - 
+ ACOR  A    1 P 00:000:00000 00:000:00000 V -
+ ADE1  A    1 P 00:000:00000 00:000:00000 P - 
+ ADE1  A    1 P 00:000:00000 00:000:00000 V -
+ AIRA  A    1 P 00:000:00000 03:050:32640 P - Antenna & Receiver Change
+ AIRA  A    2 P 03:050:32640 00:000:00000 P - 
+ AIRA  A    1 P 00:000:00000 00:000:00000 V -
+ AIS1  A    1 P 00:000:00000 96:108:00000 P - Unknown (TUM)
+ AIS1  A    2 P 96:108:00000 00:000:00000 P - 
+ AIS1  A    1 P 00:000:00000 00:000:00000 V -
+ AJAC  A    1 P 00:000:00000 08:330:00000 P - Antenna swap
+ AJAC  A    2 P 08:330:00000 00:000:00000 P - 
+ AJAC  A    1 P 00:000:00000 00:000:00000 V -
+ ALAC  A    1 P 00:000:00000 06:151:43200 P - Antenna & Receiver Change
+ ALAC  A    2 P 06:151:43200 00:000:00000 P - 
+ ALAC  A    1 P 00:000:00000 00:000:00000 V -
+ ALBH  A    1 P 00:000:00000 94:104:00000 P - Antenna Change
+ ALBH  A    2 P 94:104:00000 95:011:80100 P - Antenna & Receiver Change
+ ALBH  A    3 P 95:011:80100 03:238:58500 P - Antenna & Receiver Change
+ ALBH  A    4 P 03:238:58500 00:000:00000 P - 
+ ALBH  A    1 P 00:000:00000 00:000:00000 V -
+ ALGO  A    1 P 00:000:00000 93:180:00000 P - Unknown
+ ALGO  A    2 P 93:180:00000 94:012:00000 P - Receiver Change
+ ALGO  A    3 P 94:012:00000 94:047:63360 P - Receiver Change
+ ALGO  A    4 P 94:047:63360 94:139:00000 P - Antenna Change
+ ALGO  A    5 P 94:139:00000 00:000:00000 P - 
+ ALGO  A    1 P 00:000:00000 00:000:00000 V -
+ ALIC  A    1 P 00:000:00000 00:000:00000 P - 
+ ALIC  A    1 P 00:000:00000 00:000:00000 V -
+ ALME  A    1 P 00:000:00000 00:000:00000 P - 
+ ALME  A    1 P 00:000:00000 00:000:00000 V -
+ ALRT  A    1 P 00:000:00000 00:000:00000 P - 
+ ALRT  A    1 P 00:000:00000 00:000:00000 V -
+ AMC2  A    1 P 00:000:00000 99:244:56580 P - Receiver Change
+ AMC2  A    2 P 99:244:56580 02:165:60600 P - Antenna & Receiver Change
+ AMC2  A    3 P 02:165:60600 07:274:77431 P - Antenna & Splitter Change 
+ AMC2  A    4 P 07:274:77431 00:000:00000 P - 
+ AMC2  A    1 P 00:000:00000 00:000:00000 V -
+ AMMN  A    1 P 00:000:00000 00:000:00000 P - 
+ AMMN  A    1 P 00:000:00000 00:000:00000 V -
+ ANG1  A    1 P 00:000:00000 04:151:00000 P - 
+ ANG1  A    2 P 04:151:00000 00:000:00000 P - 
+ ANG1  A    1 P 00:000:00000 00:000:00000 V -
+ ANKR  A    1 P 00:000:00000 98:259:00000 P - Antenna Change
+ ANKR  A    2 P 98:259:00000 99:229:00099 P - Kocaeli Earthquake (Izmit, Turkey, 7.6)
+ ANKR  A    3 P 99:229:00600 99:316:61020 P - Duzce Earthquake (Turkey, 7.2)
+ ANKR  A    4 P 99:316:61020 00:329:00000 P - Antenna swap (according to MIT analysis)
+ ANKR  A    5 P 00:329:00000 08:127:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ ANKR  A    6 P 08:127:00000 00:000:00000 P - 
+ ANKR  A    1 P 00:000:00000 99:229:00600 V - 
+ ANKR  A    2 P 99:229:00600 99:316:61020 V - 
+ ANKR  A    3 P 99:316:61020 00:000:00000 V - 
+ ANTC  A    1 P 00:000:00000 00:000:00000 P - 
+ ANTC  A    1 P 00:000:00000 00:000:00000 V -
+ AOML  A    1 P 00:000:00000 00:000:00000 P - 
+ AOML  A    1 P 00:000:00000 00:000:00000 V -
+ AOA1  A    1 P 00:000:00000 00:000:00000 P - 
+ AOA1  A    1 P 00:000:00000 00:000:00000 V -  
+ AREQ  A    1 P 00:000:00000 01:175:73994 P - Arequipa Earthquake
+ AREQ  A    2 P 01:175:73994 01:219:00000 P - Post seismic
+ AREQ  A    3 P 01:219:00000 01:255:00000 P - Post seismic
+ AREQ  A    4 P 01:255:00000 02:237:00000 P - Post seismic
+ AREQ  A    5 P 02:237:00000 07:338:00000 P - Cable Change
+ AREQ  A    6 P 07:338:00000 00:000:00000 P - 
+ AREQ  A    1 P 00:000:00000 01:175:73994 V - Arequipa Earthquake
+ AREQ  A    2 P 01:175:73994 00:000:00000 V - (ZA****, Change)
+ ARP3  A    1 P 00:000:00000 99:250:00000 P - 
+ ARP3  A    2 P 99:250:00000 00:000:00000 P - 
+ ARP3  A    1 P 00:000:00000 00:000:00000 V -
+ ARTU  A    1 P 00:000:00000 00:000:00000 P - 
+ ARTU  A    1 P 00:000:00000 00:000:00000 V -
+ ASC1  A    1 P 00:000:00000 00:000:00000 P - 
+ ASC1  A    1 P 00:000:00000 00:000:00000 V -
+ ASHV  A    1 P 00:000:00000 00:000:00000 P - 
+ ASHV  A    1 P 00:000:00000 00:000:00000 V -
+ ASPA  A    1 P 00:000:00000 08:275:00000 P - Antenna & Receiver Change
+ ASPA  A    2 P 08:275:00000 00:000:00000 P - 
+ ASPA  A    1 P 00:000:00000 00:000:00000 V -
+ ATWC  A    1 P 00:000:00000 00:000:00000 P -
+ ATWC  A    1 P 00:000:00000 00:000:00000 V - 
+ AUCK  A    1 P 00:000:00000 05:307:14940 P - Antenna & Receiver Change
+ AUCK  A    2 P 05:307:14940 00:000:00000 P - 
+ AUCK  A    1 P 00:000:00000 00:000:00000 V -
+ AUTF  A    1 P 00:000:00000 00:000:00000 P - 
+ AUTF  A    1 P 00:000:00000 00:000:00000 V -
+ AUS5  A    1 P 00:000:00000 02:285:00000 P - Antenna Change (added by R. Ferland)
+ AUS5  A    2 P 02:285:00000 00:000:00000 P -
+ AUS5  A    1 P 00:000:00000 00:000:00000 V -
+ AZCN  A    1 P 00:000:00000 00:000:00000 P - 
+ AZCN  A    1 P 00:000:00000 00:000:00000 V -
+ AZCO  A    1 P 00:000:00000 00:000:00000 P - 
+ AZCO  A    1 P 00:000:00000 00:000:00000 V -
+ AZRY  A    1 P 00:000:00000 99:293:00000 P - Unknown (added by ITRFPC)
+ AZRY  A    2 P 99:293:00000 04:297:00000 P - Unknown (added by DGFI)
+ AZRY  A    3 P 04:297:00000 00:000:00000 P - 
+ AZRY  A    1 P 00:000:00000 00:000:00000 V -
+ AZU1  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ AZU1  A    2 P 99:289:35204 00:181:00000 P - Earthquake?  (added by ITRFPC)
+ AZU1  A    3 P 00:181:00000 04:218:00000 P - Antenna Change (added by ITRFPC)
+ AZU1  A    4 P 04:218:00000 06:305:00000 P - Unknown  (added by ITRFPC)
+ AZU1  A    5 P 06:305:00000 00:000:00000 P - 
+ AZU1  A    1 P 99:289:35204 00:181:00000 V - Earthquake?  (added by ITRFPC)
+ AZU1  A    2 P 00:181:00000 04:218:00000 V - Antenna Change (added by ITRFPC)
+ AZU1  A    3 P 04:218:00000 06:305:00000 V - Unknown  (added by ITRFPC) 
+ AZU1  A    4 P 06:305:00000 00:000:00000 V - Unknown  (added by ITRFPC)  
+ BAKE  A    1 P 00:000:00000 01:334:00000 P - Antenna & Receiver Change
+ BAKE  A    2 P 01:334:00000 00:000:00000 P - 
+ BAKE  A    1 P 00:000:00000 00:000:00000 V -
+ BAKO  A    1 P 00:000:00000 99:260:00000 P - Unknown (added by ITRFPC) 
+ BAKO  A    2 P 99:260:00000 00:156:59306 P - Southern Sumatra Earthquake
+ BAKO  A    3 P 00:156:59306 00:280:00000 P - Antenna Change
+ BAKO  A    4 P 00:280:00000 01:280:00000 P - Antenna & Receiver Change
+ BAKO  A    5 P 01:280:00000 02:248:00000 P - Unknown (added by ITRFPC) 
+ BAKO  A    6 P 02:248:00000 06:149:00000 P - Antenna & Receiver Change
+ BAKO  A    7 P 06:149:00000 07:001:00000 P - Antenna swap (according to MIT analysis)
+ BAKO  A    8 P 07:001:00000 07:318:00000 P - Unknown (added by ITRFPC) 
+ BAKO  A    9 P 07:319:00000 00:000:00000 P - 
+ BAKO  A    1 P 00:000:00000 00:000:00000 V - 
+ BAN2  A    1 P 00:000:00000 04:361:03533 P - Sumatra Earthquake (9.0)
+ BAN2  A    2 P 04:361:03533 05:252:00000 P - Unknown (added by ITRFPC)  
+ BAN2  A    3 P 05:252:00000 00:000:00000 P - 
+ BAN2  A    1 P 00:000:00000 00:000:00000 V -
+ BAR1  A    1 P 00:000:00000 00:000:00000 P - 
+ BAR1  A    1 P 00:000:00000 00:000:00000 V -
+ BARH  A    1 P 00:000:00000 07:086:00000 P - Antenna & Receiver Change
+ BARH  A    2 P 07:086:00000 00:000:00000 P - 
+ BARH  A    1 P 00:000:00000 00:000:00000 V -
+ BAY1  A    1 P 00:000:00000 00:000:00000 P - 
+ BAY1  A    1 P 00:000:00000 00:000:00000 V -
+ BAY2  A    1 P 00:000:00000 99:203:00000 P - 
+ BAY2  A    2 P 99:203:00000 00:000:00000 P - 
+ BAY2  A    1 P 00:000:00000 00:000:00000 V -
+ BAYR  A    1 P 00:000:00000 00:000:00000 P -  
+ BAYR  A    1 P 00:000:00000 00:000:00000 V -
+ BAYR  A    1 P 02:230:00000 03:005:00000 X - 
+ BBRY  A    1 P 00:000:00000 99:290:00000 P - Unknown (added by ITRFPC)
+ BBRY  A    2 P 99:290:00000 04:297:00000 P - Unknown (added by DGFI)
+ BBRY  A    3 P 04:297:00000 00:000:00000 P - 
+ BBRY  A    1 P 00:000:00000 00:000:00000 V -
+ BDOS  A    1 P 00:000:00000 04:225:00000 P - Unknwon (added by ITRFPC)
+ BDOS  A    2 P 04:225:00000 07:333:68419 P - Martinique Earthquake (7.4)
+ BDOS  A    3 P 07:333:68419 00:000:00000 P - 
+ BDOS  A    1 P 04:225:00000 07:333:68419 V - Martinique Earthquake (7.4) (added by ITRFPC)
+ BDOS  A    2 P 07:333:68419 00:000:00000 V - 
+ BILI  A    1 P 00:000:00000 03:306:00000 P - Unknown
+ BILI  A    4 P 03:306:00000 00:000:00000 P - 
+ BILI  A    1 P 00:000:00000 00:000:00000 V -
+ BINT  A    1 P 00:000:00000 01:107:00000 P - Unknwon (added by ITRFPC)
+ BINT  A    2 P 01:107:00000 00:000:00000 P - 
+ BINT  A    1 P 00:000:00000 00:000:00000 V -
+ BISH  A    1 P 00:000:00000 00:000:00000 P - 
+ BISH  A    1 P 00:000:00000 00:000:00000 V -
+ BJFS  A    1 P 00:000:00000 00:000:00000 P - 
+ BJFS  A    1 P 00:000:00000 00:000:00000 V -
+ BLYT  A    1 P 00:000:00000 95:026:00000 P - Unknown
+ BLYT  A    2 P 95:026:00000 95:215:00000 P - Antenna & Receiver Change
+ BLYT  A    3 P 95:215:00000 98:134:00000 P - Receiver Change
+ BLYT  A    4 P 98:134:00000 99:289:35204 P - Hector Mine Earthquake
+ BLYT  A    5 P 99:289:35204 00:000:00000 P - 
+ BLYT  A    1 P 00:000:00000 00:000:00000 V -
+ BOGO  A    1 P 00:000:00000 01:229:00000 P - Antenna re-installed ITRF2005 (added by ITRFPC)
+ BOGO  A    2 P 01:229:00000 00:000:00000 P - 
+ BOGO  A    1 P 00:000:00000 00:000:00000 V -
+ BOGT  A    1 P 00:000:00000 97:213:00000 P - Receiver Change
+ BOGT  A    2 P 97:213:00000 99:345:00000 P - Temporary shift (ZA *** Modified)
+ BOGT  A    3 P 99:345:00000 05:193:00000 P - Antenna swap (according to MIT analysis)
+ BOGT  A    4 P 05:193:00000 07:348:00000 P - Antenna swap (according to MIT analysis)
+ BOGT  A    5 P 07:348:00000 00:000:00000 P - 
+ BOGT  A    1 P 00:000:00000 00:000:00000 V -
+ BOR1  A    1 P 00:000:00000 99:151:00000 P - Antenna Change
+ BOR1  A    2 P 99:151:00000 00:000:00000 P - 
+ BOR1  A    1 P 00:000:00000 00:000:00000 V -
+ BORK  A    1 P 00:000:00000 00:000:00000 P - 
+ BORK  A    1 P 00:000:00000 00:000:00000 V -
+ BRAZ  A    1 P 00:000:00000 07:071:00000 P - Antenna swap (according to MIT analysis)
+ BRAZ  A    2 P 07:071:00000 00:000:00000 P - 
+ BRAZ  A    1 P 00:000:00000 00:000:00000 V -
+ BREW  A    1 P 00:000:00000 00:000:00000 P - 
+ BREW  A    1 P 00:000:00000 00:000:00000 V -
+ BRFT  A    1 P 00:000:00000 06:129:00000 P - Unknown  (according to MIT analysis)
+ BRFT  A    2 P 06:129:00000 07:175:00000 P - Unknown
+ BRFT  A    3 P 07:175:00000 00:000:00000 P - 
+ BRFT  A    1 P 00:000:00000 00:000:00000 V -
+ BRMU  A    1 P 00:000:00000 03:071:69300 P - Antenna & Receiver Change
+ BRMU  A    2 P 03:071:69300 00:000:00000 P - 
+ BRMU  A    1 P 00:000:00000 00:000:00000 V -
+ BRMU  A    1 P 04:186:00000 04:263:00000 X - Unknown
+ BRMU  A    2 P 05:156:00000 05:191:00000 X - Unknown
+ BRST  A    1 P 00:000:00000 06:207:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ BRST  A    2 P 06:207:00000 08:163:36000 P - Antenna & Receiver Change
+ BRST  A    3 P 08:163:36000 00:000:00000 P - 
+ BRST  A    1 P 00:000:00000 08:163:36000 V - X.C Antenna & Receiver Change ?
+ BRST  A    2 P 08:163:36000 00:000:00000 V - X.C ?
+ BRUS  A    1 P 00:000:00000 00:118:44100 P - Antenna Change
+ BRUS  A    2 P 00:118:44100 00:000:00000 P - 
+ BRUS  A    1 P 00:000:00000 00:000:00000 V -
+ BUCU  A    1 P 00:000:00000 08:305:00000 P - Antenna & Receiver Change
+ BUCU  A    2 P 08:305:00000 00:000:00000 P - 
+ BUCU  A    1 P 00:000:00000 00:000:00000 V -
+ BUDP  A    1 P 00:000:00000 00:000:00000 P - 
+ BUDP  A    1 P 00:000:00000 00:000:00000 V -
+ BUE2  A    1 P 00:000:00000 00:100:00000 P - Unknown (added by ITRFPC)
+ BUE2  A    2 P 00:100:00000 00:000:00000 P -
+ BUE2  A    1 P 00:000:00000 00:000:00000 V -
+ BUR1  A    1 P 00:000:00000 01:361:00000 P - Unknwon (added by ITRFPC)
+ BUR1  A    2 P 01:361:00000 05:104:00000 P - Unknwon (added by DGFI)
+ BUR1  A    3 P 05:104:00000 00:000:00000 P -  
+ BUR1  A    1 P 00:000:00000 00:000:00000 V -
+ BSHM  A    1 P 00:000:00000 00:169:00000 P - Unknown
+ BSHM  A    2 P 00:169:00000 02:001:00000 P - Unknown
+ BSHM  A    3 P 02:001:00000 00:000:00000 P - 
+ BSHM  A    1 P 00:000:00000 00:000:00000 V -  
+ CAGL  A    1 P 00:000:00000 01:192:00000 P - Antenna & Receiver Change
+ CAGL  A    2 P 01:192:00000 00:000:00000 P - 
+ CAGL  A    1 P 00:000:00000 00:000:00000 V -
+ CAGS  A    1 P 00:000:00000 00:000:00000 P - 
+ CAGS  A    1 P 00:000:00000 00:000:00000 V -
+ CAGZ  A    1 P 00:000:00000 00:000:00000 P - 
+ CAGZ  A    1 P 00:000:00000 00:000:00000 V -
+ CANT  A    1 P 00:000:00000 03:319:00000 P - Unknown (added by DGFI)
+ CANT  A    2 P 03:319:00000 00:000:00000 P -  
+ CANT  A    1 P 00:000:00000 00:000:00000 V -
+ CART  A    1 P 00:000:00000 03:086:00000 P - Unknwon (added by ITRFPC)
+ CART  A    2 P 03:086:00000 00:000:00000 P - 
+ CART  A    1 P 00:000:00000 00:000:00000 V -
+ CASA  A    1 P 00:000:00000 97:331:00000 P - Unknwon (added by ITRFPC)
+ CASA  A    2 P 97:331:00000 98:180:00000 P - Unknwon (added by ITRFPC)
+ CASA  A    3 P 98:180:00000 99:180:00000 P - Unknwon (added by ITRFPC) 
+ CASA  A    4 P 99:180:00000 02:240:00000 P - Unknwon (added by ITRFPC) 
+ CASA  A    5 P 02:240:00000 00:000:00000 P -
+ CASA  A    1 P 00:000:00000 00:000:00000 V - 
+ CAS1  A    1 P 00:000:00000 96:027:00000 P - Receiver Change
+ CAS1  A    2 P 96:027:00000 97:060:00000 P - Unknown
+ CAS1  A    3 P 97:060:00000 97:313:00000 P - Unknown
+ CAS1  A    4 P 97:313:00000 00:000:00000 P - 
+ CAS1  A    1 P 00:000:00000 00:000:00000 V -
+ CASC  A    1 P 00:000:00000 99:271:00000 P - Antenna & Receiver Change
+ CASC  A    2 P 99:271:00000 08:061:00000 P - Antenna Change
+ CASC  A    3 P 08:061:00000 00:000:00000 P - 
+ CASC  A    1 P 00:000:00000 00:000:00000 V -
+ CAT1  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ CAT1  A    2 P 99:289:35204 00:000:00000 P - 
+ CAT1  A    1 P 00:000:00000 00:000:00000 V -
+ CAT2  A    1 P 00:000:00000 00:000:00000 P - 
+ CAT2  A    1 P 00:000:00000 00:000:00000 V -
+ CCJM  A    1 P 00:000:00000 01:056:84060 P - Receiver Change  
+ CCJM  A    2 P 01:056:84060 08:062:00000 P - Unknown 
+ CCJM  A    3 P 08:062:00000 00:000:00000 P - 
+ CCJM  A    1 P 00:000:00000 00:000:00000 V -
+ CCV3  A    1 P 00:000:00000 00:000:00000 P - 
+ CCV3  A    1 P 00:000:00000 00:000:00000 V -
+ CEDU  A    1 P 00:000:00000 00:000:00000 P - 
+ CEDU  A    1 P 00:000:00000 00:000:00000 V -
+ CEUT  A    1 P 00:000:00000 05:066:00000 P - Unknown (added by ITRFPC)
+ CEUT  A    2 P 05:066:00000 00:000:00000 P - 
+ CEUT  A    1 P 00:000:00000 00:000:00000 V -
+ CFAG  A    1 P 00:000:00000 00:000:00000 P - 
+ CFAG  A    1 P 00:000:00000 00:000:00000 V -
+ CIT1  A    1 P 00:000:00000 99:077:00000 P - Receiver change (added by ITRFPC)
+ CIT1  A    2 P 99:077:00000 00:000:00000 P - 
+ CIT1  A    1 P 00:000:00000 00:000:00000 V - 
+ CHA1  A    1 P 00:000:00000 00:000:00000 P - 
+ CHA1  A    1 P 00:000:00000 00:000:00000 V -
+ CHAN  A    1 P 00:000:00000 00:000:00000 P - 
+ CHAN  A    1 P 00:000:00000 00:000:00000 V -
+ CHAT  A    1 P 00:000:00000 01:332:00000 P - Antenna swap
+ CHAT  A    2 P 01:332:00000 00:000:00000 P - 
+ CHAT  A    1 P 00:000:00000 00:000:00000 V -
+ CHB1  A    1 P 00:000:00000 00:000:00000 P - 
+ CHB1  A    1 P 00:000:00000 00:000:00000 V -
+ CHIL  A    1 P 00:000:00000 95:151:00000 P - Unknown
+ CHIL  A    2 P 95:151:00000 99:289:35204 P - Hector Mine Earthquake
+ CHIL  A    3 P 99:289:35204 00:000:00000 P - 
+ CHIL  A    1 P 00:000:00000 00:000:00000 V -
+ CHIZ  A    1 P 00:000:00000 00:000:00000 P - 
+ CHIZ  A    1 P 00:000:00000 00:000:00000 V -
+ CHPI  A    1 P 00:000:00000 00:000:00000 P - 
+ CHPI  A    1 P 00:000:00000 00:000:00000 V -
+ CHUM  A    1 P 00:000:00000 03:260:00000 P - Antenna swap (according to MIT analysis)
+ CHUM  A    2 P 03:260:00000 00:000:00000 P - 
+ CHUM  A    1 P 00:000:00000 00:000:00000 V -
+ CHUR  A    1 P 00:000:00000 94:000:00000 P - Unknown Note Soln #1 removed
+ CHUR  A    2 P 94:000:00000 00:202:00000 P - Antenna swap
+ CHUR  A    3 P 00:202:00000 05:034:00000 P - Antenna Change
+ CHUR  A    4 P 05:034:00000 08:088:00000 P - Antenna Change
+ CHUR  A    5 P 08:088:00000 00:000:00000 P - 
+ CHUR  A    1 P 00:000:00000 00:000:00000 V -
+ CHUR  A    1 P 04:270:00000 05:034:00000 X - Antenna
+ CIC1  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ CIC1  A    2 P 99:289:35204 00:000:00000 P - 
+ CIC1  A    1 P 00:000:00000 00:000:00000 V -
+ CKIS  A    1 P 00:000:00000 00:000:00000 P - 
+ CKIS  A    1 P 00:000:00000 00:000:00000 V -
+ CLAR  A    1 P 00:000:00000 95:139:00000 P - Antenna Change
+ CLAR  A    2 P 95:139:00000 95:328:43200 P - Unknown
+ CLAR  A    3 P 95:328:43200 96:035:00000 P - Unknown
+ CLAR  A    4 P 96:035:00000 96:172:00000 P - Unknown
+ CLAR  A    5 P 96:172:00000 96:245:69120 P - Receiver Change
+ CLAR  A    6 P 96:245:69120 96:256:00000 P - Receiver Change
+ CLAR  A    7 P 96:256:00000 98:189:00000 P - Unknown
+ CLAR  A    8 P 98:189:00000 99:289:35204 P - Hector Mine Earthquake
+ CLAR  A    9 P 99:289:35204 00:181:00000 P - Earthquake?  (added by ITRFPC)
+ CLAR  A   10 P 00:181:00000 06:305:00000 P - Unknown  (added by ITRFPC)
+ CLAR  A   11 P 06:305:00000 00:000:00000 P - 
+ CLAR  A    1 P 00:000:00000 00:181:00000 V - Earthquake?  (added by ITRFPC)
+ CLAR  A    2 P 00:181:00000 06:305:00000 V - Unknown  (added by ITRFPC)
+ CLAR  A    3 P 06:305:00000 00:000:00000 V -  
+ CNMR  A    1 P 00:000:00000 05:196:00000 P - 
+ CNMR  A    2 P 05:196:00000 08:067:00000 P - Unknwon but Antenna & receiver change 2 weeks before (added by ITRFPC)
+ CNMR  A    3 P 08:067:00000 00:000:00000 P - 
+ CNMR  A    1 P 00:000:00000 00:000:00000 V -
+ COCO  A    1 P 00:000:00000 00:170:53053 P - South Indian Earthquake
+ COCO  A    2 P 00:170:53053 04:361:03533 P - Sumatra Earthquake (9.0)
+ COCO  A    3 P 04:361:03533 07:259:00000 P - 
+ COCO  A    4 P 07:259:00000 00:000:00000 P - 
+ COCO  A    1 P 00:000:00000 00:000:00000 V -
+ CONZ  A    1 P 00:000:00000 05:137:52200 P - Antenna & Receiver Change
+ CONZ  A    2 P 05:137:52200 08:019:00000 P - Antenna swap (according to MIT analysis)
+ CONZ  A    3 P 08:019:00000 00:000:00000 P - 
+ CONZ  A    1 P 00:000:00000 00:000:00000 V -
+ COPO  A    1 P 00:000:00000 06:098:00000 P -  
+ COPO  A    2 P 06:098:00000 08:185:00000 P - Receiver Changer (added by ITRFPC)
+ COPO  A    3 P 08:185:00000 00:000:00000 P -  
+ COPO  A    1 P 00:000:00000 00:000:00000 V -
+ CORD  A    1 P 00:000:00000 05:062:00000 P - Receiver change  (added by ITRFPC)
+ CORD  A    2 P 05:062:00000 00:000:00000 P - 
+ CORD  A    1 P 00:000:00000 00:000:00000 V -
+ CORX  A    1 P 00:000:00000 03:315:61200 P - Antenna Change  
+ CORX  A    2 P 03:315:61200 00:000:00000 P - 
+ CORX  A    1 P 00:000:00000 00:000:00000 V -
+ COSO  A    1 P 00:000:00000 01:196:00000 P - Unknown 
+ COSO  A    2 P 01:196:00000 03:173:00000 P - Unknown 
+ COSO  A    3 P 03:173:00000 06:305:00000 P - Unknown (added by ITRFPC)
+ COSO  A    4 P 06:305:00000 00:000:00000 P -
+ COSO  A    1 P 03:173:00000 06:305:00000 V - Unknown (added by ITRFPC)
+ COSO  A    2 P 06:305:00000 00:000:00000 V -
+ COYQ  A    1 P 00:000:00000 06:132:00000 P - Unknown ???  (added by ITRFPC, modified DGFI)
+ COYQ  A    2 P 06:132:00000 00:000:00000 P - 
+ COYQ  A    1 P 00:000:00000 00:000:00000 V -
+ CRAO  A    1 P 00:000:00000 00:000:00000 P - 
+ CRAO  A    1 P 00:000:00000 00:000:00000 V -
+ CRAR  A    1 P 00:000:00000 07:365:00000 P - Unknwon (added by ITRFPC)
+ CRAR  A    2 P 07:365:00000 00:000:00000 P - 
+ CRAR  A    1 P 00:000:00000 00:000:00000 V -
+ CREU  A    1 P 00:000:00000 01:094:54000 P - Receiver Change 
+ CREU  A    2 P 01:094:54000 00:000:00000 P - 
+ CREU  A    1 P 00:000:00000 00:000:00000 V -
+ CRO1  A    1 P 00:000:00000 99:273:00000 P - Receiver Change (added by ITRFPC)
+ CRO1  A    2 P 99:273:00000 05:215:00000 P - Antenna swap (according to MIT analysis)
+ CRO1  A    3 P 05:215:00000 00:000:00000 P - 
+ CRO1  A    1 P 00:000:00000 00:000:00000 V -
+ CRO1  A    1 P 00:114:00000 00:225:00000 X -
+ DAEJ  A    1 P 00:000:00000 00:000:00000 P - 
+ DAEJ  A    1 P 00:000:00000 00:000:00000 V -
+ DAKA  A    1 P 00:000:00000 04:336:00000 P - Antenna Change 
+ DAKA  A    2 P 04:336:00000 07:023:00000 P - Antenna swap (according to MIT analysis) 
+ DAKA  A    3 P 07:023:00000 00:000:00000 P - 
+ DAKA  A    1 P 00:000:00000 00:000:00000 V -
+ DARW  A    1 P 00:000:00000 01:347:00000 P - Antenna swap (according to MIT analysis)
+ DARW  A    2 P 01:347:00000 03:094:00000 P - Antenna swap (according to MIT analysis) 
+ DARW  A    3 P 03:094:00000 00:000:00000 P - 
+ DARW  A    1 P 00:000:00000 00:000:00000 V -
+ DARW  A    1 P 01:292:00000 01:348:00000 X - Antenna
+ DAV1  A    1 P 00:000:00000 97:236:00000 P - Unknown
+ DAV1  A    2 P 97:236:00000 99:238:00000 P - Receiver Change
+ DAV1  A    3 P 99:238:00000 07:213:00000 P - Antenna Change
+ DAV1  A    4 P 07:213:00000 00:000:00000 P - 
+ DAV1  A    1 P 00:000:00000 00:000:00000 V -
+ DGAR  A    1 P 00:000:00000 04:139:00000 P - Antenna swap (according to MIT analysis)
+ DGAR  A    2 P 04:139:00000 04:361:03533 P - Sumatra Earthquake (9.0)
+ DGAR  A    3 P 04:361:03533 00:000:00000 P - 
+ DGAR  A    1 P 00:000:00000 00:000:00000 V -
+ DNRC  A    1 P 00:000:00000 00:000:00000 P - 
+ DNRC  A    1 P 00:000:00000 00:000:00000 V -
+ DRAG  A    1 P 00:000:00000 00:000:00000 P - 
+ DRAG  A    1 P 00:000:00000 00:000:00000 V -
+ DRAO  A    1 P 00:000:00000 94:041:64260 P - Unknown
+ DRAO  A    2 P 94:041:64260 00:000:00000 P - 
+ DRAO  A    1 P 00:000:00000 00:000:00000 V -
+ DUBO  A    1 P 00:000:00000 97:008:71400 P - Antenna Change
+ DUBO  A    2 P 97:008:71400 99:277:78360 P - Antenna & Receiver Change
+ DUBO  A    3 P 99:277:78360 04:004:00000 P - Unknown
+ DUBO  A    4 P 04:004:00000 00:000:00000 P - 
+ DUBO  A    1 P 00:000:00000 00:000:00000 V -
+ DUBR  A    1 P 00:000:00000 05:240:00000 P - Receiver change (cf. EUREF) (added by ITRFPC)
+ DUBR  A    2 P 05:240:00000 07:189:00000 P - Antenna change (cf. EUREF) (added by ITRFPC)
+ DUBR  A    3 P 07:189:00000 00:000:00000 P - 
+ DUBR  A    1 P 00:000:00000 00:000:00000 V -
+ DUCK  A    1 P 00:000:00000 00:000:00000 P - 
+ DUCK  A    1 P 00:000:00000 00:000:00000 V -
+ DUCK  A    1 P 03:103:00000 00:000:00000 X - Several Discontinuities
+ DUM1  A    1 P 00:000:00000 00:126:00000 P - Unknown (added by DGFI)
+ DUM1  A    2 P 00:126:00000 00:000:00000 P -  
+ DUM1  A    1 P 00:000:00000 00:000:00000 V -
+ DUNT  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1)
+ DUNT  A    2 P 04:358:53943 00:000:00000 P - 
+ DUNT  A    1 P 00:000:00000 00:000:00000 V -
+ DWH1  A    1 P 00:000:00000 00:000:00000 P - 
+ DWH1  A    1 P 00:000:00000 00:000:00000 V -
+ EBRE  A    1 P 00:000:00000 97:105:36780 P - Antenna & Receiver Change
+ EBRE  A    2 P 97:105:36780 00:000:00000 P - 
+ EBRE  A    1 P 00:000:00000 00:000:00000 V -
+ EIJS  A    1 P 00:000:00000 00:123:00000 P - Antenna Change  (added by ITRFPC)
+ EIJS  A    2 P 00:123:00000 00:000:00000 P - 
+ EIJS  A    1 P 00:000:00000 00:000:00000 V - 
+ EIL2  A    1 P 00:000:00000 02:307:79961 P - Denali Earthquake 
+ EIL2  A    2 P 02:307:79961 00:000:00000 P - 
+ EIL2  A    1 P 00:000:00000 02:307:79961 V - Denali Earthquake X.C
+ EIL2  A    2 P 02:307:79961 00:000:00000 V - X.C
+ EISL  A    1 P 00:000:00000 03:038:79200 P - Antenna & Receiver Change
+ EISL  A    2 P 03:038:79200 04:046:00000 P - Antenna swap
+ EISL  A    3 P 04:046:00000 00:000:00000 P -
+ EISL  A    1 P 00:000:00000 00:000:00000 V -
+ ELAT  A    1 P 00:000:00000 04:336:00000 P - Antenna Change
+ ELAT  A    2 P 04:336:00000 00:000:00000 P - 
+ ELAT  A    1 P 00:000:00000 00:000:00000 V -
+ ELEN  A    1 P 00:000:00000 00:000:00000 P - 
+ ELEN  A    1 P 00:000:00000 00:000:00000 V -
+ ELRO  A    1 P 00:000:00000 00:000:00000 P - 
+ ELRO  A    1 P 00:000:00000 00:000:00000 V -
+ ENG1  A    1 P 00:000:00000 00:000:00000 P - 
+ ENG1  A    1 P 00:000:00000 00:000:00000 V -
+ EPRT  A    1 P 00:000:00000 02:027:00000 P - Unknown
+ EPRT  A    2 P 02:027:00000 04:192:00000 P - Antenna Change  
+ EPRT  A    3 P 04:192:00000 00:000:00000 P - 
+ EPRT  A    1 P 00:000:00000 00:000:00000 V -
+ ESTI  A    1 P 00:000:00000 00:000:00000 P - 
+ ESTI  A    1 P 00:000:00000 00:000:00000 V -
+ EURK  A    1 P 00:000:00000 00:000:00000 P - 
+ EURK  A    1 P 00:000:00000 00:000:00000 V -
+ FAIR  A    1 P 00:000:00000 96:107:00000 P - Antenna & Receiver Change
+ FAIR  A    2 P 96:107:00000 02:307:79961 P - Denali Earthquake
+ FAIR  A    3 P 02:307:79961 03:033:00000 P - Post seismic
+ FAIR  A    4 P 03:033:00000 03:215:00000 P - Post seismic
+ FAIR  A    5 P 03:215:00000 04:357:76200 P - Antenna Change
+ FAIR  A    6 P 04:357:76200 06:001:00000 P - Post seismic
+ FAIR  A    7 P 06:001:00000 00:000:00000 P - 
+ FAIR  A    1 P 00:000:00000 02:307:79961 V - Denali Earthquake
+ FAIR  A    2 P 02:307:79961 03:033:00000 V - Post seismic
+ FAIR  A    3 P 03:033:00000 03:215:00000 V - Post seismic
+ FAIR  A    4 P 03:215:00000 04:357:76200 V - Post seismic
+ FAIR  A    5 P 04:357:76200 06:001:00000 V - Post seismic
+ FAIR  A    6 P 06:001:00000 00:000:00000 V - 
+ FALE  A    1 P 00:000:00000 00:000:00000 P - 
+ FALE  A    1 P 00:000:00000 00:000:00000 V -
+ FLIN  A    1 P 00:000:00000 97:007:72180 P - Antenna & Receiver Change
+ FLIN  A    2 P 97:007:72180 99:265:00000 P - Antenna Change (added by ITRFPC)
+ FLIN  A    3 P 99:265:00000 00:000:00000 P - 
+ FLIN  A    1 P 00:000:00000 00:000:00000 V -
+ FORT  A    1 P 00:000:00000 00:080:50820 P - Antenna Change
+ FORT  A    2 P 00:080:50820 00:000:00000 P -  
+ FORT  A    1 P 00:000:00000 00:000:00000 V -
+ FTS1  A    1 P 00:000:00000 00:000:00000 P - 
+ FTS1  A    1 P 00:000:00000 00:000:00000 V -
+ GAL1  A    1 P 00:000:00000 00:000:00000 P - 
+ GAL1  A    1 P 00:000:00000 00:000:00000 V -
+ GAL1  A    1 P 03:166:00000 03:194:00000 X -
+ GALA  A    1 P 00:000:00000 00:000:00000 P - 
+ GALA  A    1 P 00:000:00000 00:000:00000 V -
+ GENO  A    1 P 00:000:00000 00:000:00000 P - 
+ GENO  A    1 P 00:000:00000 00:000:00000 V -
+ GETI  A    1 P 00:000:00000 00:000:00000 P - 
+ GETI  A    1 P 00:000:00000 00:000:00000 V -
+ GILB  A    1 P 00:000:00000 00:000:00000 P - 
+ GILB  A    1 P 00:000:00000 00:000:00000 V -
+ GLPS  A    1 P 00:000:00000 08:282:00000 P - Receiver Change (added by ITRFPC)
+ GLPS  A    2 P 08:282:00000 00:000:00000 P -  
+ GLPS  A    1 P 00:000:00000 00:000:00000 V -
+ GLPT  A    1 P 00:000:00000 00:000:00000 P - 
+ GLPT  A    1 P 00:000:00000 00:000:00000 V -
+ GLSV  A    1 P 00:000:00000 07:317:00000 P - Antenna & Receiver Change
+ GLSV  A    2 P 07:317:00000 00:000:00000 P - 
+ GLSV  A    1 P 00:000:00000 00:000:00000 V -
+ GMAS  A    1 P 00:000:00000 04:044:00000 P - Unknwon (added by ITRFPC)
+ GMAS  A    2 P 04:044:00000 07:340:00000 P - Unknwon (added by ITRFPC)
+ GMAS  A    3 P 07:340:00000 08:122:00000 P - Unknwon (added by ITRFPC)
+ GMAS  A    4 P 08:122:00000 00:000:00000 P - 
+ GMAS  A    1 P 00:000:00000 00:000:00000 V -
+ GMSD  A    1 P 00:000:00000 04:246:00000 P - Unknown 
+ GMSD  A    2 P 04:246:00000 00:000:00000 P - 
+ GMSD  A    1 P 00:000:00000 00:000:00000 V -
+ GODE  A    1 P 00:000:00000 98:060:00000 P - Unknown
+ GODE  A    2 P 98:060:00000 00:000:00000 P - 
+ GODE  A    1 P 00:000:00000 00:000:00000 V -
+ GOLD  A    1 P 00:000:00000 92:106:00000 P - Receiver Change
+ GOLD  A    2 P 92:106:00000 92:180:00000 P - Receiver Change
+ GOLD  A    3 P 92:180:00000 95:304:00000 P - Antenna & Receiver Change
+ GOLD  A    4 P 95:304:00000 99:289:35204 P - Hector Mine Earthquake
+ GOLD  A    5 P 99:289:35204 00:000:00000 P - 
+ GOLD  A    1 P 00:000:00000 00:000:00000 V -
+ GOPE  A    1 P 00:000:00000 99:308:46800 P - Antenna & Receiver Change
+ GOPE  A    2 P 99:308:46800 00:278:41400 P - Antenna & Receiver Change ITRF2005 (added by ITRFPC)
+ GOPE  A    3 P 00:278:41400 06:195:43200 P - Antenna Change
+ GOPE  A    4 P 06:195:43200 00:000:00000 P - 
+ GOPE  A    1 P 00:000:00000 00:000:00000 V -
+ GOPE  A    1 P 00:206:61320 00:278:41400 X - Antenna & Receiver Change
+ GOUG  A    1 P 00:000:00000 07:205:00000 P - Cable repair
+ GOUG  A    2 P 07:205:00000 00:000:00000 P - 
+ GOUG  A    1 P 00:000:00000 00:000:00000 V -
+ GRAS  A    1 P 00:000:00000 03:113:00000 P - Antenna & Receiver Change
+ GRAS  A    2 P 03:113:00000 04:295:43200 P - Antenna & Receiver Change
+ GRAS  A    3 P 04:295:43200 00:000:00000 P -
+ GRAS  A    1 P 00:000:00000 00:000:00000 V -
+ GRAZ  A    1 P 00:000:00000 01:152:00000 P - Receiver Change
+ GRAZ  A    2 P 01:152:00000 05:081:39000 P - Antenna Change
+ GRAZ  A    3 P 05:081:39000 05:310:00000 P - Unknown
+ GRAZ  A    4 P 05:310:39000 00:000:00000 P - 
+ GRAZ  A    1 P 00:000:00000 00:000:00000 V -
+ GUAM  A    1 P 00:000:00000 97:113:57967 P - Mariana Islands Earthquake
+ GUAM  A    2 P 97:113:57967 01:285:54136 P - South Mariana Earthquake
+ GUAM  A    3 P 01:285:54136 02:116:57967 P - Mariana Islands Earthquake
+ GUAM  A    4 P 02:116:57967 00:000:00000 P - 
+ GUAM  A    1 P 00:000:00000 00:000:00000 V -
+ GUAO  A    1 P 00:000:00000 00:000:00000 P - 
+ GUAO  A    1 P 00:000:00000 00:000:00000 V -
+ GUAT  A    1 P 00:000:00000 00:000:00000 P - 
+ GUAT  A    1 P 00:000:00000 00:000:00000 V -
+ GUAX  A    1 P 00:000:00000 00:000:00000 P - 
+ GUAX  A    1 P 00:000:00000 00:000:00000 V -
+ GUUG  A    1 P 00:000:00000 00:000:00000 P - 
+ GUUG  A    1 P 00:000:00000 00:000:00000 V -
+ HALY  A    1 P 00:000:00000 00:000:00000 P - 
+ HALY  A    1 P 00:000:00000 00:000:00000 V -
+ HAMM  A    1 P 00:000:00000 00:000:00000 P - 
+ HAMM  A    1 P 00:000:00000 00:000:00000 V - 
+ HARB  A    1 P 00:000:00000 04:140:00000 P - (ZA****, Approximative discontinuity))
+ HARB  A    2 P 04:140:00000 00:000:00000 P - 
+ HARB  A    1 P 00:000:00000 00:000:00000 V -
+ HARK  A    1 P 00:000:00000 99:152:00000 P - Antenna swap (according to MIT analysis)
+ HARK  A    2 P 99:152:00000 00:000:00000 P -
+ HARK  A    1 P 00:000:00000 00:000:00000 V -
+ HARV  A    1 P 00:000:00000 95:201:00000 P - Unknown
+ HARV  A    2 P 95:201:00000 99:253:00000 P - Receiver Change
+ HARV  A    3 P 99:253:00000 00:000:00000 P - 
+ HARV  A    1 P 00:000:00000 00:000:00000 V -
+ HELG  A    1 P 00:000:00000 00:000:00000 P - 
+ HELG  A    1 P 00:000:00000 00:000:00000 V -
+ HERS  A    1 P 00:000:00000 98:048:00000 P - Antenna & Receiver Change  (added by ITRFPC)
+ HERS  A    2 P 98:048:00000 98:182:00000 P - Antenna & Receiver Change
+ HERS  A    3 P 98:182:00000 99:070:43200 P - Start Antenna Problem  (epoch modified by ITRFPC)
+ HERS  A    4 P 99:070:43200 01:220:00000 P - End Antenna Problem
+ HERS  A    5 P 01:220:00000 00:000:00000 P - 
+ HERS  A    1 P 00:000:00000 00:000:00000 V -
+ HERS  A    1 P 99:110:43200 01:220:00000 X - Antenna Problems
+ HERT  A    1 P 00:000:00000 07:338:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ HERT  A    2 P 07:338:00000 00:000:00000 P - 
+ HERT  A    1 P 00:000:00000 00:000:00000 V -
+ HFLK  A    1 P 00:000:00000 99:302:00000 P - Antenna swap (according to MIT analysis)
+ HFLK  A    2 P 99:302:00000 00:000:00000 P - 
+ HFLK  A    1 P 00:000:00000 00:000:00000 V -
+ HIL1  A    1 P 00:000:00000 06:208:00000 P - Unknwon (added by ITRFPC)
+ HIL1  A    2 P 06:208:00000 00:000:00000 P - 
+ HIL1  A    1 P 00:000:00000 00:000:00000 V -
+ HILO  A    1 P 00:000:00000 00:000:00000 P - 
+ HILO  A    1 P 00:000:00000 00:000:00000 V -
+ HLFX  A    1 P 00:000:00000 00:000:00000 P - 
+ HLFX  A    1 P 00:000:00000 00:000:00000 V -
+ HNLC  A    1 P 00:000:00000 00:000:00000 P - 
+ HNLC  A    1 P 00:000:00000 00:000:00000 V -
+ HNPT  A    1 P 00:000:00000 00:143:48120 P - Antenna & Receiver Change
+ HNPT  A    2 P 00:143:48120 00:000:00000 P - 
+ HNPT  A    1 P 00:000:00000 00:000:00000 V -
+ HOB2  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1)
+ HOB2  A    2 P 04:358:53943 00:000:00000 P - 
+ HOB2  A    1 P 00:000:00000 00:000:00000 V -
+ HOFN  A    1 P 00:000:00000 99:248:00000 P - (ZA****)
+ HOFN  A    2 P 99:248:00000 01:264:64800 P - Antenna & Receiver Change
+ HOFN  A    3 P 01:264:64800 07:267:00000 P - Antenna swap (according to MIT analysis)
+ HOFN  A    4 P 07:267:00000 00:000:00000 P - 
+ HOFN  A    1 P 00:000:00000 00:000:00000 V -
+ HOLB  A    1 P 00:000:00000 02:023:01800 P - Antenna & Receiver Change
+ HOLB  A    2 P 02:023:01800 00:000:00000 P - 
+ HOLB  A    1 P 00:000:00000 00:000:00000 V -
+ HOLM  A    1 P 00:000:00000 00:000:00000 P - 
+ HOLM  A    1 P 00:000:00000 00:000:00000 V -
+ HRAO  A    1 P 00:000:00000 08:045:00000 P - - Antenna Change
+ HRAO  A    2 P 08:045:00000 09:015:00000 P - - see IGSmail 2852
+ HRAO  A    3 P 09:015:00000 00:000:00000 P - 
+ HRAO  A    1 P 00:000:00000 00:000:00000 V -
+ HRM1  A    1 P 00:000:00000 00:000:00000 P - 
+ HRM1  A    1 P 00:000:00000 00:000:00000 V -
+ HYDE  A    1 P 00:000:00000 04:361:03533 P - Sumatra Earthquake (9.0)
+ HYDE  A    2 P 04:361:03533 07:328:00000 P - Antenna & Receiver Change 
+ HYDE  A    3 P 07:328:00000 00:000:00000 P - 
+ HYDE  A    1 P 00:000:00000 00:000:00000 V -
+ IENG  A    1 P 00:000:00000 00:000:00000 P - 
+ IENG  A    1 P 00:000:00000 00:000:00000 V -
+ IISC  B    1 P 95:274:00000 04:361:03533 P - Sumatra Earthquake (9.0)
+ IISC  B    2 P 04:361:03533 00:000:00000 P - 
+ IISC  B    1 P 00:000:00000 00:000:00000 V -
+ INEG  A    1 P 00:000:00000 99:268:00000 P - Antenna and receiver change (added by ITRFPC)
+ INEG  A    2 P 99:268:00000 00:037:00000 P - Antenna swap  (according to MIT analysis)
+ INEG  A    3 P 00:037:00000 01:126:00000 P - (ZA ****) 
+ INEG  A    4 P 01:126:00000 02:070:00000 P - 
+ INEG  A    5 P 02:070:00000 00:000:00000 P - 
+ INEG  A    1 P 00:000:00000 02:070:00000 V - (added by ITRFPC)
+ INEG  A    2 P 02:070:00000 00:000:00000 V -  
+ INVK  A    1 P 00:000:00000 03:233:55800 P - Antenna Change
+ INVK  A    2 P 03:233:55800 00:000:00000 P - 
+ INVK  A    1 P 00:000:00000 00:000:00000 V -
+ IQQE  A    1 P 00:000:00000 05:164:81873 P - Tarapaca Earthquake (7.8) 
+ IQQE  A    2 P 05:164:81873 08:179:00000 P - Receiver change (added by ITRFPC)
+ IQQE  A    3 P 08:179:81873 00:000:00000 P - 
+ IQQE  A    1 P 00:000:00000 05:164:81873 V - Tarapaca Earthquake (7.8) (added by ITRFPC)
+ IQQE  A    2 P 05:164:81873 00:000:00000 V - 
+ IRKJ  A    1 P 00:000:00000 00:000:00000 P - 
+ IRKJ  A    1 P 00:000:00000 00:000:00000 V -
+ IRKT  A    1 P 00:000:00000 00:000:00000 P - 
+ IRKT  A    1 P 00:000:00000 00:000:00000 V -
+ ISPA  A    1 P 00:000:00000 00:000:00000 P - 
+ ISPA  A    1 P 00:000:00000 00:000:00000 V -
+ ISTA  A    1 P 00:000:00000 02:333:00000 P - EQ relax ends To be removed? (added by ITRFPC)
+ ISTA  A    2 P 02:333:00000 00:000:00000 P - 
+ ISTA  A    1 P 00:000:00000 02:333:00000 V - EQ relax ends To be removed? (added by ITRFPC)
+ ISTA  A    2 P 02:333:00000 00:000:00000 V - 
+ JAB1  A    1 P 00:000:00000 00:056:00000 P - Antenna swap (according to MIT analysis)
+ JAB1  A    2 P 00:056:00000 01:008:10800 P - Antenna & Receiver Change  
+ JAB1  A    3 P 01:008:10800 02:159:00000 P - Antenna swap (according to MIT analysis)
+ JAB1  A    4 P 02:159:00000 03:063:19800 P - Antenna & Receiver Change  
+ JAB1  A    5 P 03:063:19800 07:333:00000 P - Antenna & Receiver Change 
+ JAB1  A    6 P 07:333:00000 00:000:00000 P - 
+ JAB1  A    1 P 00:000:00000 00:000:00000 V -
+ JAMA  A    1 P 00:000:00000 06:167:00000 P - Receiver change  (added by ITRFPC)
+ JAMA  A    2 P 06:167:00000 00:000:00000 P - 
+ JAMA  A    1 P 00:000:00000 00:000:00000 V -
+ JOEN  A    1 P 00:000:00000 00:000:00000 P - 
+ JOEN  A    1 P 00:000:00000 00:000:00000 V -
+ JOZ2  A    1 P 00:000:00000 08:074:00000 P - Antenna Change
+ JOZ2  A    2 P 08:074:00000 00:000:00000 P - 
+ JOZ2  A    1 P 00:000:00000 00:000:00000 V -
+ JOZE  A    1 P 00:000:00000 04:341:00000 P - Unknown
+ JOZE  A    2 P 04:341:00000 00:000:00000 P - 
+ JOZE  A    1 P 00:000:00000 00:000:00000 V -
+ JPLM  A    1 P 00:000:00000 91:303:00000 P - Receiver Change
+ JPLM  A    2 P 91:303:00000 92:180:00000 P - Unknown
+ JPLM  A    3 P 92:180:00000 94:017:45055 P - Northridge Earthquake
+ JPLM  A    4 P 94:017:45055 94:165:43200 P - Antenna & Receiver Change
+ JPLM  A    5 P 94:165:43200 99:289:35204 P - Hector Mine Earthquake
+ JPLM  A    6 P 99:289:35204 00:000:00000 P - 
+ JPLM  A    1 P 00:000:00000 00:000:00000 V -
+ KABR  A    1 P 00:000:00000 00:134:00000 P - Unknown
+ KABR  A    2 P 00:134:00000 00:000:00000 P - 
+ KABR  A    1 P 00:000:00000 00:000:00000 V -
+ KARR  A    1 P 00:000:00000 00:000:00000 P - 
+ KARR  A    1 P 00:000:00000 00:000:00000 V -
+ KATZ  A    1 P 00:000:00000 03:065:00000 P - Unknown (added by ITRFPC)
+ KATZ  A    2 P 03:065:00000 04:301:00000 P - Antenna swap 
+ KATZ  A    3 P 04:301:00000 00:000:00000 P - 
+ KATZ  A    1 P 00:000:00000 03:065:00000 V - Unknown (added by ITRFPC)
+ KATZ  A    2 P 03:065:00000 00:000:00000 V - 
+ KELS  A    1 P 00:000:00000 00:000:00000 P - 
+ KELS  A    1 P 00:000:00000 00:000:00000 V -
+ KELY  A    1 P 00:000:00000 01:257:62280 P - Antenna & Receiver Change
+ KELY  A    2 P 01:257:62280 00:000:00000 P -
+ KELY  A    1 P 00:000:00000 00:000:00000 V - 
+ KELY  B    1 P 00:000:00000 01:257:00000 P - Antenna and receiver change (added by DGFI) 
+ KELY  B    2 P 01:257:00000 00:000:00000 P - 
+ KELY  B    1 P 00:000:00000 00:000:00000 V -
+ KEN1  A    1 P 00:000:00000 02:307:79961 P - Central Alaska Earthquake 
+ KEN1  A    2 P 02:307:79961 03:033:00000 P - Post Seismic 
+ KEN1  A    3 P 03:033:00000 00:000:00000 P - 
+ KEN1  A    1 P 00:000:00000 02:307:79961 V - X.C
+ KEN1  A    2 P 02:307:79961 03:033:00000 V - Post Seismic X.C
+ KEN1  A    3 P 03:033:00000 00:000:00000 V - X.C
+ KERG  A    1 P 00:000:00000 99:091:00000 P - Antenna swap
+ KERG  A    2 P 99:091:00000 08:249:48611 P - Antenna Change
+ KERG  A    3 P 08:249:48611 00:000:00000 P - 
+ KERG  A    1 P 00:000:00000 00:000:00000 V -
+ KGN0  A    1 P 00:000:00000 00:000:00000 P - 
+ KGN0  A    1 P 00:000:00000 00:000:00000 V -
+ KGNI  A    1 P 00:000:00000 08:003:00000 P - Unknwon (added by ITRFPC)
+ KGNI  A    2 P 08:003:00000 00:000:00000 P -  
+ KGNI  A    1 P 00:000:00000 00:000:00000 V -
+ KHAJ  A    1 P 00:000:00000 06:319:40456 P - Kuril Islands Earthquake (8.3)
+ KHAJ  A    2 P 06:319:40456 00:000:00000 P - 
+ KHAJ  A    1 P 00:000:00000 00:000:00000 V -
+ KHAR  A    1 P 00:000:00000 06:162:00000 P -  
+ KHAR  A    2 P 06:162:00000 00:000:00000 P - 
+ KHAR  A    1 P 00:000:00000 00:000:00000 V -
+ KIRI  A    1 P 00:000:00000 00:000:00000 P - 
+ KIRI  A    1 P 00:000:00000 00:000:00000 V -
+ KIRU  A    1 P 00:000:00000 00:274:00000 P - Antenna swap (according to MIT analysis)
+ KIRU  A    2 P 00:274:00000 00:000:00000 P - 
+ KIRU  A    1 P 00:000:00000 00:000:00000 V -
+ KIRU  A    1 P 00:273:00000 01:098:00000 X - 
+ KIT3  A    1 P 00:000:00000 00:000:00000 P - 
+ KIT3  A    1 P 00:000:00000 00:000:00000 V -
+ KJUN  A    1 P 00:000:00000 04:221:00000 P - Unknown  
+ KJUN  A    2 P 04:221:00000 00:000:00000 P - 
+ KJUN  A    1 P 00:000:00000 00:000:00000 V -
+ KLPD  A    1 P 00:000:00000 00:000:00000 P - 
+ KLPD  A    1 P 00:000:00000 00:000:00000 V -
+ KOD1  A    1 P 00:000:00000 99:045:00000 P - 
+ KOD1  A    2 P 99:045:00000 01:010:57764 P - Kodiak Earthquake  (***Reordered by ZA)
+ KOD1  A    3 P 01:010:57764 03:016:01155 P - Kodiak Earthquake
+ KOD1  A    4 P 03:016:01155 00:000:00000 P - 
+ KOD1  A    1 P 00:000:00000 99:045:00000 V - 
+ KOD1  A    2 P 99:045:00000 01:010:57764 V - Kodiak Earthquake
+ KOD1  A    3 P 01:010:57764 03:016:01155 V - Kodiak Earthquake
+ KOD1  A    4 P 03:016:01155 00:000:00000 V - 
+ KODK  A    1 P 00:000:00000 00:065:00000 P - Antenna & Receiver Change  
+ KODK  A    2 P 00:065:00000 01:010:57764 P - Kodiak Earthquake 
+ KODK  A    3 P 01:010:57764 02:307:79961 P - Central Alaska Earthquake 
+ KODK  A    4 P 02:307:79961 03:016:01155 P - Kodiak Earthquake 
+ KODK  A    5 P 03:016:01155 00:000:00000 P - 
+ KODK  A    1 P 00:000:00000 03:016:01155 V - Kodiak Earthquake
+ KODK  A    2 P 03:016:01155 00:000:00000 V - 
+ KOK1  A    1 P 00:000:00000 00:000:00000 P - 
+ KOK1  A    1 P 00:000:00000 00:000:00000 V -
+ KOKB  A    1 P 00:000:00000 96:010:79200 P - Antenna & Receiver Change
+ KOKB  A    2 P 96:010:79200 96:214:72000 P - Antenna Change
+ KOKB  A    3 P 96:214:72000 02:267:83800 P - Antenna & Receiver Change
+ KOKB  A    4 P 02:267:83800 04:139:77400 P - Antenna Change
+ KOKB  A    5 P 04:139:77400 00:000:00000 P - 
+ KOKB  A    1 P 00:000:00000 00:000:00000 V -
+ KOSG  A    1 P 00:000:00000 03:076:00000 P - Unknown
+ KOSG  A    2 P 03:076:00000 00:000:00000 P - 
+ KOSG  A    1 P 00:000:00000 00:000:00000 V -
+ KOU1  A    1 P 00:000:00000 03:243:00000 P - Unknown
+ KOU1  A    2 P 03:243:00000 00:000:00000 P -
+ KOU1  A    1 P 02:267:00000 02:273:00000 X - (added by ITRFPC) 
+ KOU1  A    1 P 00:000:00000 00:000:00000 V -
+ KOUC  A    1 P 00:000:00000 06:136:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ KOUC  A    2 P 06:136:00000 00:000:00000 P - 
+ KOUC  A    1 P 00:000:00000 00:000:00000 V -
+ KOUR  A    1 P 00:000:00000 02:030:00000 P - Antenna Change (added by ITRFPC)
+ KOUR  A    2 P 02:030:00000 06:183:00000 P - Unknown
+ KOUR  A    3 P 06:183:00000 00:000:00000 P - 
+ KOUR  A    1 P 00:000:00000 00:000:00000 V -
+ KR0G  A    1 P 00:000:00000 00:000:00000 P - 
+ KR0G  A    1 P 00:000:00000 00:000:00000 V -
+ KSMV  A    1 P 00:000:00000 08:128:60319 P - Earthquake (6.8) Near Honshu
+ KSMV  A    2 P 08:128:60319 00:000:00000 P - 
+ KSMV  A    1 P 00:000:00000 08:128:60319 V - Earthquake (6.8) Near Honshu
+ KSMV  A    2 P 08:128:60319 00:000:00000 V - 
+ KSTU  A    1 P 00:000:00000 99:113:00000 P - Antenna swap (according to MIT analysis)
+ KSTU  A    2 P 99:113:00000 00:013:00000 P - Antenna swap (according to MIT analysis)
+ KSTU  A    3 P 00:013:00000 01:025:00000 P - Antenna swap (according to MIT analysis)
+ KSTU  A    4 P 01:025:00000 00:000:00000 P -
+ KSTU  A    1 P 00:000:00000 00:000:00000 V -
+ KUNM  A    1 P 00:000:00000 04:361:03533 P - Sumatra Earthquake (9.0)
+ KUNM  A    2 P 04:361:03533 00:000:00000 P - 
+ KUNM  A    1 P 00:000:00000 04:361:03533 V - Sumatra Earthquake (9.0) (added by ITRFPC)
+ KUNM  A    2 P 04:361:03533 00:000:00000 V - 
+ KUUJ  A    1 P 00:000:00000 05:215:00000 P - Antenna swap (according to MIT analysis) 
+ KUUJ  A    2 P 05:215:00000 00:000:00000 P - 
+ KUUJ  A    1 P 00:000:00000 00:000:00000 V -
+ KUUJ  A    1 P 05:037:00000 05:148:00000 X - 
+ KYW1  A    1 P 00:000:00000 99:363:00000 P - Receiver Change
+ KYW1  A    2 P 99:363:00000 00:000:00000 P - 
+ KYW1  A    1 P 00:000:00000 00:000:00000 V -
+ LAE1  A    1 P 00:000:00000 00:000:00000 P - 
+ LAE1  A    1 P 00:000:00000 00:000:00000 V -
+ LAGO  A    1 P 00:000:00000 00:000:00000 P - 
+ LAGO  A    1 P 00:000:00000 00:000:00000 V -
+ LAMA  A    1 P 00:000:00000 00:100:00000 P - Antenna problems Starts
+ LAMA  A    2 P 00:100:00000 00:280:00000 P - Antenna Change
+ LAMA  A    3 P 00:280:00000 07:332:00000 P - Antenna swap (according to MIT analysis)
+ LAMA  A    4 P 07:332:00000 00:000:00000 P - 
+ LAMA  A    1 P 00:000:00000 00:000:00000 V -
+ LAMA  A    1 P 00:100:00000 00:280:00000 X - Antenna Problems
+ LAMP  A    1 P 00:000:00000 00:000:00000 P - 
+ LAMP  A    1 P 00:000:00000 00:000:00000 V -
+ LASC  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ LASC  A    2 P 99:289:35204 00:000:00000 P - 
+ LASC  A    1 P 00:000:00000 00:000:00000 V -
+ LAUT  A    1 P 00:000:00000 06:113:00000 P - (ZA****, Approximate discontinuity epoch) 
+ LAUT  A    2 P 06:113:00000 00:000:00000 P - 
+ LAUT  A    1 P 00:000:00000 00:000:00000 V -
+ LEBA  A    1 P 00:000:00000 07:099:00000 P - Antenna & Receiver Change  
+ LEBA  A    2 P 07:099:00000 00:000:00000 P - 
+ LEBA  A    1 P 00:000:00000 00:000:00000 V -
+ LHAS  A    1 P 00:000:00000 97:240:00000 P - Antenna swap (according to MIT analysis)
+ LHAS  A    2 P 97:240:00000 00:126:00000 P - Antenna & Receiver Change 
+ LHAS  A    3 P 00:126:00000 06:209:45000 P - Antenna & Receiver Change
+ LHAS  A    4 P 06:209:45000 00:000:00000 P - 
+ LHAS  A    1 P 00:000:00000 00:000:00000 V -
+ LHAZ  A    1 P 00:000:00000 08:280:35417 P - Eastern Xizang Earthquake (6.4)
+ LHAZ  A    2 P 08:280:35417 00:000:00000 P - 
+ LHAZ  A    1 P 00:000:00000 00:000:00000 V -
+ LHCL  A    1 P 00:000:00000 00:000:00000 P - 
+ LHCL  A    1 P 00:000:00000 00:000:00000 V -
+ LHUE  A    1 P 00:000:00000 00:000:00000 P - 
+ LHUE  A    1 P 00:000:00000 00:000:00000 V -
+ LKTH  A    1 P 00:000:00000 00:000:00000 P - 
+ LKTH  A    1 P 00:000:00000 00:000:00000 V -
+ LPAL  A    1 P 00:000:00000 08:190:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ LPAL  A    2 P 08:190:00000 00:000:00000 P - 
+ LPAL  A    1 P 00:000:00000 00:000:00000 V -
+ LPGS  A    1 P 00:000:00000 00:000:00000 P - 
+ LPGS  A    1 P 00:000:00000 00:000:00000 V -
+ LROC  A    1 P 00:000:00000 00:000:00000 P - 
+ LROC  A    1 P 00:000:00000 00:000:00000 V -
+ LYTT  A    1 P 00:000:00000 00:000:00000 P - 
+ LYTT  A    1 P 00:000:00000 00:000:00000 V -
+ MAC1  A    1 P 00:000:00000 95:178:00000 P - Receiver Change
+ MAC1  A    2 P 95:178:00000 04:358:53943 P - Macquarie Island Earthquake (8.1)
+ MAC1  A    3 P 04:358:53943 05:083:00000 P - Post Seismic
+ MAC1  A    4 P 05:083:00000 05:265:00000 P - Post Seismic
+ MAC1  A    5 P 05:265:00000 06:265:00000 P - Post Seismic
+ MAC1  A    6 P 06:265:00000 00:000:00000 P - 
+ MAC1  A    1 P 00:000:00000 04:358:53943 V - Macquarie Island Earthquake (8.1)
+ MAC1  A    2 P 04:358:53943 05:083:00000 V - Post Seismic
+ MAC1  A    3 P 05:083:00000 05:265:00000 V - Post Seismic
+ MAC1  A    4 P 05:265:53943 06:265:00000 V - Post Seismic
+ MAC1  A    5 P 06:265:53943 00:000:00000 V -
+ MADR  A    1 P 00:000:00000 96:277:00000 P - TUM
+ MADR  A    2 P 96:277:00000 97:005:00000 P - Unknown
+ MADR  A    3 P 97:005:00000 97:303:00000 P - Receiver Change
+ MADR  A    4 P 97:303:00000 98:167:31800 P - Receiver Change
+ MADR  A    5 P 98:167:31800 98:214:00000 P - Unknown
+ MADR  A    6 P 98:214:00000 98:354:00000 P - Unknown
+ MADR  A    7 P 98:354:00000 99:346:00000 P - Unknown
+ MADR  A    8 P 99:346:00000 00:182:00000 P - Receiver Change
+ MADR  A    9 P 00:182:00000 03:316:00000 P - Antenna swap
+ MADR  A   10 P 03:316:00000 00:000:00000 P - 
+ MADR  A    1 P 00:000:00000 00:000:00000 V -
+ MAG0  A    1 P 00:000:00000 01:315:00000 P - Unknown
+ MAG0  A    2 P 01:315:00000 02:286:00000 P - Unknown
+ MAG0  A    3 P 02:286:00000 03:268:71406 P - Hokkaido Earthquake
+ MAG0  A    4 P 03:268:71406 04:312:00000 P - Unknown
+ MAG0  A    5 P 04:312:00000 05:285:00000 P - Unknown
+ MAG0  A    6 P 05:285:00000 00:000:00000 P - 
+ MAG0  A    1 P 00:000:00000 00:000:00000 V -
+ MALD  A    1 P 00:000:00000 00:149:00000 P - TUM
+ MALD  A    2 P 00:149:00000 00:000:00000 P - 
+ MALD  A    1 P 00:000:00000 00:000:00000 V -
+ MALI  A    1 P 00:000:00000 97:296:49020 P - Antenna & Receiver Change
+ MALI  A    2 P 97:296:49020 01:165:00000 P - Unknown  (added by ITRFPC)
+ MALI  A    3 P 01:165:00000 00:000:00000 P -  
+ MALI  A    1 P 00:000:00000 00:000:00000 V -
+ MALL  A    1 P 00:000:00000 03:229:00000 P - Unknown 
+ MALL  A    2 P 03:229:00000 08:304:00000 P - Antenna & Receiver Change 
+ MALL  A    3 P 08:304:00000 00:000:00000 P -  
+ MALL  A    1 P 00:000:00000 03:229:00000 V - Unknwon (added by ITRFPC)
+ MALL  A    2 P 03:229:00000 00:000:00000 V - 
+ MANA  A    1 P 00:000:00000 04:283:77213 P - Managua Earthquake (7.0) 
+ MANA  A    2 P 04:283:77213 00:000:00000 P - 
+ MANA  A    1 P 00:000:00000 04:283:77213 V - Managua Earthquake (7.0) 
+ MANA  A    2 P 04:283:77213 00:000:00000 V - 
+ MANA  A    2 P 04:285:00000 05:058:00000 X - 
+ MANZ  A    1 P 00:000:00000 02:319:00000 P - Monument displaced (IGSMail 4199) 
+ MANZ  A    2 P 02:319:00000 03:019:00000 P - Unknown  
+ MANZ  A    3 P 03:019:00000 03:145:00000 P - Unknown  
+ MANZ  A    4 P 03:145:00000 04:207:00000 P - Unknown 
+ MANZ  A    5 P 04:207:00000 00:000:00000 P - 
+ MANZ  A    1 P 00:000:00000 00:000:00000 V -
+ MAR6  A    1 P 00:000:00000 00:000:00000 P - 
+ MAR6  A    1 P 00:000:00000 00:000:00000 V -
+ MARS  A    1 P 00:000:00000 03:087:00000 P - Antenna & Receiver Change 
+ MARS  A    2 P 03:087:00000 04:210:00000 P - Antenna & Receiver Change  
+ MARS  A    3 P 04:210:00000 09:084:00000 P - Unknown 
+ MARS  A    4 P 09:084:00000 00:000:00000 P -
+ MARS  A    1 P 00:000:00000 00:000:00000 V -
+ MAS1  A    1 P 00:000:00000 00:266:00000 P - Receiver change (added by DGFI)
+ MAS1  A    2 P 00:266:00000 08:190:00000 P - Antenna & Receiver Change 
+ MAS1  A    3 P 08:190:00000 00:000:00000 P -   
+ MAS1  A    1 P 00:000:00000 00:000:00000 V -
+ MAT1  A    1 P 00:000:00000 09:154:00000 P - Antenna change (modified by ITRFPC)
+ MAT1  A    2 P 09:154:00000 00:000:00000 P - 
+ MAT1  A    1 P 00:000:00000 00:000:00000 V -
+ MATE  A    1 P 00:000:00000 96:108:00000 P - Unknown
+ MATE  A    2 P 96:108:00000 96:191:00000 P - Antenna & Receiver Change
+ MATE  A    3 P 96:191:00000 99:169:00000 P - Antenna & Receiver Change
+ MATE  A    4 P 99:169:00000 08:329:00000 P - Antenna & Receiver Change 
+ MATE  A    5 P 08:329:00000 00:000:00000 P - 
+ MATE  A    1 P 00:000:00000 00:000:00000 V -
+ MAUI  A    1 P 00:000:00000 00:000:00000 P - 
+ MAUI  A    1 P 00:000:00000 00:000:00000 V -
+ MATH  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ MATH  A    2 P 99:289:35204 01:030:00000 P - Antenna Change
+ MATH  A    3 P 01:030:00000 00:000:00000 P - 
+ MATH  A    1 P 00:000:00000 00:000:00000 V - 
+ MAW1  A    1 P 00:000:00000 00:000:00000 P - 
+ MAW1  A    1 P 00:000:00000 00:000:00000 V -
+ MBAR  A    1 P 00:000:00000 00:000:00000 P - 
+ MBAR  A    1 P 00:000:00000 00:000:00000 V -
+ MBAR  A    1 P 02:090:00000 02:243:00000 X - 
+ MCD1  A    1 P 00:000:00000 00:000:00000 P - 
+ MCD1  A    1 P 00:000:00000 00:000:00000 V -
+ MCIL  A    1 P 00:000:00000 00:000:00000 P - 
+ MCIL  A    1 P 00:000:00000 00:000:00000 V -
+ MCM4  A    1 P 00:000:00000 99:037:00000 P - Unknown
+ MCM4  A    2 P 99:037:00000 02:003:00000 P - Receiver Change
+ MCM4  A    3 P 02:003:00000 00:000:00000 P - 
+ MCM4  A    1 P 00:000:00000 00:000:00000 V -
+ MCN1  A    1 P 00:000:00000 00:000:00000 P - 
+ MCN1  A    1 P 00:000:00000 00:000:00000 V -
+ MDO1  A    1 P 00:000:00000 04:342:00000 P - Receiver Change
+ MDO1  A    2 P 04:342:00000 06:210:00000 P - 
+ MDO1  A    3 P 06:210:00000 08:258:00000 P -
+ MDO1  A    4 P 08:258:00000 00:000:00000 P - 
+ MDO1  A    1 P 00:000:00000 00:000:00000 V -
+ MDVJ  A    1 P 00:000:00000 00:000:00000 P - 
+ MDVJ  A    1 P 00:000:00000 00:000:00000 V -
+ MDVO  A    1 P 00:000:00000 96:205:00000 P - Unknown
+ MDVO  A    2 P 96:205:00000 02:349:00000 P - Unknown
+ MDVO  A    3 P 02:349:00000 00:000:00000 P - 
+ MDVO  A    1 P 00:000:00000 00:000:00000 V -
+ MEDI  A    1 P 00:000:00000 01:093:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ MEDI  A    2 P 01:093:00000 00:000:00000 P - 
+ MEDI  A    1 P 00:000:00000 00:000:00000 V -
+ MEM2  A    1 P 00:000:00000 04:183:00000 P - Unknwon (added by ITRFPC)
+ MEM2  A    2 P 04:183:00000 00:000:00000 P - 
+ MEM2  A    1 P 00:000:00000 04:183:00000 V - Unknwon (added by ITRFPC)
+ MEM2  A    2 P 04:183:00000 00:000:00000 V - 
+ MEM2  A    1 P 04:186:00000 04:361:00000 X - 
+ METS  A    1 P 00:000:00000 00:000:00000 P - 
+ METS  A    1 P 00:000:00000 00:000:00000 V -
+ METZ  A    1 P 00:000:00000 00:000:00000 P - 
+ METZ  A    1 P 00:000:00000 00:000:00000 V -
+ MIG1  A    1 P 00:000:00000 00:000:00000 P - 
+ MIG1  A    1 P 00:000:00000 00:000:00000 V -
+ MIKL  A    1 P 00:000:00000 00:000:00000 P - 
+ MIKL  A    1 P 00:000:00000 00:000:00000 V -
+ MIZU  A    1 P 00:000:00000 03:146:33873 P - Honshu Earthquake
+ MIZU  A    2 P 03:146:33873 03:268:71406 P - Hokkaido Earthquake (8.3)
+ MIZU  A    3 P 03:268:71406 05:211:00000 P - Unknown (added by ITRFPC)
+ MIZU  A    4 P 05:211:00000 06:319:40456 P - Kuril Islands Earthquake (8.3)
+ MIZU  A    5 P 06:319:40456 08:165:85426 P - Easter Honshu Earthquake (6.9)
+ MIZU  A    6 P 08:165:85426 00:000:00000 P - 
+ MIZU  A    1 P 00:000:00000 00:000:00000 V -
+ MKEA  A    1 P 00:000:00000 06:288:61669 P - Hawaii Earthquake (6.7)
+ MKEA  A    2 P 06:288:61669 00:000:00000 P - 
+ MKEA  A    1 P 00:000:00000 00:000:00000 V -
+ MLF1  A    1 P 00:000:00000 97:246:00000 P - Antenna swap (according to MIT analysis)
+ MLF1  A    2 P 97:246:00000 99:177:00000 P - Unknown (added by DGFI)
+ MLF1  A    3 P 99:177:00000 00:000:00000 P - 
+ MLF1  A    1 P 00:000:00000 00:000:00000 V -
+ MOB1  A    1 P 00:000:00000 00:000:00000 P - 
+ MOB1  A    1 P 00:000:00000 00:000:00000 V -
+ MOBN  A    1 P 00:000:00000 00:000:00000 P - 
+ MOBN  A    1 P 00:000:00000 00:000:00000 V -
+ MOBS  A    1 P 00:000:00000 00:000:00000 P - 
+ MOBS  A    1 P 00:000:00000 00:000:00000 V -
+ MONP  A    1 P 00:000:00000 95:213:68400 P - Antenna & Receiver Change
+ MONP  A    2 P 95:213:68400 99:289:35204 P - Hector Mine Earthquake
+ MONP  A    3 P 99:289:35204 00:082:80160 P - Antenna & Receiver Change
+ MONP  A    4 P 00:082:80160 04:286:00000 P - Unknown (added by DGFI)
+ MONP  A    5 P 04:286:00000 00:000:00000 P -   
+ MONP  A    1 P 00:000:00000 00:000:00000 V -
+ MORP  A    1 P 00:000:00000 00:000:00000 P - 
+ MORP  A    1 P 00:000:00000 00:000:00000 V -
+ MQZG  A    1 P 00:000:00000 01:246:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ MQZG  A    2 P 01:246:00000 00:000:00000 P -  
+ MQZG  A    1 P 00:000:00000 00:000:00000 V -
+ MSKU  A    1 P 00:000:00000 02:276:00000 P - Unknwon (added by ITRFPC)
+ MSKU  A    2 P 02:276:00000 03:303:00000 P - Unknwon (added by ITRFPC)
+ MSKU  A    3 P 03:303:00000 00:000:00000 P - 
+ MSKU  A    1 P 00:000:00000 00:000:00000 V -
+ MTJO  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1)
+ MTJO  A    2 P 04:358:53943 00:000:00000 P - 
+ MTJO  A    1 P 00:000:00000 00:000:00000 V -
+ MTKA  A    1 P 00:000:00000 00:163:00000 P -  
+ MTKA  A    2 P 00:163:00000 00:000:00000 P -  
+ MTKA  A    1 P 00:000:00000 00:000:00000 V -
+ NAIN  A    1 P 00:000:00000 00:000:00000 P - 
+ NAIN  A    1 P 00:000:00000 00:000:00000 V -
+ NANO  A    1 P 00:000:00000 03:009:66900 P - Antenna & Receiver Change
+ NANO  A    2 P 03:009:66900 00:000:00000 P - 
+ NANO  A    1 P 00:000:00000 00:000:00000 V -
+ NAUR  A    1 P 00:000:00000 00:000:00000 P - 
+ NAUR  A    1 P 00:000:00000 00:000:00000 V -
+ NEAH  A    1 P 00:000:00000 00:000:00000 P - 
+ NEAH  A    1 P 00:000:00000 00:000:00000 V -
+ NEIA  A    1 P 00:000:00000 00:000:00000 V -
+ NETP  A    1 P 00:000:00000 07:038:00000 P - Antenna swap (added by ITRFPC)
+ NETP  A    2 P 07:038:00000 00:000:00000 P - 
+ NETP  A    1 P 00:000:00000 00:000:00000 V -
+ NEWL  A    1 P 00:000:00000 00:000:00000 P - 
+ NEWL  A    1 P 00:000:00000 00:000:00000 V -
+ NEWP  A    1 P 00:000:00000 98:073:00000 P - Antenna and receiver change (modified by ITRFPC)
+ NEWP  A    2 P 98:073:00000 00:000:00000 P - 
+ NEWP  A    1 P 00:000:00000 00:000:00000 V -
+ NICO  A    1 P 00:000:00000 99:233:32400 P - Antenna & Receiver Change
+ NICO  A    2 P 99:233:32400 08:163:00000 P - Receiver Change (added by ITRFPC)
+ NICO  A    3 P 08:163:00000 00:000:00000 P - 
+ NICO  A    1 P 00:000:00000 00:000:00000 V -
+ NISU  A    1 P 00:000:00000 02:162:00000 P - Work close to the antenna 
+ NISU  A    2 P 02:162:00000 06:106:00000 P - Work close to the antenna 
+ NISU  A    3 P 06:106:00000 06:165:00000 P - Unknown
+ NISU  A    4 P 06:165:00000 00:000:00000 P - 
+ NISU  A    1 P 00:000:00000 00:000:00000 V -
+ NKLG  A    1 P 00:000:00000 00:000:00000 P - 
+ NKLG  A    1 P 00:000:00000 00:000:00000 V -
+ NLIB  A    1 P 00:000:00000 00:000:00000 P - 
+ NLIB  A    1 P 00:000:00000 00:000:00000 V -
+ NNOR  A    1 P 00:000:00000 00:000:00000 P - 
+ NNOR  A    1 P 00:000:00000 00:000:00000 V -
+ NOT1  A    1 P 00:000:00000 00:000:00000 P - 
+ NOT1  A    1 P 00:000:00000 00:000:00000 V -
+ NOUM  A    1 P 00:000:00000 01:327:00000 P - Antenna swap (according to MIT analysis)
+ NOUM  A    2 P 01:327:00000 04:001:00000 P - Unknown (added by DGFI)
+ NOUM  A    3 P 04:001:00000 00:000:00000 P - 
+ NOUM  A    1 P 00:000:00000 00:000:00000 V -
+ NOVJ  A    1 P 00:000:00000 00:000:00000 P - 
+ NOVJ  A    1 P 00:000:00000 00:000:00000 V -
+ NPLD  A    1 P 00:000:00000 04:235:00000 P - Unknown
+ NPLD  A    2 P 04:235:00000 00:000:00000 P - 
+ NPLD  A    1 P 00:000:00000 00:000:00000 V -
+ NPRI  A    1 P 00:000:00000 00:000:00000 P - 
+ NPRI  A    1 P 00:000:00000 00:000:00000 V -
+ NRC1  A    1 P 00:000:00000 04:197:00000 P - Antenna swap (according to MIT analysis)
+ NRC1  A    2 P 04:197:00000 00:000:00000 P -
+ NRC1  A    1 P 00:000:00000 00:000:00000 V -
+ NRIL  A    1 P 00:000:00000 00:000:00000 P - 
+ NRIL  A    1 P 00:000:00000 00:000:00000 V -
+ NRMD  A    1 P 00:000:00000 07:097:00000 P - (Approximate discontinuity epoch) 
+ NRMD  A    2 P 07:097:00000 08:110:00000 P - (Approximate discontinuity epoch) 
+ NRMD  A    3 P 08:110:00000 00:000:00000 P -  
+ NRMD  A    1 P 00:000:00000 00:000:00000 V -
+ NSSP  A    1 P 00:000:00000 00:000:00000 P - 
+ NSSP  A    1 P 00:000:00000 00:000:00000 V -
+ NSSS  A    1 P 00:000:00000 00:000:00000 P - 
+ NSSS  A    1 P 00:000:00000 00:000:00000 V -
+ NSTG  A    1 P 00:000:00000 01:129:00000 P - Antenna & Receiver Change (ULR analysis)
+ NSTG  A    2 P 01:129:00000 02:095:00000 P - Antenna & Receiver Change (ULR analysis) (added by DGFI)
+ NSTG  A    3 P 02:095:00000 00:000:00000 P - 
+ NSTG  A    1 P 00:000:00000 00:000:00000 V -
+ NTUS  A    1 P 00:000:00000 98:159:00000 P - Antenna swap (according to MIT analysis)
+ NTUS  A    2 P 98:159:00000 99:301:21600 P - Receiver Change
+ NTUS  A    3 P 99:301:21600 04:361:03533 P - Sumatra Earthquake (9.0)
+ NTUS  A    4 P 04:361:03533 05:086:00000 P - Post seismic
+ NTUS  A    5 P 05:086:00000 05:268:00000 P - Post seismic
+ NTUS  A    6 P 05:268:00000 07:136:00000 P - Antenna & Receiver Change
+ NTUS  A    7 P 07:136:00000 07:255:40226 P - South Sumatra Earthquake (8.5)
+ NTUS  A    8 P 07:255:40226 07:343:00000 P - Post seismic
+ NTUS  A    9 P 07:343:00000 08:160:00000 P - Post seismic
+ NTUS  A   10 P 08:160:00000 00:000:00000 P - 
+ NTUS  A    1 P 00:000:00000 04:361:03533 V - Sumatra Earthquake (9.0)
+ NTUS  A    3 P 04:361:03533 05:086:00000 V - Post seismic
+ NTUS  A    4 P 05:086:00000 05:268:00000 V - Post seismic
+ NTUS  A    5 P 05:268:00000 07:255:40226 V - South Sumatra Earthquake (8.5)
+ NTUS  A    7 P 07:255:40226 07:343:00000 V - Post seismic
+ NTUS  A    8 P 07:343:00000 08:160:00000 V - Post seismic
+ NTUS  A    9 P 08:160:00000 00:000:00000 V - 
+ NTUS  A    1 P 05:107:00000 05:148:00000 X - 
+ NVSK  A    1 P 00:000:00000 03:270:41605 P - Southern Siberia Earthquake ?
+ NVSK  A    2 P 03:270:41605 00:000:00000 P - 
+ NVSK  A    1 P 00:000:00000 00:000:00000 V -
+ NYA1  A    1 P 00:000:00000 99:153:00000 P - Antenna change (according to MIT analysis)
+ NYA1  A    2 P 99:153:00000 00:000:00000 P - 
+ NYA1  A    1 P 00:000:00000 00:000:00000 V - 
+ NYAL  A    1 P 00:000:00000 99:240:00000 P - Unknown (according to MIT analysis)
+ NYAL  A    2 P 99:240:00000 01:255:00000 P - Unknown
+ NYAL  A    3 P 01:255:00000 00:000:00000 P - 
+ OBE2  A    1 P 00:000:00000 01:308:00000 P - Unknown
+ OBE2  A    2 P 01:308:00000 00:000:00000 P - 
+ OBE2  A    1 P 00:000:00000 00:000:00000 V -
+ OBET  A    1 P 00:000:00000 00:000:00000 P - 
+ OBET  A    1 P 00:000:00000 00:000:00000 V -
+ OBET  A    1 P 03:145:00000 03:187:00000 X - 
+ OHI2  A    1 P 00:000:00000 00:000:00000 P - 
+ OHI2  A    1 P 00:000:00000 00:000:00000 V -
+ OHI3  A    1 P 00:000:00000 00:000:00000 P - 
+ OHI3  A    1 P 00:000:00000 00:000:00000 V -
+ ONSA  A    1 P 00:000:00000 99:033:00000 P - Antenna & Receiver Change
+ ONSA  A    2 P 99:033:00000 00:000:00000 P - 
+ ONSA  A    1 P 00:000:00000 00:000:00000 V -
+ OPMT  A    1 P 00:000:00000 00:000:00000 P - 
+ OPMT  A    1 P 00:000:00000 00:000:00000 V -
+ ORID  A    1 P 00:000:00000 00:000:00000 P - 
+ ORID  A    1 P 00:000:00000 00:000:00000 V -
+ OSN1  A    1 P 00:000:00000 00:000:00000 P - 
+ OSN1  A    1 P 00:000:00000 00:000:00000 V -
+ OUS2  A    1 P 00:000:00000 01:286:00000 P - Antenna swap (according to MIT analysis)
+ OUS2  A    2 P 01:286:00000 04:358:53943 P - Macquarie Island Earthquake (8.1)
+ OUS2  A    3 P 04:358:53943 06:239:79200 P - Radome removed
+ OUS2  A    4 P 06:239:79200 00:000:00000 P - 
+ OUS2  A    1 P 00:000:00000 00:000:00000 V -
+ OUSD  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1) 
+ OUSD  A    2 P 04:358:53943 06:170:25200 P - Equipment Change ???  
+ OUSD  A    3 P 06:170:25200 07:364:00000 P - Unknwon (added by ITRFPC, modified DGFI)
+ OUSD  A    4 P 07:364:00000 00:000:00000 P -  
+ OUSD  A    1 P 00:000:00000 00:000:00000 V -
+ P101  A    1 P 00:000:00000 00:000:00000 P - 
+ P101  A    1 P 00:000:00000 00:000:00000 V -
+ P105  A    1 P 00:000:00000 05:063:00000 P - Unknwon (added by DGFI)
+ P105  A    2 P 05:063:00000 06:167:00000 P - Unknwon (added by DGFI)
+ P105  A    3 P 06:167:00000 07:106:00000 P - Unknwon (added by ITRFPC)
+ P105  A    4 P 07:106:00000 00:000:00000 P - 
+ P105  A    1 P 00:000:00000 00:000:00000 V -
+ P108  A    1 P 00:000:00000 00:000:00000 P - 
+ P108  A    1 P 00:000:00000 00:000:00000 V -
+ P110  A    1 P 00:000:00000 07:280:00000 P - Unknown 
+ P110  A    2 P 07:280:00000 00:000:00000 P -   
+ P110  A    1 P 00:000:00000 00:000:00000 V -
+ P112  A    1 P 00:000:00000 00:000:00000 P - 
+ P112  A    1 P 00:000:00000 00:000:00000 V -
+ P114  A    1 P 00:000:00000 00:000:00000 P - 
+ P114  A    1 P 00:000:00000 00:000:00000 V -
+ P118  A    1 P 00:000:00000 00:000:00000 P - 
+ P118  A    1 P 00:000:00000 00:000:00000 V -
+ P119  A    1 P 00:000:00000 00:000:00000 P - 
+ P119  A    1 P 00:000:00000 00:000:00000 V -
+ P121  A    1 P 00:000:00000 00:000:00000 P - 
+ P121  A    1 P 00:000:00000 00:000:00000 V -
+ P122  A    1 P 00:000:00000 00:000:00000 P - 
+ P122  A    1 P 00:000:00000 00:000:00000 V -
+ P201  A    1 P 00:000:00000 03:268:71404 P - Hokkaido Earthquake (8.3) 
+ P201  A    2 P 03:268:71404 04:333:66734 P - Hokkaido Earthquake (7.0)  
+ P201  A    3 P 04:333:66734 00:000:00000 P -  
+ P201  A    1 P 00:000:00000 00:000:00000 V -
+ P202  A    1 P 00:000:00000 03:268:71404 P - Hokkaido Earthquake (8.3) 
+ P202  A    2 P 03:268:71404 04:333:66734 P - Hokkaido Earthquake (7.0) 
+ P202  A    3 P 04:333:66734 00:000:00000 P - 
+ P202  A    1 P 00:000:00000 00:000:00000 V -
+ P203  A    1 P 00:000:00000 03:268:71404 P - Hokkaido Earthquake (8.3)  
+ P203  A    2 P 03:268:71404 04:333:66734 P - Hokkaido Earthquake (7.0)
+ P203  A    3 P 04:333:66734 00:000:00000 P - 
+ P203  A    1 P 00:000:00000 04:333:66734 V - Hokkaido Earthquake (7.0) (added by ITRFPC)
+ P203  A    2 P 04:333:66734 00:000:00000 V - 
+ P204  A    1 P 00:000:00000 03:268:71404 P - Hokkaido Earthquake (8.3)
+ P204  A    2 P 03:268:71404 00:000:00000 P -  
+ P204  A    1 P 00:000:00000 00:000:00000 V -
+ P205  A    1 P 00:000:00000 05:228:09988 P - Honshu Earthquake (7.2) 
+ P205  A    2 P 05:228:09988 00:000:00000 P -   
+ P205  A    1 P 00:000:00000 00:000:00000 V -
+ P207  A    1 P 00:000:00000 04:249:36428 P - Western Honshu Earthquake (7.2)  
+ P207  A    2 P 04:249:36428 04:333:66734 P - Hokkaido Earthquake (7.0) 
+ P207  A    3 P 04:333:66734 00:000:00000 P -  
+ P207  A    1 P 00:000:00000 00:000:00000 V -
+ P209  A    1 P 00:000:00000 00:000:00000 P - 
+ P209  A    1 P 00:000:00000 00:000:00000 V -
+ P211  A    1 P 00:000:00000 00:000:00000 P - 
+ P211  A    1 P 00:000:00000 00:000:00000 V -
+ PADO  A    1 P 00:000:00000 00:000:00000 P - 
+ PADO  A    1 P 00:000:00000 00:000:00000 V -
+ PALM  A    1 P 00:000:00000 00:000:00000 P - 
+ PALM  A    1 P 00:000:00000 00:000:00000 V -
+ PAPE  A    1 P 00:000:00000 00:000:00000 P - 
+ PAPE  A    1 P 00:000:00000 00:000:00000 V -
+ PARA  A    1 P 00:000:00000 00:000:00000 P - 
+ PARA  A    1 P 00:000:00000 00:000:00000 V -
+ PARC  A    1 P 00:000:00000 01:345:00000 P - Antenna swap (according to MIT analysis)
+ PARC  A    2 P 01:345:00000 00:000:00000 P -
+ PARC  A    1 P 00:000:00000 00:000:00000 V -
+ PARK  A    1 P 00:000:00000 00:000:00000 P - 
+ PARK  A    1 P 00:000:00000 00:000:00000 V -
+ PDEL  A    1 P 00:000:00000 06:351:00000 P - Unknown 
+ PDEL  A    2 P 06:351:00000 08:097:00000 P - Antenna & Receiver Change 
+ PDEL  A    3 P 08:097:00000 00:000:00000 P - 
+ PDEL  A    1 P 00:000:00000 00:000:00000 V -
+ PENC  A    1 P 00:000:00000 03:142:00000 P - Antenna & Receiver Change 
+ PENC  A    2 P 03:142:00000 07:176:00000 P - Antenna & Receiver Change 
+ PENC  A    3 P 07:176:00000 00:000:00000 P - 
+ PENC  A    1 P 00:000:00000 00:000:00000 V -
+ PERT  A    1 P 00:000:00000 94:070:00000 P - Unknown
+ PERT  A    2 P 94:070:00000 94:117:00000 P - Antenna & Receiver Change
+ PERT  A    3 P 94:117:00000 01:158:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ PERT  A    4 P 01:158:00000 03:156:00000 P - Antenna & Receiver Change
+ PERT  A    5 P 03:156:00000 00:000:00000 P - 
+ PERT  A    1 P 00:000:00000 00:000:00000 V -
+ PETP  A    1 P 00:000:00000 05:023:00000 P - Unknown
+ PETP  A    2 P 05:023:00000 07:182:00000 P - Unknown  
+ PETP  A    3 P 07:182:00000 00:000:00000 P - 
+ PETP  A    1 P 00:000:00000 00:000:00000 V - 
+ PETS  A    1 P 00:000:00000 05:278:86340 P - Antenna Change
+ PETS  A    2 P 05:278:86340 06:319:40456 P - Kuril Islands Earthquake (8.3)
+ PETS  A    3 P 06:319:40456 00:000:00000 P - 
+ PETS  A    1 P 00:000:00000 06:319:40456 V - Kuril Islands Earthquake (8.3) (added by ITRFPC)
+ PETS  A    2 P 06:319:40456 00:000:00000 V - 
+ PGC5  A    1 P 00:000:00000 01:287:00000 P - Unknown 
+ PGC5  A    2 P 01:287:00000 00:000:00000 P -  
+ PGC5  A    1 P 00:000:00000 00:000:00000 V -
+ PHLW  A    1 P 00:000:00000 00:000:00000 P - 
+ PHLW  A    1 P 00:000:00000 00:000:00000 V -
+ PICL  A    1 P 00:000:00000 04:353:00000 P - Unknown (added by DGFI)
+ PICL  A    2 P 04:353:00000 00:000:00000 P - 
+ PICL  A    1 P 00:000:00000 00:000:00000 V -
+ PIE1  A    1 P 00:000:00000 98:251:00000 P - Unknown (according to MIT analysis)
+ PIE1  A    2 P 98:251:00000 99:152:00000 P - Dome swap (according to MIT analysis)
+ PIE1  A    3 P 99:152:00000 04:219:00000 P - Unknown (added by ITRFPC)
+ PIE1  A    4 P 04:219:00000 07:023:00000 P - Antenna change  (added by ITRFPC)
+ PIE1  A    5 P 07:023:00000 00:000:00000 P - 
+ PIE1  A    1 P 00:000:00000 00:000:00000 V -
+ PIMO  A    1 P 00:000:00000 99:345:65160 P - Luzon Earthquake
+ PIMO  A    2 P 99:345:65160 01:248:00000 P - Antenna swap (according to MIT analysis)
+ PIMO  A    3 P 01:248:00000 04:361:03533 P - Sumatra Earthquake (9.0)
+ PIMO  A    4 P 04:361:03533 00:000:00000 P - 
+ PIMO  A    1 P 00:000:00000 99:345:65160 V - Luzon Earthquake (added by ITRFPC)
+ PIMO  A    2 P 99:345:65160 04:361:03533 V - Sumatra Earthquake (9.0) (added by ITRFPC)
+ PIMO  A    3 P 04:361:03533 00:000:00000 V - 
+ PIN1  A    1 P 00:000:00000 91:046:00000 P - Antenna & Receiver Change 
+ PIN1  A    2 P 91:046:00000 91:181:00000 P - Antenna & Receiver Change 
+ PIN1  A    3 P 91:181:00000 91:297:00000 P - Receiver Change 
+ PIN1  A    4 P 91:297:00000 92:116:00000 P - Receiver Change 
+ PIN1  A    5 P 92:116:00000 92:180:00000 P - Unknown 
+ PIN1  A    6 P 92:180:00000 92:269:00000 P - Antenna & Receiver Change 
+ PIN1  A    7 P 92:269:00000 93:173:00000 P - Antenna & Receiver Change 
+ PIN1  A    8 P 93:173:00000 93:310:00000 P - Antenna & Receiver Change 
+ PIN1  A    9 P 93:310:00000 95:214:00000 P - Receiver Change 
+ PIN1  A   10 P 95:214:00000 95:245:00000 P - Antenna Change 
+ PIN1  A   11 P 95:245:00000 97:023:00000 P - Antenna & Receiver Change 
+ PIN1  A   12 P 97:023:00000 98:057:00000 P - Unknown  (added by ITRFPC)
+ PIN1  A   13 P 98:057:00000 99:289:35204 P - Hector Mine Earthquake 
+ PIN1  A   14 P 99:289:35204 01:059:00000 P - Antenna Change
+ PIN1  A   15 P 01:059:00000 04:205:67560 P - Receiver Change
+ PIN1  A   16 P 04:205:67560 06:305:00000 P - Unknown  (added by ITRFPC)
+ PIN1  A   17 P 06:305:00000 00:000:00000 P -  
+ PIN1  A    1 P 00:000:00000 06:305:00000 V - Unknown  (added by ITRFPC)
+ PIN1  A    2 P 06:305:00000 00:000:00000 V -   
+ PLO3  A    1 P 00:000:00000 00:000:00000 P - 
+ PLO3  A    1 P 00:000:00000 00:000:00000 V -
+ PLO3  A    1 P 06:155:00000 06:189:00000 X - 
+ PLUZ  A    1 P 00:000:00000 00:000:00000 P - 
+ PLUZ  A    1 P 00:000:00000 00:000:00000 V -
+ PNGM  A    1 P 00:000:00000 00:000:00000 P - 
+ PNGM  A    1 P 00:000:00000 00:000:00000 V -
+ POHN  A    1 P 00:000:00000 00:000:00000 P - 
+ POHN  A    1 P 00:000:00000 00:000:00000 V -
+ POL2  A    1 P 00:000:00000 01:317:00000 P - Antenna swap (according to MIT analysis)
+ POL2  A    2 P 01:317:00000 00:000:00000 P -
+ POL2  A    1 P 00:000:00000 00:000:00000 V -
+ POLV  A    1 P 00:000:00000 00:000:00000 P - 
+ POLV  A    1 P 00:000:00000 00:000:00000 V -
+ POTS  A    1 P 00:000:00000 00:000:00000 P - 
+ POTS  A    1 P 00:000:00000 00:000:00000 V -
+ PRDS  A    1 P 00:000:00000 02:305:00000 P - Antenna Change
+ PRDS  A    2 P 02:305:00000 03:141:00000 P - Antenna Change
+ PRDS  A    3 P 03:141:00000 00:000:00000 P - 
+ PRDS  A    1 P 00:000:00000 00:000:00000 V -
+ PRDS  A    1 P 02:305:00000 03:141:00000 X - Antenna problems
+ PRE1  A    1 P 00:000:00000 00:000:00000 P - 
+ PRE1  A    1 P 00:000:00000 00:000:00000 V -
+ PRE1  A    1 P 06:337:00000 07:126:00000 X -
+ PSU1  A    1 P 00:000:00000 00:000:00000 P - 
+ PSU1  A    1 P 00:000:00000 00:000:00000 V -
+ PTBB  A    1 P 00:000:00000 02:078:00000 P - Antenna swap (according to MIT analysis)
+ PTBB  A    2 P 02:078:00000 03:243:00000 P - Unknwon ITRF2005 (added by ITRFPC)
+ PTBB  A    3 P 03:243:00000 00:000:00000 P - 
+ PTBB  A    1 P 00:000:00000 00:000:00000 V -
+ PUC1  A    1 P 00:000:00000 00:000:00000 P - 
+ PUC1  A    1 P 00:000:00000 00:000:00000 V -
+ PUR3  A    1 P 00:000:00000 00:000:00000 P - 
+ PUR3  A    1 P 00:000:00000 00:000:00000 V -
+ PVEP  A    1 P 00:000:00000 98:003:00000 P - Antenna swap (added by ITRFPC)
+ PVEP  A    2 P 98:003:00000 00:000:00000 P -  
+ QAQ1  A    1 P 00:000:00000 03:248:43200 P - Antenna Change
+ QAQ1  A    2 P 03:248:43200 03:364:61740 P - Antenna Change
+ QAQ1  A    3 P 03:364:61740 00:000:00000 P - 
+ QAQ1  A    1 P 00:000:00000 00:000:00000 V -
+ QIKI  A    1 P 00:000:00000 00:000:00000 P - 
+ QIKI  A    1 P 00:000:00000 00:000:00000 V -
+ QUIN  A    1 P 00:000:00000 93:065:00000 P - Unknown
+ QUIN  A    2 P 93:065:00000 98:091:70200 P - Antenna & Receiver Change
+ QUIN  A    3 P 98:091:70200 00:000:00000 P - 
+ QUIN  A    1 P 00:000:00000 00:000:00000 V -
+ RABT  A    1 P 00:000:00000 00:000:00000 P - 
+ RABT  A    1 P 00:000:00000 00:000:00000 V -
+ RAMO  A    1 P 00:000:00000 00:199:00000 P - Antenna Change
+ RAMO  A    2 P 00:199:00000 04:077:36000 P - Monument repaired (IGS Mail 4887)
+ RAMO  A    3 P 04:077:36000 00:000:00000 P - 
+ RAMO  A    1 P 00:000:00000 00:000:00000 V -
+ RBAY  A    1 P 00:000:00000 00:000:00000 P - 
+ RBAY  A    1 P 00:000:00000 00:000:00000 V -
+ REDU  A    1 P 00:000:00000 00:000:00000 P - 
+ REDU  A    1 P 00:000:00000 00:000:00000 V -
+ RESO  A    1 P 00:000:00000 00:000:00000 P - 
+ RESO  A    1 P 00:000:00000 00:000:00000 V -
+ REUN  A    1 P 00:000:00000 08:338:50000 P - Antenna & Receiver Change 
+ REUN  A    2 P 08:338:50000 00:000:00000 P - 
+ REUN  A    1 P 00:000:00000 00:000:00000 V -
+ REYK  A    1 P 00:000:00000 00:169:56460 P - Earthquake 
+ REYK  A    2 P 00:169:56460 00:173:03120 P - Earthquake 
+ REYK  A    3 P 00:173:03120 03:164:54000 P - Antenna Change  
+ REYK  A    4 P 03:164:54000 08:073:62760 P - Antenna Change 
+ REYK  A    5 P 08:073:62760 08:150:56760 P - Iceland Earthquake (6.3)
+ REYK  A    6 P 08:150:56760 00:000:00000 P - 
+ REYK  A    1 P 00:169:56460 00:173:03120 X - Only one point. To be removed (added by ITRFPC)
+ REYK  A    1 P 00:000:00000 00:169:56460 V - (added by ITRFPC)
+ REYK  A    2 P 00:169:56460 00:173:03120 V - (added by ITRFPC)
+ REYK  A    3 P 00:173:03120 00:000:00000 V - 
+ REYZ  A    1 P 00:000:00000 00:173:03120 P - Earthquake 
+ REYZ  A    2 P 00:173:03120 00:000:00000 P -  
+ REYZ  A    1 P 00:000:00000 00:173:03120 V - (added by ITRFPC)
+ REYZ  A    2 P 00:173:03120 00:000:00000 V -
+ RIGA  A    1 P 00:000:00000 05:013:00000 P - Antenna change (cf. EUREF) (added by ITRFPC)
+ RIGA  A    2 P 05:013:00000 06:142:00000 P - Antenna Change 
+ RIGA  A    3 P 06:142:00000 07:350:00000 P - Antenna/receiver change (cf. EUREF) (added by ITRFPC)
+ RIGA  A    4 P 07:350:00000 00:000:00000 P - 
+ RIGA  A    1 P 00:000:00000 00:000:00000 V -
+ RIOG  A    1 P 00:000:00000 99:337:00000 P - Antenna swap (according to MIT analysis)
+ RIOG  A    2 P 99:337:00000 00:000:00000 P -
+ RIOG  A    1 P 00:000:00000 00:000:00000 V -
+ RIOP  A    1 P 00:000:00000 07:121:00000 P - Antenna & Receiver Change (added by DGFI, modified Ferland)
+ RIOP  A    2 P 07:121:00000 00:000:00000 P - 
+ RIOP  A    1 P 00:000:00000 00:000:00000 V -
+ RIOP  A    1 P 99:003:00000 99:009:00000 X - 
+ RWSN  A    1 P 00:000:00000 00:000:00000 P - 
+ RWSN  A    1 P 00:000:00000 00:000:00000 V -
+ SACH  A    1 P 00:000:00000 00:000:00000 P - 
+ SACH  A    1 P 00:000:00000 00:000:00000 V -
+ SACH  A    1 P 04:312:00000 05:009:00000 X - 
+ SAG1  A    1 P 00:000:00000 00:000:00000 P - 
+ SAG1  A    1 P 00:000:00000 00:000:00000 V -
+ SAMO  A    1 P 00:000:00000 07:214:00000 P - Antenna swap (according to MIT analysis)
+ SAMO  A    2 P 07:214:00000 00:000:00000 P -
+ SAMO  A    1 P 00:000:00000 00:000:00000 V -
+ SAMP  A    1 P 00:000:00000 04:361:03533 P - Sumatra Earthquake (9.0) 
+ SAMP  A    2 P 04:361:03533 05:087:58176 P - Northern Sumatra (8.6) 
+ SAMP  A    3 P 05:087:58176 05:177:00000 P - Post Seismic 
+ SAMP  A    4 P 05:177:00000 05:359:00000 P - Post Seismic 
+ SAMP  A    5 P 05:359:00000 06:364:00000 P - Post Seismic  
+ SAMP  A    6 P 06:364:00000 00:000:00000 P - 
+ SAMP  A    1 P 00:000:00000 04:361:03533 V - Sumatra Earthquake (9.0)
+ SAMP  A    2 P 04:361:03533 05:087:58176 V - Northern Sumatra (8.6) X.C
+ SAMP  A    3 P 05:087:58176 05:177:00000 V - Post Seismic X.C
+ SAMP  A    4 P 05:177:00000 05:359:00000 V - Post Seismic X.C
+ SAMP  A    5 P 05:359:00000 06:364:00000 V - Post Seismic  X.C
+ SAMP  A    6 P 06:364:00000 00:000:00000 V -  X.C
+ SANT  A    1 P 00:000:00000 96:199:00000 P - Antenna & Receiver Change
+ SANT  A    2 P 96:199:00000 98:306:00000 P - Unknown
+ SANT  A    3 P 98:306:00000 00:000:00000 P - 
+ SANT  A    1 P 00:000:00000 00:000:00000 V -
+ SASK  A    1 P 00:000:00000 08:257:00000 P - Receiver change  (added by ITRFPC)
+ SASK  A    2 P 08:257:00000 00:000:00000 P - 
+ SASK  A    1 P 00:000:00000 00:000:00000 V -
+ SASS  A    1 P 00:000:00000 08:025:00000 P - Receiver change  (added by ITRFPC)
+ SASS  A    2 P 08:025:00000 00:000:00000 P - 
+ SASS  A    1 P 00:000:00000 00:000:00000 V -
+ SCH2  A    1 P 00:000:00000 03:286:00000 P - Antenna swap (according to MIT analysis)
+ SCH2  A    2 P 03:286:00000 08:280:59097 P - Antenna Change
+ SCH2  A    3 P 08:280:59097 00:000:00000 P - 
+ SCH2  A    1 P 00:000:00000 00:000:00000 V -
+ SCIP  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ SCIP  A    2 P 99:289:35204 00:000:00000 P - 
+ SCIP  A    1 P 00:000:00000 00:000:00000 V -
+ SCOR  A    1 P 00:000:00000 00:000:00000 P - 
+ SCOR  A    1 P 00:000:00000 00:000:00000 V -
+ SCUB  A    1 P 00:000:00000 00:342:00000 P - Antenna swap (according to MIT analysis)
+ SCUB  A    2 P 00:342:00000 00:000:00000 P - 
+ SCUB  A    1 P 00:000:00000 00:000:00000 V -
+ SEAT  A    1 P 00:000:00000 00:000:00000 P - 
+ SEAT  A    1 P 00:000:00000 00:000:00000 V -
+ SELE  A    1 P 00:000:00000 98:343:00000 P - Antenna change (added by DGFI)
+ SELE  A    2 P 98:343:00000 00:000:00000 P -  
+ SELE  A    1 P 00:000:00000 00:000:00000 V -
+ SEY1  A    1 P 00:000:00000 96:032:00000 P - Antenna Change (added by ITRFPC)
+ SEY1  A    2 P 96:032:00000 98:225:00000 P - Antenna Change (added by ITRFPC)
+ SEY1  A    3 P 98:225:00000 03:037:00000 P - Antenna swap  (according to MIT analysis)
+ SEY1  A    4 P 03:037:00000 00:000:00000 P - 
+ SEY1  A    1 P 00:000:00000 00:000:00000 V -
+ SFDM  A    1 P 00:000:00000 06:305:00000 P - Unknown (added by ITRFPC)
+ SFDM  A    2 P 06:305:00000 00:000:00000 P - 
+ SFDM  A    1 P 00:000:00000 06:305:00000 V - Unknown (added by ITRFPC)
+ SFDM  A    2 P 06:305:00000 00:000:00000 V -  
+ SFER  A    1 P 00:000:00000 98:035:00000 P - Antenna Change
+ SFER  A    2 P 98:035:00000 98:153:00000 P - Antenna & Receiver Change
+ SFER  A    3 P 98:153:00000 02:064:00000 P - Antenna & Receiver Change
+ SFER  A    4 P 02:064:00000 03:159:00000 P - Unknown
+ SFER  A    5 P 03:159:00000 05:199:00000 P - Unknown (according to MIT analysis)
+ SFER  A    6 P 05:199:00000 00:000:00000 P -
+ SFER  A    1 P 00:000:00000 00:000:00000 V -
+ SHAO  A    1 P 00:000:00000 02:103:00000 P - (ZA****, Approximative discontinuity epoch)
+ SHAO  A    2 P 02:103:00000 04:001:00000 P - (ZA****, Approximative discontinuity epoch)
+ SHAO  A    3 P 04:001:00000 07:240:00000 P - (ZA****, Approximative discontinuity epoch)
+ SHAO  A    4 P 07:240:00000 00:000:00000 P -
+ SHAO  A    1 P 00:000:00000 00:000:00000 V -
+ SHEE  A    1 P 00:000:00000 00:000:00000 P - 
+ SHEE  A    1 P 00:000:00000 00:000:00000 V -
+ SIMO  A    1 P 00:000:00000 00:000:00000 P - 
+ SIMO  A    1 P 00:000:00000 00:000:00000 V -
+ SIO3  A    1 P 00:000:00000 93:195:00000 P - Antenna Change ?
+ SIO3  A    2 P 93:195:00000 94:138:00000 P - Antenna Change
+ SIO3  A    3 P 94:138:00000 94:285:00000 P - Antenna & Receiver Change
+ SIO3  A    4 P 94:285:00000 95:207:00000 P - Antenna Change
+ SIO3  A    5 P 95:207:00000 98:013:00000 P - Receiver Change
+ SIO3  A    6 P 98:013:00000 99:289:35204 P - Hector Mine Earthquake
+ SIO3  A    7 P 99:289:35204 00:103:06600 P - Antenna Change
+ SIO3  A    8 P 00:103:06600 00:000:00000 P - 
+ SIO3  A    1 P 00:000:00000 00:000:00000 V -
+ SIO3  A    1 P 00:044:00000 00:071:00000 X - 
+ SIO5  A    1 P 00:000:00000 00:000:00000 P - 
+ SIO5  A    1 P 00:000:00000 00:000:00000 V -
+ SJDV  A    1 P 00:000:00000 99:071:57600 P - Antenna Change
+ SJDV  A    2 P 99:071:57600 00:000:00000 P - 
+ SJDV  A    1 P 00:000:00000 00:000:00000 V -
+ SNI1  A    1 P 00:000:00000 98:230:00000 P - Antenna swap (according to MIT analysis)
+ SNI1  A    2 P 98:230:00000 99:289:35204 P - Hector Mine Earthquake
+ SNI1  A    3 P 99:289:35204 00:354:00000 P - Antenna Change
+ SNI1  A    4 P 00:354:00000 00:000:00000 P - 
+ SNI1  A    1 P 00:000:00000 00:000:00000 V -
+ SOFI  A    1 P 00:000:00000 00:000:00000 P - 
+ SOFI  A    1 P 00:000:00000 00:000:00000 V -
+ SOL1  A    1 P 00:000:00000 00:000:00000 P - 
+ SOL1  A    1 P 00:000:00000 00:000:00000 V -
+ SOL1  A    1 P 06:288:00000 06:309:00000 X - 
+ SPK1  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ SPK1  A    2 P 99:289:35204 00:000:00000 P - 
+ SPK1  A    1 P 00:000:00000 00:000:00000 V -
+ SPMX  A    1 P 00:000:00000 00:255:00000 P - Antenna swap
+ SPMX  A    2 P 00:255:00000 00:000:00000 P - 
+ SPMX  A    1 P 00:000:00000 00:000:00000 V -
+ SPT0  A    1 P 00:000:00000 00:000:00000 P - 
+ SPT0  A    1 P 00:000:00000 00:000:00000 V -
+ SRS1  A    1 P 00:000:00000 00:000:00000 P - 
+ SRS1  A    1 P 00:000:00000 00:000:00000 V -
+ SSIA  A    1 P 00:000:00000 01:013:63212 P - El Salvador Earthquake
+ SSIA  A    2 P 01:013:63212 01:044:51726 P - El Salvador Earthquake
+ SSIA  A    3 P 01:044:51726 04:283:78723 P - Nicaragua Earthquake ???
+ SSIA  A    4 P 04:283:78723 00:000:00000 P - 
+ SSIA  A    1 P 00:000:00000 00:000:00000 V -
+ STAV  A    1 P 00:000:00000 07:122:53880 P - Antenna Change 
+ STAV  A    2 P 07:122:53880 00:000:00000 P -  
+ STAV  A    1 P 00:000:00000 00:000:00000 V -
+ STJO  A    1 P 00:000:00000 94:057:00000 P - Unknown
+ STJO  A    2 P 94:057:00000 95:057:48480 P - Antenna & Receiver Change
+ STJO  A    3 P 95:057:48480 95:307:45000 P - Antenna & Receiver Change
+ STJO  A    4 P 95:307:45000 96:215:00000 P - Antenna swap (according to MIT analysis)
+ STJO  A    5 P 96:215:00000 00:148:00000 P - Antenna swap (according to MIT analysis)
+ STJO  A    6 P 00:148:00000 00:000:00000 P - 
+ STJO  A    1 P 00:000:00000 00:000:00000 V -
+ STK2  A    1 P 00:000:00000 03:268:71406 P - Kokkaido Earthquake (8.3) 
+ STK2  A    2 P 03:268:71406 03:361:00000 P - Post Seismic 
+ STK2  A    3 P 03:361:00000 04:179:00000 P - Post Seismic 
+ STK2  A    4 P 04:179:00000 05:177:00000 P - Post Seismic 
+ STK2  A    5 P 05:177:00000 06:319:40456 P - Kuril Islands Earthquake (8.3)  
+ STK2  A    6 P 06:319:40456 00:000:00000 P - 
+ STK2  A    1 P 00:000:00000 03:268:71406 V - Kokkaido Earthquake (8.3) X.C 
+ STK2  A    2 P 03:268:71406 03:361:00000 V - Post Seismic X.C 
+ STK2  A    3 P 03:361:00000 04:179:00000 V - Post Seismic X.C 
+ STK2  A    4 P 04:179:00000 05:177:00000 V - Post Seismic X.C 
+ STK2  A    5 P 05:177:00000 06:319:40456 V - Kuril Islands Earthquake (8.3)  X.C 
+ STK2  A    6 P 06:319:40456 00:000:00000 V - X.C 
+ STR1  A    1 P 00:000:00000 98:287:00000 P - Unknown (added by ITRFPC)
+ STR1  A    2 P 98:287:00000 99:174:00000 P - Antenna change (added by ITRFPC)
+ STR1  A    3 P 99:174:00000 00:000:00000 P -
+ STR1  A    1 P 00:000:00000 00:000:00000 V -
+ STR1  A    1 P 00:000:00000 00:000:00000 V -
+ STR2  A    1 P 00:000:00000 03:335:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ STR2  A    2 P 03:335:00000 00:000:00000 P - 
+ STR2  A    1 P 00:000:00000 00:000:00000 V -
+ SULP  A    1 P 00:000:00000 00:000:00000 P - 
+ SULP  A    1 P 00:000:00000 00:000:00000 V -
+ SUM1  A    1 P 00:000:00000 00:000:00000 P - 
+ SUM1  A    1 P 00:000:00000 00:000:00000 V -
+ SUNM  A    1 P 00:000:00000 00:338:00000 P - Unknown  (according to MIT analysis)
+ SUNM  A    2 P 00:338:00000 00:000:00000 P -
+ SUNM  A    1 P 00:000:00000 00:000:00000 V -
+ SUTH  A    1 P 00:000:00000 02:058:00000 P - Antenna swap (according to MIT analysis)
+ SUTH  A    2 P 02:058:00000 04:153:00000 P - Antenna swap (according to MIT analysis)
+ SUTH  A    3 P 04:153:00000 00:000:00000 P -
+ SUTH  A    1 P 00:000:00000 00:000:00000 V -
+ SUTM  A    1 P 00:000:00000 05:031:00000 P - Unknown  (according to MIT analysis)
+ SUTM  A    2 P 05:031:00000 00:000:00000 P -
+ SUTM  A    1 P 00:000:00000 00:000:00000 V -
+ SUWN  A    1 P 00:000:00000 00:045:00000 P - Antenna & Receiver Change
+ SUWN  A    3 P 00:045:00000 00:000:00000 P - 
+ SUWN  A    1 P 00:040:00000 00:045:00000 X - only one point (added by ITRFPC)
+ SUWN  A    1 P 00:000:00000 00:000:00000 V -
+ SVTL  A    1 P 00:000:00000 04:336:00000 P - Antenna change (added by DGFI)  
+ SVTL  A    2 P 04:336:00000 08:297:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ SVTL  A    3 P 08:297:00000 00:000:00000 P - 
+ SVTL  A    1 P 00:000:00000 00:000:00000 V -
+ SYDN  A    1 P 00:000:00000 00:000:00000 P - 
+ SYDN  A    1 P 00:000:00000 00:000:00000 V -
+ SYOG  A    1 P 00:000:00000 00:000:00000 P - 
+ SYOG  A    1 P 00:000:00000 00:000:00000 V -
+ TAH1  A    1 P 00:000:00000 00:000:00000 V -
+ TAKL  A    1 P 00:000:00000 00:000:00000 P - 
+ TAKL  A    1 P 00:000:00000 00:000:00000 V -
+ TASH  A    1 P 00:000:00000 00:000:00000 V -
+ TCMS  A    1 P 00:000:00000 00:000:00000 P - 
+ TCMS  A    1 P 00:000:00000 00:000:00000 V -
+ TEHN  A    1 P 00:000:00000 00:000:00000 P - 
+ TEHN  A    1 P 00:000:00000 00:000:00000 V -
+ TELA  A    1 P 00:000:00000 03:065:00000 P - Unknown (added by ITRFPC)
+ TELA  A    2 P 03:065:00000 04:075:00000 P - Equipment Change 
+ TELA  A    3 P 04:075:00000 00:000:00000 P -   
+ TELA  A    1 P 00:000:00000 03:065:00000 V - Unknown (added by ITRFPC)
+ TELA  A    2 P 03:065:00000 04:075:00000 V - Equipment Change 
+ TELA  A    3 P 04:075:00000 00:000:00000 V -  
+ TERS  A    1 P 00:000:00000 00:118:00000 P - Antenna change (added by ITRFPC)
+ TERS  A    2 P 00:118:00000 00:000:00000 P -  
+ TERS  A    1 P 00:000:00000 00:000:00000 V - 
+ THTI  A    1 P 00:000:00000 04:013:00000 P - Antenna swap (according to MIT analysis) 
+ THTI  A    2 P 04:013:00000 00:000:00000 P -
+ THU1  A    1 P 00:000:00000 01:175:00000 P - Unknown
+ THU1  A    2 P 01:175:00000 00:000:00000 P - 
+ THU1  A    1 P 00:000:00000 00:000:00000 V -
+ THU3  A    1 P 00:000:00000 00:000:00000 P - 
+ THU3  A    1 P 00:000:00000 00:000:00000 V -
+ TIDB  A    1 P 00:000:00000 96:178:00000 P - Receiver & Antenna Change
+ TIDB  A    2 P 96:178:00000 04:347:00000 P - Antenna swap (according to MIT analysis)
+ TIDB  A    3 P 04:347:00000 00:000:00000 P -
+ TIDB  A    1 P 00:000:00000 00:000:00000 V -
+ TIXI  A    1 P 00:000:00000 00:000:00000 P - 
+ TIXI  A    1 P 00:000:00000 00:000:00000 V -
+ TLSE  A    1 P 00:000:00000 03:335:00000 P - Antenna & Receiver Change (added by ITRFPC)
+ TLSE  A    2 P 03:335:00000 00:000:00000 P - 
+ TLSE  A    1 P 00:000:00000 00:000:00000 V -
+ TNML  A    1 P 00:000:00000 00:000:00000 P - 
+ TNML  A    1 P 00:000:00000 00:000:00000 V -
+ TONG  A    1 P 00:000:00000 06:123:55599 P - Tonga Earthquake (7.9)  
+ TONG  A    2 P 06:123:00000 07:125:00000 P - Unknown (added by DGFI)  
+ TONG  A    3 P 07:125:00000 00:000:00000 P - 
+ TONG  A    1 P 00:000:00000 00:000:00000 V -
+ TORP  A    1 P 00:000:00000 99:289:35204 P - Hector Mine Earthquake
+ TORP  A    2 P 99:289:35204 06:305:00000 P - Unknown  (added by ITRFPC)
+ TORP  A    3 P 06:305:00000 00:000:00000 P - 
+ TORP  A    1 P 00:000:00000 99:289:35204 V - Hector Mine Earthquake
+ TORP  A    2 P 99:289:35204 06:305:00000 V - Unknown  (added by ITRFPC)
+ TORP  A    3 P 06:305:00000 00:000:00000 V -  
+ TORS  A    1 P 00:000:00000 00:000:00000 P - 
+ TORS  A    1 P 00:000:00000 00:000:00000 V -
+ TOW2  A    1 P 00:000:00000 00:000:00000 P - 
+ TOW2  A    1 P 00:000:00000 00:000:00000 V -
+ TRAB  A    1 P 00:000:00000 00:000:00000 P - 
+ TRAB  A    1 P 00:000:00000 00:000:00000 V -
+ TRDS  A    1 P 00:000:00000 00:001:00000 P - (ZA**** Approximative)
+ TRDS  A    2 P 00:001:00000 07:127:58020 P - Antenna Change 
+ TRDS  A    3 P 07:127:58020 00:000:00000 P -  
+ TRDS  A    1 P 00:000:00000 00:000:00000 V -
+ TRDS  A    1 P 04:074:00000 04:116:00000 X - 
+ TRDS  A    1 P 04:200:00000 04:360:00000 X - 
+ TRO1  A    1 P 00:000:00000 98:356:00000 P - Antenna Change
+ TRO1  A    2 P 98:356:00000 00:171:28800 P - Antenna Change
+ TRO1  A    3 P 00:171:28800 02:016:00000 P - (ZA***** Analysis)
+ TRO1  A    4 P 02:016:00000 04:195:27300 P - Antenna Change
+ TRO1  A    5 P 04:195:27300 07:235:51420 P - Antenna Change
+ TRO1  A    6 P 07:235:51420 00:000:00000 P - 
+ TRO1  A    1 P 00:000:00000 00:000:00000 V -
+ TROM  A    1 P 00:000:00000 00:211:00000 P - Unknown (added by DGFI) 
+ TROM  A    2 P 00:211:00000 00:000:00000 P -  
+ TROM  A    1 P 00:000:00000 00:000:00000 V -
+ TSK2  A    1 P 00:000:00000 08:128:60319 P - Earthquake (6.8) Near Honshu (added by ITRFPC)
+ TSK2  A    2 P 08:128:60319 00:000:00000 P -
+ TSK2  A    1 P 00:000:00000 00:000:00000 V -
+ TSKB  A    1 P 00:000:00000 94:277:00000 P - Unknown 
+ TSKB  A    2 P 94:277:00000 00:235:33609 P - Antenna Change  
+ TSKB  A    3 P 00:235:33609 08:128:60319 P - Earthquake (6.8) Near Honshu 
+ TSKB  A    4 P 08:128:60319 00:000:00000 P - 
+ TSKB  A    1 P 00:000:00000 08:128:60319 V - Earthquake (6.8) Near Honshu
+ TSKB  A    2 P 08:128:60319 00:000:00000 V - 
+ TUBI  A    1 P 00:000:00000 99:229:00000 P - (ZA***** Kocaeli Earthquake-7.8)
+ TUBI  A    2 P 99:229:00000 02:255:00000 P - Izmit EQ relax ends EUREF   (added by ITRFPC)
+ TUBI  A    3 P 02:255:00000 00:000:00000 P - 
+ TUBI  A    1 P 00:000:00000 99:229:00000 V - (ZA***** Earthquake-7.8)
+ TUBI  A    2 P 99:226:00000 02:255:00000 V - Izmit EQ relax ends EUREF  (added by ITRFPC)
+ TUBI  A    3 P 02:255:00000 00:000:00000 V - 
+ TUCU  A    1 P 00:000:00000 06:026:00000 P - Unknwon (added by ITRFPC)
+ TUCU  A    2 P 06:026:00000 00:000:00000 P - 
+ TUCU  A    1 P 00:000:00000 06:026:00000 V - Unknwon (added by ITRFPC)
+ TUCU  A    2 P 06:026:00000 00:000:00000 V - 
+ TUKT  A    1 P 00:000:00000 00:000:00000 P - 
+ TUKT  A    1 P 00:000:00000 00:000:00000 V -
+ TUKT  A    1 P 03:341:00000 04:095:00000 X - 
+ TUKT  A    2 P 05:002:00000 05:200:00000 X - 
+ TUVA  A    1 P 00:000:00000 00:000:00000 P - 
+ TUVA  A    1 P 00:000:00000 00:000:00000 V -
+ TWTF  A    1 P 00:000:00000 02:090:24770 P - Taiwan Earthquake
+ TWTF  A    2 P 02:090:24770 00:000:00000 P - 
+ TWTF  A    1 P 00:000:00000 02:090:24770 V - (added by ITRFPC)
+ TWTF  A    2 P 02:090:24770 00:000:00000 V - 
+ UCLU  A    1 P 00:000:00000 00:153:82800 P - Antenna & Receiver Change
+ UCLU  A    2 P 00:153:82800 01:339:71100 P - Antenna & Receiver Change
+ UCLU  A    3 P 01:339:71100 00:000:00000 P - 
+ UCLU  A    1 P 00:000:00000 00:000:00000 V -
+ UEPP  A    1 P 00:000:00000 00:000:00000 P - 
+ UEPP  A    1 P 00:000:00000 00:000:00000 V -
+ ULAB  A    1 P 00:000:00000 00:000:00000 P - 
+ ULAB  A    1 P 00:000:00000 00:000:00000 V -
+ UNB1  A    1 P 00:000:00000 00:000:00000 P - 
+ UNB1  A    1 P 00:000:00000 00:000:00000 V -
+ UNIV  A    1 P 00:000:00000 00:000:00000 P - 
+ UNIV  A    1 P 00:000:00000 00:000:00000 V -
+ UNSA  A    1 P 00:000:00000 08:206:00000 P - Antenna swap (according to MIT analysis)
+ UNSA  A    2 P 08:206:00000 00:000:00000 P - 
+ UNSA  A    1 P 00:000:00000 00:000:00000 V -
+ UNPG  A    1 P 00:000:00000 98:326:00000 P - Unknown (added by R. Ferland)
+ UNPG  A    2 P 98:326:00000 00:041:00000 P - Unknwon (added by ITRFPC)
+ UNPG  A    3 P 00:041:00000 00:000:00000 P -  
+ UNPG  A    1 P 00:000:00000 00:000:00000 V - 
+ UPAD  A    1 P 00:000:00000 97:357:00000 P - Antenna & Receiver Change
+ UPAD  A    2 P 97:357:00000 00:000:00000 P -  
+ UPAD  A    1 P 00:000:00000 00:000:00000 V - 
+ UPO1  A    1 P 00:000:00000 00:000:00000 P - 
+ UPO1  A    1 P 00:000:00000 00:000:00000 V -
+ URUM  A    1 P 00:000:00000 99:267:00000 P - Receiver Change 
+ URUM  A    2 P 99:267:00000 05:244:00000 P - Receiver Change 
+ URUM  A    3 P 05:244:00000 07:168:00000 P - Unknown  
+ URUM  A    4 P 07:168:00000 08:261:00000 P - Receiver & Antenna Change 
+ URUM  A    5 P 08:261:00000 00:000:00000 P -  
+ URUM  A    1 P 00:000:00000 00:000:00000 V -
+ USN3  A    1 P 00:000:00000 00:000:00000 P - 
+ USN3  A    1 P 00:000:00000 00:000:00000 V -
+ USNA  A    1 P 00:000:00000 00:000:00000 P - 
+ USNA  A    1 P 00:000:00000 00:000:00000 V -
+ USNO  A    1 P 00:000:00000 00:000:00000 P - 
+ USNO  A    1 P 00:000:00000 00:000:00000 V -
+ USUD  A    1 P 00:000:00000 00:279:00000 P - Receiver Change  
+ USUD  A    2 P 00:279:00000 04:249:36428 P - Western Honshu Earthquake (7.2) 
+ USUD  A    3 P 04:249:36428 00:000:00000 P -  
+ USUD  A    1 P 00:000:00000 00:279:00000 V - Receiver Change   (added by ITRFPC)
+ USUD  A    2 P 00:279:00000 04:249:36428 V - Western Honshu Earthquake (7.2)    (added by ITRFPC)
+ USUD  A    3 P 04:249:36428 00:000:00000 V -  
+ UZHL  A    1 P 00:000:00000 00:000:00000 P - 
+ UZHL  A    1 P 00:000:00000 00:000:00000 V -
+ VAAS  A    1 P 00:000:00000 00:000:00000 P - 
+ VAAS  A    1 P 00:000:00000 00:000:00000 V -
+ VALE  A    1 P 00:000:00000 05:219:00000 P - Unknown 
+ VALE  A    2 P 05:219:00000 00:000:00000 P -  
+ VALE  A    1 P 00:000:00000 00:000:00000 V -
+ VANU  A    1 P 00:000:00000 04:116:00000 P - Unknown  
+ VANU  A    2 P 04:116:00000 05:268:00000 P - Unknown 
+ VANU  A    3 P 05:268:00000 00:000:00000 P -  
+ VANU  A    1 P 00:000:00000 00:000:00000 V -
+ VARS  A    1 P 00:000:00000 00:108:00000 P - Receiver change (added by ITRFPC)
+ VARS  A    2 P 00:108:00000 02:006:00000 P - Unknown  
+ VARS  A    3 P 02:006:00000 00:000:00000 P -  
+ VARS  A    1 P 00:000:00000 00:000:00000 V -
+ VARS  A    1 P 04:074:00000 04:361:00000 X - Several discontinuities
+ VBCA  A    1 P 00:000:00000 00:000:00000 P - 
+ VBCA  A    1 P 00:000:00000 00:000:00000 V -
+ VCIO  A    1 P 00:000:00000 97:219:00000 P - Unknown
+ VCIO  A    2 P 97:219:00000 00:000:00000 P - 
+ VCIO  A    1 P 00:000:00000 00:000:00000 V -
+ VENE  A    1 P 00:000:00000 97:274:00000 P - Antenna & Receiver Change
+ VENE  A    2 P 97:274:00000 99:219:00000 P - Antenna malfunction
+ VENE  A    3 P 99:219:00000 01:032:32400 P - Antenna & Receiver Change
+ VENE  A    4 P 01:032:32400 01:350:00000 P - Unknown
+ VENE  A    5 P 01:350:00000 05:301:00000 P - Antenna & Receiver Change
+ VENE  A    6 P 05:301:00000 00:000:00000 P - 
+ VENE  A    1 P 00:000:00000 00:000:00000 V -
+ VESL  A    1 P 00:000:00000 00:000:00000 P - 
+ VESL  A    1 P 00:000:00000 00:000:00000 V -
+ VIL0  A    1 P 00:000:00000 00:000:00000 P - 
+ VIL0  A    1 P 00:000:00000 00:000:00000 V -
+ VILL  A    1 P 00:000:00000 95:001:00000 P - Unknown
+ VILL  A    2 P 95:001:00000 01:113:00000 P - Receiver Change
+ VILL  A    3 P 01:113:00000 04:272:43200 P - Antenna Change
+ VILL  A    4 P 04:272:43200 00:000:00000 P - 
+ VILL  A    1 P 00:000:00000 00:000:00000 V -
+ VNDP  A    1 P 00:000:00000 92:180:00000 P - Unknown
+ VNDP  A    2 P 92:180:00000 92:268:00000 P - Receiver Change
+ VNDP  A    3 P 92:268:00000 93:012:00000 P - Antenna & Receiver Change
+ VNDP  A    4 P 93:012:00000 94:134:00000 P - Antenna & Receiver Change
+ VNDP  A    5 P 94:134:00000 95:313:00000 P - Antenna & Receiver Change
+ VNDP  A    6 P 95:313:00000 99:289:35204 P - Hector Mine Earthquake
+ VNDP  A    7 P 99:289:35204 00:000:00000 P - 
+ VNDP  A    1 P 00:000:00000 00:000:00000 V -
+ VTIS  A    1 P 00:000:00000 00:000:00000 P - 
+ VTIS  A    1 P 00:000:00000 00:000:00000 V -
+ WAB2  A    1 P 00:000:00000 00:000:00000 P - 
+ WAB2  A    1 P 00:000:00000 00:000:00000 V -
+ WARN  A    1 P 00:000:00000 03:295:00000 P - Antenna change   (added by ITRFPC)
+ WARN  A    2 P 03:295:00000 08:025:00000 P - Receiver change  (added by ITRFPC)
+ WARN  A    3 P 08:025:00000 00:000:00000 P - 
+ WARN  A    1 P 00:000:00000 00:000:00000 V -
+ WDC2  A    1 P 00:000:00000 05:218:00000 P - Unknown - ZA 
+ WDC2  A    2 P 05:218:00000 00:000:00000 P - 
+ WDC2  A    1 P 00:000:00000 00:000:00000 V -
+ WDC2  A    1 P 06:092:00000 00:000:00000 X - New location
+ WDC3  A    1 P 00:000:00000 00:000:00000 P - 
+ WDC3  A    1 P 00:000:00000 00:000:00000 V -
+ WEL2  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1) 
+ WEL2  A    2 P 04:358:53943 07:321:00000 P - Unknown (added by DGFI)
+ WEL2  A    3 P 07:321:00000 00:000:00000 P - 
+ WEL2  A    1 P 00:000:00000 00:000:00000 V -
+ WES2  A    1 P 00:000:00000 94:215:00000 P - Antenna & Receiver Change
+ WES2  A    2 P 94:215:00000 97:142:00000 P - Antenna & Receiver Change
+ WES2  A    3 P 97:142:00000 97:181:00000 P - Antenna Change
+ WES2  A    4 P 97:181:00000 98:152:54180 P - Antenna & Receiver Change
+ WES2  A    5 P 98:152:54180 00:235:63960 P - Antenna Change
+ WES2  A    6 P 00:235:63960 01:208:00000 P - Antenna & Receiver Change
+ WES2  A    7 P 01:208:00000 02:283:00000 P - Receiver Change
+ WES2  A    8 P 02:283:00000 00:000:00000 P - 
+ WES2  A    1 P 00:000:00000 00:000:00000 V -
+ WGTN  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1) 
+ WGTN  A    2 P 04:358:53943 00:000:00000 P -  
+ WGTN  A    1 P 00:000:00000 00:000:00000 V -
+ WGTT  A    1 P 00:000:00000 04:358:53943 P - Macquarie Island Earthquake (8.1) 
+ WGTT  A    2 P 04:358:53943 08:096:00000 P - Unknown (added by DGFI) 
+ WGTT  A    3 P 08:096:00000 00:000:00000 P -   
+ WGTT  A    1 P 00:000:00000 00:000:00000 V -
+ WHIT  A    1 P 00:000:00000 02:296:40179 P - Central Alaska Earthquake (6.7) ?
+ WHIT  A    2 P 02:296:40179 00:000:00000 P -  
+ WHIT  A    1 P 00:000:00000 00:000:00000 V -
+ WHIT  A    1 P 02:230:00000 03:005:00000 X - 
+ WILL  A    1 P 00:000:00000 00:000:00000 P - 
+ WILL  A    1 P 00:000:00000 00:000:00000 V -
+ WIND  A    1 P 00:000:00000 00:000:00000 P - 
+ WIND  A    1 P 00:000:00000 00:000:00000 V -
+ WIS1  A    1 P 00:000:00000 00:000:00000 P - 
+ WIS1  A    1 P 00:000:00000 00:000:00000 V -
+ WIS1  A    1 P 07:308:00000 07:322:00000 X -
+ WLSN  A    1 P 00:000:00000 97:180:00000 P - Unknown
+ WLSN  A    2 P 97:180:00000 99:289:35204 P - Hector Mine Earthquake
+ WLSN  A    3 P 99:289:35204 00:000:00000 P - 
+ WLSN  A    1 P 00:000:00000 00:000:00000 V -
+ WROC  A    1 P 00:000:00000 06:232:00000 P - Unknown  
+ WROC  A    2 P 06:232:00000 07:103:47580 P - Antenna & Receiver Change 
+ WROC  A    3 P 07:103:47580 00:000:00000 P - 
+ WROC  A    1 P 00:000:00000 00:000:00000 V -
+ WSLR  A    1 P 00:000:00000 00:089:62400 P - Antenna & Receiver Change
+ WSLR  A    2 P 00:089:62400 00:000:00000 P - 
+ WSLR  A    1 P 00:000:00000 00:000:00000 V -
+ WSRT  A    1 P 00:000:00000 00:000:00000 P - 
+ WSRT  A    1 P 00:000:00000 00:000:00000 V -
+ WTZA  A    1 P 00:000:00000 00:000:00000 P - 
+ WTZA  A    1 P 00:000:00000 00:000:00000 V -
+ WTZR  A    1 P 00:000:00000 00:000:00000 P -
+ WTZR  A    1 P 00:000:00000 00:000:00000 V -
+ WTZT  A    1 P 00:000:00000 97:358:00000 P - Unknown (added by ITRFPC)
+ WTZT  A    2 P 97:358:00000 98:308:00000 P - Antenna change (added by ITRFPC)
+ WTZT  A    3 P 98:308:00000 00:019:00000 P - Antenna change (added by ITRFPC)
+ WTZT  A    4 P 00:019:00000 00:000:00000 P -  
+ WTZT  A    1 P 00:000:00000 00:000:00000 V -
+ WTZZ  A    1 P 00:000:00000 00:000:00000 P - 
+ WTZZ  A    1 P 00:000:00000 00:000:00000 V -
+ WUHN  A    1 P 00:000:00000 00:160:00000 P - Antenna Swap (according to MIT analysis)
+ WUHN  A    2 P 00:160:00000 02:026:00000 P - Dome
+ WUHN  A    3 P 02:026:00000 00:000:00000 P - 
+ WUHN  A    1 P 00:000:00000 00:160:00000 V - Unknwon  (added by ITRFPC)
+ WUHN  A    2 P 00:160:00000 00:000:00000 V - 
+ XMIS  A    1 P 00:000:00000 00:000:00000 P - 
+ XMIS  A    1 P 00:000:00000 00:000:00000 V -
+ YAKT  A    1 P 00:000:00000 06:319:40456 P - Kuril Islands Earthquake (8.3)
+ YAKT  A    2 P 06:319:40456 07:038:00000 P - Post Seismic
+ YAKT  A    3 P 07:038:00000 07:220:00000 P - Post Seismic
+ YAKT  A    4 P 07:220:00000 08:220:00000 P - Post Seismic
+ YAKT  A    5 P 08:220:00000 09:015:64189 P - Kuril Islands Earthquake (7.4) 
+ YAKT  A    6 P 09:015:64189 00:000:00000 P - 
+ YAKT  A    1 P 00:000:00000 06:319:40456 V - Kuril Islands Earthquake (8.3)
+ YAKT  A    2 P 06:319:40456 07:038:00000 V - Post Seismic
+ YAKT  A    3 P 07:038:00000 07:220:00000 V - Post Seismic
+ YAKT  A    4 P 07:220:00000 08:220:00000 V - Post Seismic
+ YAKT  A    5 P 08:220:00000 00:000:00000 V - 
+ YAKT  A    1 P 04:319:00000 05:030:00000 X - Snow ?
+ YAKT  A    2 P 06:309:00000 07:006:00000 X - Snow ?
+ YAR1  A    1 P 00:000:00000 98:060:00000 P - Unknown
+ YAR1  A    2 P 98:060:00000 02:270:00000 P - (ZA****, Change)
+ YAR1  A    3 P 02:270:00000 00:000:00000 P -
+ YAR1  A    1 P 00:000:00000 00:000:00000 V -
+ YARR  A    1 P 00:000:00000 00:000:00000 P - 
+ YARR  A    1 P 00:000:00000 00:000:00000 V -
+ YEBE  A    1 P 00:000:00000 00:000:00000 P - 
+ YEBE  A    1 P 00:000:00000 00:000:00000 V -
+ YELL  A    1 P 00:000:00000 92:080:00000 P - Antenna & Receiver Change
+ YELL  A    2 P 92:080:00000 96:235:00000 P - Antenna Change
+ YELL  A    3 P 96:235:00000 03:005:00000 P - Unknown
+ YELL  A    4 P 03:005:00000 00:000:00000 P - 
+ YELL  A    1 P 00:000:00000 00:000:00000 V -
+ YELL  A    1 P 00:303:00000 01:069:00000 X - Snow ?
+ YELL  A    1 P 05:345:00000 06:049:00000 X - Snow ?
+ YIBL  A    1 P 00:000:00000 00:000:00000 P - 
+ YIBL  A    1 P 00:000:00000 00:000:00000 V -
+ YSSK  A    1 P 00:000:00000 03:268:71406 P - Hokkaido Earthquake
+ YSSK  A    2 P 03:268:71406 06:319:40456 P - Kuril Islands Earthquake (8.3)
+ YSSK  A    3 P 06:319:40456 00:000:00000 P - 
+ YSSK  A    1 P 00:000:00000 03:268:71406 V - Hokkaido Earthquake
+ YSSK  A    2 P 03:268:71406 06:319:40456 V - Kuril Islands Earthquake (8.3)
+ YSSK  A    3 P 06:319:40456 00:000:00000 V - 
+ ZAMB  A    1 P 00:000:00000 00:000:00000 P - 
+ ZAMB  A    1 P 00:000:00000 00:000:00000 V -
+ ZECK  A    1 P 00:000:00000 01:193:46800 P - Antenna & Receiver Change
+ ZECK  A    2 P 01:193:46800 06:211:00000 P - Antenna swap (according to MIT analysis)
+ ZECK  A    3 P 06:211:00000 00:000:00000 P - 
+ ZECK  A    1 P 00:000:00000 00:000:00000 V -
+ ZIMJ  A    1 P 00:000:00000 07:303:00000 P - Receiver change  (added by ITRFPC)
+ ZIMJ  A    2 P 07:303:00000 00:000:00000 P - 
+ ZIMJ  A    1 P 00:000:00000 00:000:00000 V -
+ ZIMM  A    1 P 00:000:00000 98:310:00000 P - Antenna Change
+ ZIMM  A    2 P 98:310:00000 00:000:00000 P - 
+ ZIMM  A    1 P 00:000:00000 00:000:00000 V -
+ ZIMZ  A    1 P 00:000:00000 03:041:00000 P - Unkwnown         (added by ITRFPC)
+ ZIMZ  A    2 P 03:041:00000 00:000:00000 P - 
+ ZIMZ  A    1 P 00:000:00000 00:000:00000 V -
+ ZWE2  A    1 P 00:000:00000 00:000:00000 P - 
+ ZWE2  A    1 P 00:000:00000 00:000:00000 V -
+ ZWEN  A    1 P 00:000:00000 00:251:00000 P - Antenna Change
+ ZWEN  A    2 P 00:251:00000 04:060:00000 P - Unknown
+ ZWEN  A    3 P 04:060:00000 04:266:00000 P - Antenna Change
+ ZWEN  A    4 P 04:266:00000 00:000:00000 P - 
+ ZWEN  A    1 P 00:000:00000 00:000:00000 V -
+ ZWEN  A    1 P 00:079:00000 00:251:00000 X - Antenna malfunction
+-SOLUTION/DISCONTINUITY
+*----------------------------------------------------------------
+%ENDSNX             
